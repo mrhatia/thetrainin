@@ -1,0 +1,369 @@
+/*!
+Theme Name: TTA
+Theme URI: http://underscores.me/
+Author: wpconfigs.com
+Author URI: http://wpconfigs.com
+Description: Description
+Version: 1.0.0
+Tested up to: 5.4
+Requires PHP: 5.6
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: tta
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned.
+
+TTA is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Generic
+    - Normalize
+    - Box sizing
+# Base
+    - Typography
+    - Elements
+    - Links
+    - Forms
+## Layouts
+# Components
+    - Navigation
+    - Posts and pages
+    - Comments
+    - Widgets
+    - Media
+    - Captions
+    - Galleries
+# plugins
+    - Jetpack infinite scroll
+# Utilities
+    - Accessibility
+    - Alignments
+
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Generic
+--------------------------------------------------------------*/
+
+/* Normalize
+--------------------------------------------- */
+.title-box {
+    padding: 44px 40px!important;
+}
+.reality-sec {
+    padding: 0 0 30px!important;
+}
+
+.popular-accordion-cell {
+    font-size: 16px!important;
+    width: 29%!important;
+}
+p {
+    margin-bottom: 10px;
+}
+/*
+p, ul li, ol li {
+    font-size: 18px;
+    line-height: 28px;
+    color: #4A5271;
+    margin: 0;
+}*/
+
+.title-text {
+    margin-left: 18px!important;
+}
+.podcast-label {
+    margin-bottom: 20px;
+}
+.award-sec {
+    padding: 110px 0 110px;
+}
+.wpcf7 form.sent .wpcf7-response-output {
+    background: green!important;
+  
+}
+
+.wpcf7 form.sent .wpcf7-response-output {
+    border-color: green!important;
+}
+.webinar-card .webinar-detail span {
+    text-transform: inherit!important;
+}
+
+.blog-header .b-search {
+    position: relative;
+    width: 40%;
+    margin-left: 30%;
+}
+.women-owned_logo {
+    max-width: 200px !important;
+}
+.core-card h4 {
+    text-align: center !important;
+}
+.how-can-help_image label {
+    text-transform: none !important;
+   
+}
+.link {
+    font-weight: 500;
+    font-size: 16px !important;
+    line-height: 19px;
+    text-align: center;
+
+}
+.single-blog .b-detail p {
+    margin: 0 0 15px!important;
+}
+.single-blog .b-detail p {
+    margin: 0 0 0px !important;
+}
+
+
+.resource-main .nav-tabs.tab-listings {
+
+    max-width: 1014px;
+
+}
+.how-it-work-sec {
+    padding: 100px 0 100px;
+}
+.webinar-card .webinar-detail span {
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 34px;
+    text-transform: capitalize;
+    color: #3CB4E5;    
+}
+.podcast-episode .podcast-detail p {
+    margin: 0;
+       font-size: 18px;
+    padding: 10px;
+    line-height: 1.3;
+}
+.main-banner .link:hover {
+    color: #2a3d90;
+}
+.story-block img {
+    max-width: 210px;
+    max-height: 120px;
+}
+.webinar-card .webinar-detail {
+    padding-right: 40px;
+}
+.column3-icon-text .small-text p{
+      font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #4A5271;
+}
+.blod-text p{
+      font-weight: bold !important;
+    font-size: 20px !important;
+    line-height: 28px !important;
+    color: #2C2C2C !important;
+}
+.testi-item h5 {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 34px;
+    text-transform: capitalize;
+    color: #3CB4E5;
+}
+.testi-item h1 {
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -0.03em;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    margin: 0 0 26px;
+}
+.testimonials-caps h4{
+       color: #3cb4e5 !important;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0 0 14px;
+}
+.testimonials-caps h2{
+    font-size: 38px !important;
+    font-weight: 900;
+    line-height: 1.26em;
+    margin: 0 0 26px;
+}
+
+.banner-detail__flex p {
+    font-weight: 400 !important;
+}
+.women-owned_logo {
+    text-align: center !important;
+}
+.testi-item p {
+    margin-bottom: 10px !important;
+}
+
+.leader-block { justify-content: center!important;}
+
+.t-img.no-img { width: 220px!important; height: 150px!important; margin-bottom: 32px!important;}
+.testimonials-slider-oth-img.no-img{  width: 220px!important; height: 50px!important; margin-bottom: 32px!important; }
+
+
+.social img {
+    width: 30px;
+}
+.our_eLearning-sec-text p {
+    margin-bottom: 25px!important;
+}
+.popular-accordion-cell {
+    margin-right: 40px;
+}
+.align-items-center {
+    padding-top: 30px !important;
+}
+.single-casestudy .list-dots ul {
+    padding-top: 30px !important;
+}
+.image-block .image:after {
+    right: -75px !important;
+}
+tbody, td, tfoot, th, thead, tr {
+    border: 1px solid #898888;
+    padding: 15px;
+}
+.help-item h6 {
+    text-align: center;
+}
+.job-openings-slider-main .slick-dots {
+    margin: 15px 0 0 !important;
+  
+}
+.story-block p {
+    font-size: 18px;
+}
+.story-block .story-award p {
+    font-weight: 600 !important;
+}
+.resource-main .tab-content .tab-pane {
+    margin-bottom: 50px;
+}
+.pd_list_title a {
+    color: #3CB4E5 !important;
+}
+.pd_list_content {
+    color: #4A5271;
+}
+.get-content {
+    padding: 30px 0 30px !important;
+}
+section.get-know {
+    margin-bottom: 100px;
+}
+.star-author {
+    font-size: 20px!important;
+}
+.star_section.business-goal .business-detail h2 {
+    text-transform: none !important;
+}
+.text-block-title h6 {
+ 
+    text-transform: none !important;
+  
+}
+.new_banner_label .top-label {
+    text-transform: none !important;   
+}
+.help-you p {
+    font-size: 22px!important; 
+}
+.f-block p {
+    font-size: 14px!important; 
+}
+.at-style-responsive .at-share-btn {
+   padding: 0px !important; 
+}
+.round-icon-label-block-1 .round-label {
+    left: 0% !important; 
+}
+.case-study-tabing {
+    display: none;
+}
+.work-tabing.d-lg-none.d-block {
+    padding-top: 15px;
+}
+.event_main-section .newteam_box {
+       width: 93%!important; 
+}
+a.link.news_load_more_mo{
+		margin-top: 50px;
+    margin-bottom: 50px;
+}
+a.link.webinars_load_more_mo{
+	margin-top: 50px;
+    margin-bottom: 50px;
+}
+.see-more.insights_load_more_remove_mo {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.right-menu .log-in a {
+
+    padding: 14px 18px!important;
+    background-color: black !important; 
+}
+@media (max-width: 767px){
+.business-goal .business-detail h2 {
+    text-transform: none;
+}
+.work-with-you [class*=col-]:nth-child(2) {
+    order: 0;
+    margin-bottom: 50px;
+}
+.speaker-block {
+    margin-top: 25px;
+}
+}
+
+.right-menu .log-in a {
+  border: none!important;
+}
+
+#commentform #commentsection, #commentform #authorsection, #commentform #emailsection {
+  position: initial ;
+ 
+}
+div#event_result {
+    justify-content: center;
+}
+.deliver-sec .btn.btn-border-blue {
+    text-transform: capitalize !important;
+}
+
+li.connect-login-mobile a {
+    border: 0 !important;
+    text-align: center;
+}
+.f-block.f-link.img {
+    width: 200px;
+}
+.f-block .social {
+    padding-top: 10px !important;
+}
+.foteraddres{ 
+	margin-left: 6px;
+}  
+
+
+
+.contact-banner-detail{
+    display: flex;
+    justify-content: space-between;
+}
