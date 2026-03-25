@@ -1,0 +1,508 @@
+{
+    "key": "group_621901c0aeefa",
+    "title": "Mobile Mega Menu Setting",
+    "fields": [
+        {
+            "key": "field_621901eff92b1",
+            "label": "How We Can Help",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_6219020cf92b2",
+            "label": "Menu 1 Title",
+            "name": "mg_hwch_menu_1_title_mo",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_62190221f92b3",
+            "label": "Enter menu name",
+            "name": "mg_hwch_menu_1_name_mo",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Note:  Here link mega menu add and removed setting: <a target=\"_blank\" href=\"\/wp-admin\/nav-menus.php?action=edit&menu=35\">Click Menu<\/a>",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_6219023cf92b4",
+            "label": "Menu 2 Title",
+            "name": "mg_hwch_menu_2_title_mo",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_62190257f92b5",
+            "label": "Enter menu name",
+            "name": "mg_hwch_menu_2_name_mo",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Note:  Here link mega menu add and removed setting: <a target=\"_blank\" href=\"\/wp-admin\/nav-menus.php?action=edit&menu=36\">Click Menu<\/a>",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_6219027af92b6",
+            "label": "Menu 3 Title",
+            "name": "mg_hwch_menu_3_title_mo",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Note:  Here link mega menu add and removed setting: <a target=\"_blank\" href=\"\/wp-admin\/nav-menus.php?action=edit&menu=37\">Click Menu<\/a>",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_621902a3f92b7",
+            "label": "Enter menu name",
+            "name": "mg_hwch_menu_3_name_mo",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_621902c1f92b8",
+            "label": "Find Talent",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_621902daf92b9",
+            "label": "Menu 1 Title",
+            "name": "mg_ft_menu_1_title_mo",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_62190300f92ba",
+            "label": "Enter menu name",
+            "name": "mg_ft_menu_1_name_mo",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Note:  Here link mega menu add and removed setting: <a target=\"_blank\" href=\"\/wp-admin\/nav-menus.php?action=edit&menu=39\">Click Menu<\/a>",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_62190315f92bb",
+            "label": "Menu 2 Title",
+            "name": "mg_ft_menu_2_title_mo",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_62190328f92bc",
+            "label": "Enter menu name",
+            "name": "mg_ft_menu_2_name_mo",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Note:  Here link mega menu add and removed setting: <a target=\"_blank\" href=\"\/wp-admin\/nav-menus.php?action=edit&menu=38\">Click Menu<\/a>",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_621903636364f",
+            "label": "Find Work",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_621903b463651",
+            "label": "Enter menu name",
+            "name": "mg_fw_menu_1_name_mo",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Note:  Here link mega menu add and removed setting: <a target=\"_blank\" href=\"\/wp-admin\/nav-menus.php?action=edit&menu=40\">Click Menu<\/a>",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_621903d263652",
+            "label": "Image",
+            "name": "mg_fw_image_mo",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_621903eb63653",
+            "label": "Button 1",
+            "name": "mg_fw_button_1_mo",
+            "aria-label": "",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
+        },
+        {
+            "key": "field_621903fd63654",
+            "label": "Button 2",
+            "name": "mg_fw_button_2_mo",
+            "aria-label": "",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
+        },
+        {
+            "key": "field_6219048b8119f",
+            "label": "Insights & Events",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_621904b0811a1",
+            "label": "Enter menu name",
+            "name": "mg_ie_menu_1_name_mo",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Note:  Here link mega menu add and removed setting: <a target=\"_blank\" href=\"\/wp-admin\/nav-menus.php?action=edit&menu=41\">Click Menu<\/a>",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_631abb7694cd6",
+            "label": "Enter menu name Event",
+            "name": "mg_ie_menu_1_name_mo_event",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Note:  Here link mega menu add and removed setting: <a target=\"_blank\" href=\"\/wp-admin\/nav-menus.php?menu=103\">Click Menu<\/a>",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_621904dd811a2",
+            "label": "About TTA",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_62190503811a4",
+            "label": "Enter menu name",
+            "name": "mg_at_menu_1_name_mo",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "Note:  Here link mega menu add and removed setting: <a target=\"_blank\" href=\"\/wp-admin\/nav-menus.php?action=edit&menu=42\">Click Menu<\/a>",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_62190521811a5",
+            "label": "Image",
+            "name": "mg_at_image_mo",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "30",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_62190535811a6",
+            "label": "Content",
+            "name": "mg_at_content_mo",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "70",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_62190548811a7",
+            "label": "Button 1",
+            "name": "mg_at_button_1_mo",
+            "aria-label": "",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options-mega-menu-settings"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": false,
+    "modified": 1774409733
+}

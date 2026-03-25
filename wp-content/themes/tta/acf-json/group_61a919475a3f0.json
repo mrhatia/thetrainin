@@ -1,0 +1,643 @@
+{
+    "key": "group_61a919475a3f0",
+    "title": "Casestudy Settings",
+    "fields": [
+        {
+            "key": "field_61a91a9b9a407",
+            "label": "Services Settings Heading",
+            "name": "services_settings_heading",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_61a91a1af9eba",
+            "label": "Services  Settings Title",
+            "name": "services__settings_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_61a91a3af9ebb",
+            "label": "Industries  Settings Title",
+            "name": "industries__settings_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_61a91aca9a408",
+            "label": "Industries Settings Heading",
+            "name": "industries_settings_heading",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_61b376157e4e0",
+            "label": "Banner Section",
+            "name": "casestudy_banner_section",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_62e35c2310853",
+                    "label": "Choose layout",
+                    "name": "casestudy_banner_choose_layout",
+                    "aria-label": "",
+                    "type": "button_group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "fullbannerdefault": "Banner 1",
+                        "fullbannerone": "Banner 2",
+                        "fullbannertwo": "Banner 3",
+                        "fullbannerthreee": "Banner 4",
+                        "fullbannerfure": "Banner 5",
+                        "fullbannerfive": "Banner 6",
+                        "fullbannersix": "Banner 7"
+                    },
+                    "allow_null": 0,
+                    "default_value": "",
+                    "layout": "horizontal",
+                    "return_format": "value"
+                },
+                {
+                    "key": "field_61b376317e4e1",
+                    "label": "Heading",
+                    "name": "casestudy_banner_heading",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_62e35c2310853",
+                                "operator": "==",
+                                "value": "rightbannersave"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_61b3763e7e4e2",
+                    "label": "Title",
+                    "name": "casestudy_banner_title",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_62e35c2310853",
+                                "operator": "==",
+                                "value": "rightbannersave"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_61b3764c7e4e3",
+                    "label": "Text Content",
+                    "name": "casestudy_banner_text_content",
+                    "aria-label": "",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_62e35c2310853",
+                                "operator": "==",
+                                "value": "rightbannersave"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 0,
+                    "delay": 0
+                },
+                {
+                    "key": "field_61b376627e4e4",
+                    "label": "Image",
+                    "name": "casestudy_banner_image",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_62e35c2310853",
+                                "operator": "==",
+                                "value": "rightbannersave"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "preview_size": "medium",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                },
+                {
+                    "key": "field_62e35d1605978",
+                    "label": "Banner Image",
+                    "name": "full_casestudy_banner_image",
+                    "aria-label": "",
+                    "type": "image",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_62e35c2310853",
+                                "operator": "==",
+                                "value": "fullbannerdefault"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_62e35c2310853",
+                                "operator": "==",
+                                "value": "fullbannerone"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_62e35c2310853",
+                                "operator": "==",
+                                "value": "fullbannertwo"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_62e35c2310853",
+                                "operator": "==",
+                                "value": "fullbannerthreee"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_62e35c2310853",
+                                "operator": "==",
+                                "value": "fullbannerfure"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_62e35c2310853",
+                                "operator": "==",
+                                "value": "fullbannerfive"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_62e35c2310853",
+                                "operator": "==",
+                                "value": "fullbannersix"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "preview_size": "medium",
+                    "library": "all",
+                    "min_width": "",
+                    "min_height": "",
+                    "min_size": "",
+                    "max_width": "",
+                    "max_height": "",
+                    "max_size": "",
+                    "mime_types": ""
+                },
+                {
+                    "key": "field_62e35d1105977",
+                    "label": "Text Content",
+                    "name": "full_casestudy_banner_text_content",
+                    "aria-label": "",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_62e35c2310853",
+                                "operator": "==",
+                                "value": "fullbannerdefault"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_62e35c2310853",
+                                "operator": "==",
+                                "value": "fullbannerone"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_62e35c2310853",
+                                "operator": "==",
+                                "value": "fullbannertwo"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_62e35c2310853",
+                                "operator": "==",
+                                "value": "fullbannerthreee"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_62e35c2310853",
+                                "operator": "==",
+                                "value": "fullbannerfure"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_62e35c2310853",
+                                "operator": "==",
+                                "value": "fullbannerfive"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_62e35c2310853",
+                                "operator": "==",
+                                "value": "fullbannersix"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "tabs": "all",
+                    "toolbar": "full",
+                    "media_upload": 0,
+                    "delay": 0
+                },
+                {
+                    "key": "field_62e35d0105976",
+                    "label": "Title",
+                    "name": "full_casestudy_banner_title",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_62e35c2310853",
+                                "operator": "==",
+                                "value": "fullbannerdefault"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_62e35c2310853",
+                                "operator": "==",
+                                "value": "fullbannerone"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_62e35c2310853",
+                                "operator": "==",
+                                "value": "fullbannertwo"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_62e35c2310853",
+                                "operator": "==",
+                                "value": "fullbannerthreee"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_62e35c2310853",
+                                "operator": "==",
+                                "value": "fullbannerfure"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_62e35c2310853",
+                                "operator": "==",
+                                "value": "fullbannerfive"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_62e35c2310853",
+                                "operator": "==",
+                                "value": "fullbannersix"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_62e360a7d59a7",
+                    "label": "Sub Title",
+                    "name": "full_casestudy_banner_title_sub",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_62e35c2310853",
+                                "operator": "==",
+                                "value": "fullbannerdefault"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_62e35c2310853",
+                                "operator": "==",
+                                "value": "fullbannerone"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_62e35c2310853",
+                                "operator": "==",
+                                "value": "fullbannertwo"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_62e35c2310853",
+                                "operator": "==",
+                                "value": "fullbannerthreee"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_62e35c2310853",
+                                "operator": "==",
+                                "value": "fullbannerfure"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_62e35c2310853",
+                                "operator": "==",
+                                "value": "fullbannerfive"
+                            }
+                        ],
+                        [
+                            {
+                                "field": "field_62e35c2310853",
+                                "operator": "==",
+                                "value": "fullbannersix"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_62e35d6605979",
+                    "label": "Button",
+                    "name": "full_casestudy_default_button",
+                    "aria-label": "",
+                    "type": "link",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array"
+                }
+            ]
+        },
+        {
+            "key": "field_61b9a3e2e7d21",
+            "label": "Call Out Block",
+            "name": "casestudy_call_out_block",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_61b9a3f3e7d22",
+                    "label": "Heading",
+                    "name": "casestudy_call_out_heading",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_61b9a3ffe7d23",
+                    "label": "Title",
+                    "name": "casestudy_call_out_title",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_61b9a405e7d24",
+                    "label": "Link",
+                    "name": "casestudy_call_out_short_code",
+                    "aria-label": "",
+                    "type": "link",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array"
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "casestudy_settings"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": false,
+    "modified": 1774409733
+}

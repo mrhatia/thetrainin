@@ -7,7 +7,7 @@
 
 
 @font-face {
-  font-family: "haiyard-display";
+  font-family: "halyard-display";
   src: url(../fonts/halyard-display/halyard-display.woff2) format('woff2');
 
 }
@@ -201,7 +201,7 @@ p {
   justify-items: center;
 }
 
-.section-wrapper__card-grid .talent-card {
+.section-wrapper__card-grid .talent-card, .section-wrapper__card-grid .service-card {
   position: relative;
   background: #fff;
   border-radius: 16px;
@@ -219,7 +219,6 @@ p {
     transform 0.25s ease;
   z-index: 1;
   box-shadow: 8px 8px 8px 0px #0000001A;
-
 }
 
 .section-wrapper__card-grid .talent-card a {
@@ -232,7 +231,14 @@ p {
   border-radius: 16px;
 }
 
-.section-wrapper__card-grid .talent-card::before {
+.learning-services-section{
+  background-color: #000000;
+  border-radius: unset !important;
+  padding: 0;
+
+}
+
+.section-wrapper__card-grid .talent-card::before, .section-wrapper__card-grid .service-card::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -247,7 +253,7 @@ p {
   z-index: -1;
 }
 
-.section-wrapper__card-grid .talent-card:hover {
+.section-wrapper__card-grid .talent-card:hover, .section-wrapper__card-grid .service-card:hover {
   box-shadow: 0px 0px 24px 0px #3EB3E3;
   transform: translateY(-4px);
 }
@@ -2374,6 +2380,13 @@ section.tt_lago {
   border-bottom-left-radius: 100px !important;
 }
 
+.case_studies_section.case-studies-design-two{
+    padding: 160px 0;
+    background-image: url(../images/new-home-images/training.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+}
 
 
 /* New homepage mobile responsive */
@@ -2472,6 +2485,9 @@ section.tt_lago {
     margin-bottom: 0;
   }
 }
+
+
+
 /* Tablet */
 @media (min-width:767.98px) and (max-width:1024px){
 	.tta-home-banner .cta-wrap {

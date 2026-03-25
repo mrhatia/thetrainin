@@ -114,8 +114,31 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 // Pop up slick slider
-jQuery('.tech-slider').slick({
+jQuery('.case-studies-design-one .tech-slider').slick({
   slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: false,
+  autoplaySpeed: 2500,
+  arrows: true,
+  dots: false,
+  prevArrow: `<button type="button" class="slick-prev">
+        <svg width="50" height="58" viewBox="0 0 50 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M30.837 43.1719L18.5022 28.7812L30.837 14.3906" stroke="#132136" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+        </button>`,
+  nextArrow: `<button type="button" class="slick-next">
+        <svg width="50" height="58" viewBox="0 0 50 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18.5023 14.3906L30.8372 28.7813L18.5023 43.1719" stroke="#132136" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></button>`,
+  responsive: [
+    { breakpoint: 991, settings: { slidesToShow: 2 } },
+    { breakpoint: 767, settings: { slidesToShow: 1 } }
+  ]
+});
+
+jQuery('.case-studies-design-two .tech-slider').slick({
+  slidesToShow: 1,
   slidesToScroll: 1,
   autoplay: false,
   autoplaySpeed: 2500,
