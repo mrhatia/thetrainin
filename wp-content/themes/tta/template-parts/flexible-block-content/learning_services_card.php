@@ -18,7 +18,7 @@ $explore_services_button = get_sub_field('explore_services_button');
                     <div class="card-grid">
                         <?php while (have_rows('repeater_card')) : the_row(); ?>
                             <div class="service-card">
-
+                                
                                 <?php $title = get_sub_field('title'); ?>
                                 <div class="talent-title"><?php echo $title ?></div>
                                 <?php

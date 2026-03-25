@@ -19,9 +19,9 @@ $design_variation = get_sub_field('design_variation');
                             <?php if ($titlePrefix) : ?>
                             <span><?php echo ($titlePrefix); ?></span>
                             <?php endif; ?>
-                            <?php echo ($title); ?>
+                                <span><?php echo ($title); ?></span>
                             <?php if ($titleSufix) : ?>
-                            <span><?php echo ($titleSufix); ?></span>
+                                <?php echo ($titleSufix); ?>
                             <?php endif; ?>
                         </h2>
                     </div>

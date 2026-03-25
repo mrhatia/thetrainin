@@ -17217,6 +17217,30 @@
                     "display": "block",
                     "sub_fields": [
                         {
+                            "key": "field_69c3ce253d051",
+                            "label": "Select Design Variation",
+                            "name": "design_variation",
+                            "aria-label": "",
+                            "type": "button_group",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "relevanssi_exclude": 0,
+                            "choices": {
+                                "simple": "Simple",
+                                "slider": "Slider"
+                            },
+                            "default_value": "",
+                            "return_format": "value",
+                            "allow_null": 0,
+                            "layout": "horizontal"
+                        },
+                        {
                             "key": "field_69a939f0aca1a",
                             "label": "Section Title",
                             "name": "section_title",
@@ -17892,5 +17916,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1774421349
+    "modified": 1774440016
 }
