@@ -144,6 +144,7 @@ function tta_scripts() {
 	wp_style_add_data( 'tta-style', 'rtl', 'replace' );
 	// wp_enqueue_style('tta-acf-style', get_template_directory_uri().'/css/style.css', array(), time());
 	wp_enqueue_style('tta-home-style', get_template_directory_uri().'/css/new-homepage.css', array(), time());
+	wp_enqueue_style('tta-contact-style', get_template_directory_uri().'/css/new-contact-page.css', array(), time());
 	// wp_enqueue_style('tta-slick-theme-style', get_template_directory_uri().'/css/new-homepage.css', array(), time());
 
 	// wp_enqueue_script( 'jquery');
