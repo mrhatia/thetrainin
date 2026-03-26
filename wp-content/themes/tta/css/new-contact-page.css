@@ -609,7 +609,7 @@
 }
 
 .service-card:hover .talent-title{
-  transform: translateY(-220px);
+  transform: translateY(-20px);
 }
 
 .service-card:hover .service-cad-link {
@@ -663,6 +663,7 @@
 .page-template-tpl-industry-page .trusted-by{
     padding: 127px 0 124px;
 }
+
 
 
 @media (max-width: 767px) {

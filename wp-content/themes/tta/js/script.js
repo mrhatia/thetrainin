@@ -747,21 +747,7 @@ $(document).ready(function () {
 		
 
 
-	// FAQ Accordion Start
-	jQuery('.faq-accordion-title').click(function(e) {
-		jQuery('.faq-accordion-caps').slideUp();
-		jQuery('.faq-accordion-block').removeClass('open');
-		jQuery('.active').not(this).removeClass('active');
-		if (jQuery(this).hasClass('active')) {
-			jQuery(this).removeClass('active');
-			jQuery(this).next('.faq-accordion-caps').slideUp();
-
-		}else{
-			jQuery(this).addClass('active');
-			jQuery(this).next('.faq-accordion-caps').slideDown();
-			jQuery(this).parent('.faq-accordion-block').addClass('open');
-		}
-	});
+	
 
 
 	// Accordion Start

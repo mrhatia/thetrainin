@@ -53,11 +53,27 @@
 					<?php endif; ?>
 				</div>
 			</div>
+<script>
+	// FAQ Accordion Start
+	jQuery('.faq-accordion-title').click(function(e) {
+		jQuery('.faq-accordion-caps').slideUp();
+		jQuery('.faq-accordion-block').removeClass('open');
+		jQuery('.active').not(this).removeClass('active');
+		if (jQuery(this).hasClass('active')) {
+			jQuery(this).removeClass('active');
+			jQuery(this).next('.faq-accordion-caps').slideUp();
 
+		}else{
+			jQuery(this).addClass('active');
+			jQuery(this).next('.faq-accordion-caps').slideDown();
+			jQuery(this).parent('.faq-accordion-block').addClass('open');
+		}
+	});
+</script>
 		</div>
 	</section>
 <?php } else { ?>
-	<section class="faq-section" id="<?php echo $gradient_color_banner_section_id; ?>">
+	<section class="faq-section faq-design-one" id="<?php echo $gradient_color_banner_section_id; ?>">
 		<div class="container">
 			<div class="section-title <?php echo $class_fontstyle; ?>">
 				<span><?php the_sub_field( 'faqs_label' ); ?></span>
@@ -78,5 +94,24 @@
 			<?php endif; ?>
 			</div>
 		</div>
+		<script>
+	// FAQ Accordion Start
+	jQuery('.faq-accordion-title').click(function(e) {
+		jQuery('.faq-accordion-caps').slideUp();
+		jQuery('.faq-accordion-block').removeClass('open');
+		jQuery('.active').not(this).removeClass('active');
+		if (jQuery(this).hasClass('active')) {
+			jQuery(this).removeClass('active');
+			jQuery(this).next('.faq-accordion-caps').slideUp();
+
+		}else{
+			jQuery(this).addClass('active');
+			jQuery(this).next('.faq-accordion-caps').slideDown();
+			jQuery(this).parent('.faq-accordion-block').addClass('open');
+		}
+	});
+</script>
 	</section>
 <?php }  ?>
+
+
