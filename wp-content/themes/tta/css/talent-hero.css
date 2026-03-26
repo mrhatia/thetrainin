@@ -62,7 +62,7 @@
   letter-spacing: -0.5px;
   color: #ffffff;
   margin: 0;
-  font-family: "Polymath-Display";
+  font-family: "Polymath Display";
 }
 .talent-banner-section .main-title::after {
   display: none;
@@ -132,7 +132,6 @@
 
 
 box-sizing: border-box;
-
 
 width: 881px;
 height: 363px;
