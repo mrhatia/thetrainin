@@ -41,16 +41,15 @@
 .social-icons-section {
   text-align: center;
 }
-.social-icons-section .tta-seperator{
-     margin-top: 133px;
-     margin-bottom: 20px;
-
+.social-icons-section .tta-seperator {
+  margin-top: 133px;
+  margin-bottom: 20px;
 }
 .social-icons-section .social_link_title {
   border: none !important;
   font-size: 26px;
-      letter-spacing: -0.1px;
-          margin-bottom: 38px;
+  letter-spacing: -0.1px;
+  margin-bottom: 38px;
 }
 
 .social-icons-section .social {
@@ -302,41 +301,41 @@
 .tta-contact-v1__form textarea::placeholder {
   color: #8aa3aa;
 }
-.btn.btn-white.btn-pill{
-      margin: 0 auto;
-    display: flex;
-
-  
+.btn.btn-white.btn-pill {
+  margin: 0 auto;
+  display: flex;
 }
-.btn.btn-white.btn-pill p{
-      margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-
-  
+.btn.btn-white.btn-pill p {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 /* SUBMIT BUTTON */
 .tta-contact-v1__form button,
 .tta-contact-v1__form input[type="submit"] {
-display: inline-flex;
-    align-items: center;
-    gap: 15px;
-    box-shadow: 0px 4px 4px 0px #00000040, 2px 6px 6px 0px #FFFFFF inset;
-    color: #132136;
-    padding: 12px 32px 12px 35px;
-    border-radius: 55px;
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 1;
-    position: relative;
-    transition: all .3s ease;
-    border: 3px solid transparent;
-    background: linear-gradient(90deg, #3EB3E3 0%, #3BE2A8 100%) padding-box, linear-gradient(177.35deg, #3EB3E3 -4.78%, #22637D 170.96%) border-box;
-    letter-spacing: 0.7px;
-    margin-bottom: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+  box-shadow:
+    0px 4px 4px 0px #00000040,
+    2px 6px 6px 0px #ffffff inset;
+  color: #132136;
+  padding: 12px 32px 12px 35px;
+  border-radius: 55px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1;
+  position: relative;
+  transition: all 0.3s ease;
+  border: 3px solid transparent;
+  background:
+    linear-gradient(90deg, #3eb3e3 0%, #3be2a8 100%) padding-box,
+    linear-gradient(177.35deg, #3eb3e3 -4.78%, #22637d 170.96%) border-box;
+  letter-spacing: 0.7px;
+  margin-bottom: 0;
 }
 
 .btn.btn-white.btn-pill p::before {
@@ -353,13 +352,13 @@ display: inline-flex;
   z-index: 1;
 }
 .btn.btn-white.btn-pill p::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    border-radius: 50px;
-    background: linear-gradient(90deg, #3EB3E3 0%, #3BE2A8 100%);
-    z-index: -1;
-    transition: all .4s;
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50px;
+  background: linear-gradient(90deg, #3eb3e3 0%, #3be2a8 100%);
+  z-index: -1;
+  transition: all 0.4s;
 }
 
 /* RESPONSIVE */
