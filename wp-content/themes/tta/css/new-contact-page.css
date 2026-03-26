@@ -758,12 +758,12 @@
       display: block;
     }
     .tta-form__col p {
-    margin-bottom: 10px;
+    margin-bottom: 00px;
 }
 .tta-contact-v1__form input,
 .tta-contact-v1__form textarea,
 .tta-contact-v1__form select {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 .social-icons-section .tta-seperator {
     margin-top: 60px;
