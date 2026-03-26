@@ -18106,6 +18106,13 @@
                 "operator": "==",
                 "value": "default"
             }
+        ],
+        [
+            {
+                "param": "post_template",
+                "operator": "==",
+                "value": "tpl-industry-page.php"
+            }
         ]
     ],
     "menu_order": 0,
@@ -18117,5 +18124,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1774515853
+    "modified": 1774536643
 }

@@ -241,9 +241,17 @@
   padding: 120px 0;
 }
 
-.faq-section-design-two + .tts-testimonial-section{
-  background-color: #ffffff;
-  padding: 120px 0;
+.page-template-tpl-industry-page .tts-testimonial-section{
+  padding: 154px 0 143px;
+  background-image: url(../images/testimonial-bg-shape.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.page-template-tpl-industry-page .tts-text{
+  max-width: 100%;
+  line-height: 1.5;
 }
 
 /* .tts-testimonial-section {
