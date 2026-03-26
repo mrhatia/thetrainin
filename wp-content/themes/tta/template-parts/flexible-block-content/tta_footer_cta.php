@@ -24,7 +24,7 @@ if ($button_two) {
 
 
 <section class="section-footer-cta">
-	<div class="footer-cta-outer" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/industry-banner.png');">
+	<div class="footer-cta-outer" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/cta-bg.png');">
 		<div class="cta-inner">
 		
 			<?php if(get_sub_field('title')) { ?>
@@ -35,7 +35,7 @@ if ($button_two) {
 			<div class="cta-buttons-section">
 				<!-- button two -->
 				<?php if($button_one) { ?>
-					<div class="button-two">
+					<div class="button-one">
 						<a class="view-btn-bottom" href="<?php echo esc_url($button_one_url); ?>"
 							target="<?php echo esc_attr($button_one_target); ?>"><?php echo esc_html($button_one_title); ?> <img
 								src="<?php echo get_template_directory_uri(); ?>/images/new-home-images/icon-img.svg"
