@@ -1,0 +1,142 @@
+/* .................................................... */
+/* Talent Banner Detail */
+/* .................................................... */
+
+@font-face {
+  font-family: "halyard-display";
+  src: url(../fonts/halyard-display/halyard-display.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "halyard-display";
+  src: url(../fonts/halyard-display/Halyard-Display_Bold.woff2) format("woff2");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "halyard-display";
+  src: url(../fonts/halyard-display/Halyard_Display_SemiBold.woff2)
+    format("woff2");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "lato";
+  src: url(../fonts/lato/Lato-Regular.woff) format("woff");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Polymath-Display";
+  src: url(../fonts/Polymatch/Polymath-Bold.woff) format("woff");
+  font-weight: 800;
+}
+@font-face {
+  font-family: "Polymath Display";
+  src: url("../fonts/Polymatch/PolymathDisp-Black.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+.ctn-800 {
+  max-width: 800px;
+  width: 90%;
+  margin: 0 auto;
+}
+.talent-banner-section .banner-detail-content {
+  max-width: 815px;
+}
+.talent-banner-section {
+  position: relative;
+  padding: 140px 0 115px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.talent-banner-section .main-title h1 {
+  font-weight: 900;
+  font-size: 90px;
+  line-height: 1.15;
+  letter-spacing: -0.5px;
+  color: #ffffff;
+  margin: 0;
+  font-family: "Polymath-Display";
+}
+.talent-banner-section .main-title::after {
+  display: none;
+}
+.talent-banner-section .main-title {
+  padding: 0;
+  margin-bottom: 15px;
+}
+.talent-banner-section .content p {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 177%;
+
+  max-width: 785px;
+  color: #ffffff;
+}
+.talent-banner-section .main-title span {
+  background: linear-gradient(90deg, #3eb3e3 0%, #3be2a8 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.banner-button .view-btn-bottom {
+  font-size: 22px;
+  letter-spacing: 0.8px;
+  gap: 19px;
+}
+.banner-button {
+  margin-top: 62px;
+}
+
+.s-64{
+  height: 64px;
+}
+
+/* //strategists */
+
+.strategists-section .wrapper{
+  max-width: 1389px;
+  width: 90%;
+  margin: 0 auto;
+}
+.strategists-section .strategists-section-title h2{
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 1.15;
+  letter-spacing: -0.5px;
+  color: #000000;
+  margin: 0;
+  font-family: "Polymath-Display";
+  margin-bottom: 37px;
+}
+.strategists-section .strategists-section-title span{
+  background: linear-gradient(90deg, #3eb3e3 0%, #3be2a8 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+
+
+
+.strategists-single-card{
+
+
+box-sizing: border-box;
+
+
+width: 881px;
+height: 363px;
+
+background: rgba(62, 179, 227, 0.08);
+border: 1px solid #3EB3E3;
+border-radius: 34px;
+}

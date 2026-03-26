@@ -146,6 +146,7 @@ function tta_scripts() {
 	wp_enqueue_style('tta-home-style', get_template_directory_uri().'/css/new-homepage.css', array(), time());
 	wp_enqueue_style('tta-contact-style', get_template_directory_uri().'/css/new-contact-page.css', array(), time());
 	wp_enqueue_style('tta-faq-style', get_template_directory_uri().'/css/new-faqs.css', array(), time());
+	wp_enqueue_style('tta-talent-hero-style', get_template_directory_uri().'/css/talent-hero.css', array(), time());
 	// wp_enqueue_style('tta-slick-theme-style', get_template_directory_uri().'/css/new-homepage.css', array(), time());
 
 	// wp_enqueue_script( 'jquery');
