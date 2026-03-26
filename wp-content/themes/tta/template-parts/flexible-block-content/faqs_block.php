@@ -31,7 +31,7 @@
 <?php if($class_designvariation === 'design_two'){ ?>
 	<section class="faq-section faq-section-design-two" id="<?php echo $gradient_color_banner_section_id; ?>">
 		<div class="container">
-			<div class="section-title <?php echo $class_fontstyle; ?>">
+			<div class="faq-section-title <?php echo $class_fontstyle; ?>">
 				<h2><?php the_sub_field( 'faqs_heading' ); ?></h2>
 			</div>
 			<div class="faq-inner-section">
@@ -41,7 +41,7 @@
 				<div class="faq-accordion-blocks faq-right-section">
 					<?php if ( have_rows( 'add_faqs_block' ) ) : ?>
 							<?php  $counter = 0; while ( have_rows( 'add_faqs_block' ) ) : the_row(); $counter++; ?>
-							<div class="faq-accordion-block">
+							<div class="faq-accordion-block <?php if( $counter == 1 ) { ?>open<?php } ?>">
 								<div class="faq-accordion-title <?php if( $counter == 1 ) { ?>active<?php } ?>">
 									<h5><?php the_sub_field( 'add_faqs_title' ); ?></h5>
 								</div>
