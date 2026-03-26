@@ -321,6 +321,79 @@
                     "min": "",
                     "max": ""
                 },
+                "layout_69c4f3b0939ab": {
+                    "key": "layout_69c4f3b0939ab",
+                    "name": "talent_banner_block",
+                    "label": "Talent Banner",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_69c4f3b0939ac",
+                            "label": "Title",
+                            "name": "banner_header_title",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "relevanssi_exclude": 0,
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_69c4f3b0939ad",
+                            "label": "Sub Title",
+                            "name": "banner_header_sub_title",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "relevanssi_exclude": 0,
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_69c4f3b1939ae",
+                            "label": "Content",
+                            "name": "banner_header_content",
+                            "aria-label": "",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "relevanssi_exclude": 0,
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 0,
+                            "delay": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
                 "layout_620c7136d3469": {
                     "key": "layout_620c7136d3469",
                     "name": "banner_big_header_block",
@@ -9437,6 +9510,7 @@
                                 "class": "",
                                 "id": ""
                             },
+                            "relevanssi_exclude": 0,
                             "layout": "block",
                             "sub_fields": [
                                 {
@@ -9481,6 +9555,30 @@
                                     "prepend": "",
                                     "append": "",
                                     "maxlength": ""
+                                },
+                                {
+                                    "key": "field_69c4e3f3f2222",
+                                    "label": "Select FAQ Design Variation",
+                                    "name": "design_variation",
+                                    "aria-label": "",
+                                    "type": "button_group",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "relevanssi_exclude": 0,
+                                    "choices": {
+                                        "design_one": "Design One",
+                                        "design_two": "Design Two"
+                                    },
+                                    "default_value": "",
+                                    "return_format": "value",
+                                    "allow_null": 0,
+                                    "layout": "horizontal"
                                 }
                             ]
                         },
@@ -9492,17 +9590,26 @@
                             "type": "text",
                             "instructions": "",
                             "required": 0,
-                            "conditional_logic": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_69c4e3f3f2222",
+                                        "operator": "==",
+                                        "value": "design_one"
+                                    }
+                                ]
+                            ],
                             "wrapper": {
                                 "width": "50",
                                 "class": "",
                                 "id": ""
                             },
+                            "relevanssi_exclude": 0,
                             "default_value": "",
+                            "maxlength": "",
                             "placeholder": "",
                             "prepend": "",
-                            "append": "",
-                            "maxlength": ""
+                            "append": ""
                         },
                         {
                             "key": "field_61e83a5221423",
@@ -9523,6 +9630,35 @@
                             "prepend": "",
                             "append": "",
                             "maxlength": ""
+                        },
+                        {
+                            "key": "field_69c4e4b8f2223",
+                            "label": "Left Heading",
+                            "name": "left_heading",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_69c4e3f3f2222",
+                                        "operator": "==",
+                                        "value": "design_two"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "relevanssi_exclude": 0,
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
                         },
                         {
                             "key": "field_61e83a6021424",
@@ -17891,6 +18027,71 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "layout_69c4e949c82cc": {
+                    "key": "layout_69c4e949c82cc",
+                    "name": "tta_footer_cta",
+                    "label": "Footer CTA",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_69c4e94ac82cf",
+                            "label": "Title",
+                            "name": "title",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "relevanssi_exclude": 0,
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_69c4e981c82db",
+                            "label": "Button One",
+                            "name": "button_one",
+                            "aria-label": "",
+                            "type": "link",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "relevanssi_exclude": 0,
+                            "return_format": "array"
+                        },
+                        {
+                            "key": "field_69c4e991c82dc",
+                            "label": "Button Two",
+                            "name": "button_two",
+                            "aria-label": "",
+                            "type": "link",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            },
+                            "relevanssi_exclude": 0,
+                            "return_format": "array"
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "min": "",
@@ -17916,5 +18117,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1774440016
+    "modified": 1774515853
 }
