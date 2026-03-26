@@ -20,7 +20,7 @@
 }
 
 @font-face {
-  font-family: "Polymath-Display";
+  font-family: "Polymath Display";
   src: url(../fonts/Polymatch/Polymath-Bold.woff) format('woff');
   font-weight: 800;
 }
@@ -76,7 +76,7 @@ p {
 }
 
 .training-solutions h2 {
-  font-family: "Polymath-Display";
+  font-family: "Polymath Display";
   font-weight: 800;
   font-size: 80px;
   line-height: 1.16;
@@ -170,8 +170,8 @@ p {
 }
 
 .section-wrapper__card-grid h2.section-titles {
-  font-family: "Polymath-Display";
-  font-weight: 800;
+  font-family: "Polymath Display";
+  font-weight: 900;
   font-size: 128px;
   line-height: 1;
   text-align: center;
@@ -181,6 +181,7 @@ p {
   background-clip: text;
   color: transparent;
   margin-bottom: 35px;
+  letter-spacing: 0;
 
 }
 
@@ -286,17 +287,18 @@ section.staff-section {
 }
 
 .step-section-heading {
-  max-width: 800px;
+  max-width: 950px;
   margin: 0 auto;
 }
 
 .staff-section .step-section-heading h2 {
-  font-family: "Polymath-Display";
-  font-weight: 800;
+  font-family: "Polymath Display";
+  font-weight: 900;
   font-size: 96px;
   line-height: 1;
   text-align: center;
   margin-bottom: 100px;
+  letter-spacing: 0;
 }
 .staff-section .step-section-heading h2 span{
 
@@ -459,13 +461,14 @@ display: inline-flex;
 }
 
 .card-heading h2 {
-  font-family: "Polymath-Display";
-  font-weight: 800;
+  font-family: "Polymath Display";
+  font-weight: 900;
   font-size: 96px;
   line-height: 1;
   color: #132136;
   margin-bottom: 30px;
   text-align: center;
+  letter-spacing: 0;
 }
 
 .card-heading p {
@@ -952,13 +955,13 @@ section.tt_lago {
 }
 
 .heading-wrapper {
-  max-width: 1000px;
+  max-width: 1020px;
   margin: 0 auto;
 }
 
 .heading-wrapper h2 {
-  font-family: "Polymath-Display";
-  font-weight: 800;
+  font-family: "Polymath Display";
+  font-weight: 900;
   color: #000000;
   font-size: 120px;
   text-align: center;
@@ -1069,7 +1072,7 @@ section.tt_lago {
   color: #FFF;
 }
 .tech-card-body h3 {
-  font-family: "Polymath-Display";
+  font-family: "Polymath Display";
   font-weight: 800;
   font-size: 25px;
   line-height: 1;
@@ -1268,7 +1271,7 @@ section.tt_lago {
 }
 
 .popup-text h3 {
-  font-family: "Polymath-Display";
+  font-family: "Polymath Display";
   font-weight: 800;
   font-size: 20px;
   color: #132136;
@@ -1421,9 +1424,6 @@ section.tt_lago {
   background: linear-gradient(90deg, #3EB3E3, #3BE2A8);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 100px;
-  font-weight: 800;
-  line-height: 1.2;
 }
 /* .slider-top-bottom,
 .slider-top-bottom .container,
@@ -1569,7 +1569,7 @@ section.tt_lago {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
-  font-family: "Polymath-Display";
+  font-family: "Polymath Display";
   font-weight: 800;
   font-size: 124px;
   line-height: 1.12;
@@ -1657,7 +1657,7 @@ section.tt_lago {
 
 .award-card__label {
   color: #ffff;
-  font-family: "Polymath-Display";
+  font-family: "Polymath Display";
   font-weight: 700;
   font-size: 18px;
   text-align: center;
@@ -2329,7 +2329,7 @@ section.tt_lago {
 .trusted-by .section-title h2 {
     width: 100%;
     max-width: 1024px;
-    font-family: "Polymath-Display";
+    font-family: "Polymath Display";
     margin: 0px auto;
     font-weight: 800;
     font-size: 80px;
@@ -2381,7 +2381,7 @@ section.tt_lago {
 }
 
 .case_studies_section.case-studies-design-two{
-    padding: 120px 0 !important;
+    padding: 120px 0 90px !important;
     background-image: url(../images/new-home-images/training.png);
     background-repeat: no-repeat;
     background-position: center top;

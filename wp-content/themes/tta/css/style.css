@@ -17,7 +17,7 @@ Mixin
 	font-style: normal;
 }
 @font-face {
-  font-family: "Polymath-Display";
+  font-family: "Polymath Display";
   src: url('../fonts/Polymatch/Polymath-Bold.woff') format('woff');
   font-weight: 800;
 }
@@ -410,7 +410,7 @@ body .text-center{
 .trusted-by .section-title h2 {
     width: 100%;
     max-width: 1024px;
-    font-family: "Polymath-Display";
+    font-family: "Polymath Display";
     margin: 0px auto;
     font-weight: 800;
     font-size: 80px;

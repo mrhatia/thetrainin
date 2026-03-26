@@ -29,7 +29,7 @@
 }
 
 @font-face {
-  font-family: "Polymath-Display";
+  font-family: "Polymath Display";
   src: url(../fonts/Polymatch/Polymath-Bold.woff) format('woff');
   font-weight: 800;
 }
@@ -123,7 +123,7 @@
   background-clip: text;
   -webkit-text-fill-color: transparent;
   color: transparent;
-  font-family: "Polymath-Display";
+  font-family: "Polymath Display";
   margin: 0;
 }
 
@@ -312,22 +312,22 @@
 
 .industry-banner-section .main-title {
   padding: 0;
-    margin-bottom: 10px;
+    margin-bottom: 7px;
 }
 
 .industry-banner-section .main-title h1 {
   font-weight: 900;
   font-size: 128px;
   line-height: 1.15;
-  letter-spacing: -0.5px;
+  letter-spacing: 0px;
   /* color: #2C2C2C; */
   color: #ffffff;
   margin: 0;
-  font-family: "Polymath-Display";
+  font-family: "Polymath Display";
 }
 
 .industry-banner-section .sub-title {
-  padding-bottom: 63px;
+  padding-bottom: 60px;
 }
 
 .industry-banner-section .sub-title h2 {
@@ -360,6 +360,7 @@ padding-right: 100px;
 .case-studies-design-two .heading-wrapper h2{
   font-size: clamp(3.125rem, 6.928vw + 1.332rem, 6.875rem);
   color: #ffffff;
+  letter-spacing: 0;
 }
 
 .case-studies-design-two .slick-slider-wrapper .tta-sub-title {
@@ -377,6 +378,7 @@ padding-right: 100px;
 }
 .case-studies-design-two .card-right-section h3{
   font-size: 30px;
+  font-weight: 900;
 }
 .case-studies-design-two .card-right-section .list-style-heaindg{
   margin-top: 23px;
@@ -391,11 +393,15 @@ padding-right: 100px;
       padding-left: 37px;
 }
 
+.case-studies-design-two .card-left-section .tech-btn{
+  padding: 6px 13px 5px 21px;
+}
+
 .case-studies-design-two .tech-slider-section {
-     padding: 136px 0;
+     padding: 150px 0;
 }
 .case-studies-design-two .tech-card-inner{
-     padding: 16px 28px;
+     padding: 16px 22px 22px 28px;
 }
 .case-studies-design-two .tech-slider-section .tech-card {
      padding: 0;
@@ -475,7 +481,7 @@ padding-right: 100px;
 
 .learning-services-section .card-grid{
   grid-template-columns: repeat(4, minmax(0, 1fr));
-      margin-top: 110px;
+      margin-top: 120px;
           gap: 27px 14px;
 }
 
@@ -485,12 +491,13 @@ padding-right: 100px;
   color: #000000;
   letter-spacing: 0.4px;
     line-height: 1.5;
+    top: -7px;
 
 }
 
 
 .section-wrapper__card-grid .service-card{
-  padding:43px 23px 43px 23px;
+  padding:35px 25px 35px 25px;
   min-height: 206px;
   justify-content: center ;
   transition: all 0.3s ease-in-out;
@@ -525,7 +532,7 @@ padding-right: 100px;
 }
 
 .service-card:hover .talent-title{
-  transform: translateY(-30px);
+  transform: translateY(-220px);
 }
 
 .service-card:hover .service-cad-link{
@@ -535,6 +542,7 @@ padding-right: 100px;
 .service-card .service-cad-link{
   color: #3EB3E3;
   font-size: 20px;
+  font-weight: 700;
 }
 
 .slider-variation-outer .bottom-link-text #ttaSeeMoreBtn{
@@ -571,3 +579,153 @@ padding-right: 100px;
   margin-right: 42px;
   display: flex;
 }
+
+
+
+/* Logos Section */
+.page-template-tpl-industry-page .trusted-by{
+    padding: 127px 0 124px;
+}
+
+
+@media (max-width: 767px) {
+
+  .industry-banner-section .sub-title {
+      padding-bottom: 40px;
+  }
+
+  .industry-banner-section .main-title h1 {
+    font-size: 62px;
+  }
+  .industry-banner-section .content{
+    padding-right: 0;
+  }
+
+.case_studies_section.case-studies-design-two{
+  padding: 80px 0 90px !important;
+}
+
+.case-studies-design-two .heading-wrapper h2{
+  margin-bottom: 30px;
+}
+
+.case-studies-design-two .tech-slider-section {
+    padding: 56px 0;
+}
+
+.case-studies-design-two .tech-card-body {
+    flex-wrap: wrap;
+}
+
+.case-studies-design-two .card-right-section .list-style-heaindg {
+    margin-bottom: 13px;
+}
+
+.case-studies-design-two .card-right-section ul {
+    padding-left: 0;
+}
+
+  .case-studies-design-two .tech-card-body .card-right-section {
+      width: 100%;
+  }
+
+  .case-studies-design-two .tech-card-body .card-left-section {
+    width: 100%;
+    margin-top: 60px;
+  }
+
+  .section-wrapper__card-grid h2.section-titles , .section-wrapper__card-grid h2.section-titles span {
+    font-size: 50px !important;
+}
+
+.learning-services-section .card-grid {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    margin-top: 60px;
+}
+
+.bottom-button-wrapper {
+ 
+    margin-top: 55px;
+}
+
+.learning-services-section + .staff-section .profile-card-outer{
+  border-top-right-radius: 0 !important;
+}
+
+.slider-variation-outer .bottom-link-text {
+    margin-top: 129px;
+}
+
+ .slider-variation-outer .bottom-button-wrapper {
+        margin-top: 19px;
+    }
+
+    .faq-section-design-two h2{
+      font-size: 50px;
+    }
+
+    .faq-inner-section{
+      flex-wrap: wrap;
+    }
+
+    .faq-left-heading, .faq-right-section{
+width: 100%;
+    }
+
+    .faq-inner-section{
+      margin-top: 25px;
+    }
+
+    .faq-left-heading h3{
+      font-size: 40px;
+      text-align: center;
+    }
+
+    .faq-right-section .faq-accordion-title h5{
+      font-size: 24px;
+    }
+    .faq-right-section .faq-accordion-caps p{
+      font-size: 18px;
+      left: 0;
+    }
+
+    .faq-section-design-two + .awards-section .awards-section__heading h2{
+      font-size: 56px;
+    }
+
+    .cta-buttons-section{
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    .footer-cta-outer{
+      padding: 65px 40px 90px;
+      border-radius: 50px;
+    }
+
+    .cta-title h1{
+      font-size: 50px;
+    }
+
+    .learning-services-section .profile-card-outer{
+      border-radius: 50px;
+    }
+
+    .learning-services-section{
+      padding: 50px 0;
+    }
+
+    .learning-services-section + .staff-section .profile-card-outer{
+      border-radius: 50px;
+    }
+    
+    .faq-section-design-two{
+      border-radius: 50px;
+    }
+
+    .slider-variation-outer{
+      overflow: hidden;
+    }
+
+}
+

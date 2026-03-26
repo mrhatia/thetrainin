@@ -2,6 +2,11 @@
 
 $explore_services_button = get_sub_field('explore_services_button');
 
+if ($explore_services_button) {
+    $button_url = $explore_services_button['url'];
+    $button_title = $explore_services_button['title'];
+    $button_target = $explore_services_button['target'] ? $explore_services_button['target'] : '_self';
+}
 ?>
 <?php if (get_row_layout() == 'learning_services_card') { ?>
 
@@ -31,6 +36,14 @@ $explore_services_button = get_sub_field('explore_services_button');
                     </div>
                 <?php endif ?>
             </div>
+             <?php if ($explore_services_button) : ?>
+                <div class="bottom-button-wrapper">
+                    <a class="view-btn-bottom" href="<?php echo esc_url($button_url); ?>"
+                        target="<?php echo esc_attr($button_target); ?>"><?php echo esc_html($button_title); ?> <img
+                            src="<?php echo get_template_directory_uri(); ?>/images/new-home-images/icon-img.svg"
+                            alt=""></a>
+                </div>
+            <?php endif; ?>
         </div>
     </div>
 <?php }; ?>

@@ -29,7 +29,7 @@
 }
 
 @font-face {
-  font-family: "Polymath-Display";
+  font-family: "Polymath Display";
   src: url(../fonts/Polymatch/Polymath-Bold.woff) format('woff');
   font-weight: 800;
 }
@@ -46,20 +46,21 @@
 
 .faq-section-design-two h2{
   color: #FFFFFF;
+  letter-spacing: 0;
   background: linear-gradient(92.31deg, #3EB3E3 1.69%, #3BE2A8 97.57%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
-  font-family: "Polymath-Display";
-  font-weight: 800;
+  font-family: "Polymath Display";
+  font-weight: 900;
   font-size: 96px;
   line-height: 1.02;
   text-align: center;
 }
 
 .faq-inner-section{
-  margin-top: 200px;
+  margin-top: 177px;
 }
 
 .faq-right-section{
@@ -92,7 +93,8 @@
 
 .faq-right-section .faq-accordion-title{
   /* background-color: black; */
-  padding: 27px 35px;
+  transition: all 0.3s ease-in-out;
+  padding: 37px 35px;
   border-top: 0.5px solid;
   border-image: linear-gradient(90deg, hsla(197, 75%, 57%, 1) 0%, hsla(159, 74%, 56%, 1) 48%) 1;
 }
@@ -105,8 +107,13 @@
     background-repeat: no-repeat;
     transform: rotate(90deg);
     background-position: center center;
+    top: -7px;
+    right: 38px;
 }
 
+.faq-right-section .faq-accordion-title.active{
+    padding: 28px 35px 18px;
+}
 .faq-right-section .faq-accordion-title.active:after{
     transform: rotate(0);
 }
@@ -120,15 +127,30 @@
   background-clip: text;
   color: transparent;
   font-size: 44px;
-    font-family: "Polymath-Display";
-  font-weight: 800;
+    font-family: "Polymath Display";
+  font-weight: 900;
   line-height: 1.15;
+  letter-spacing: 0;
+
 }
 
 .faq-right-section .faq-accordion-caps{
   /* background-color: black; */
   padding: 0 35px;
   margin: 0;
+}
+
+.faq-right-section .faq-accordion-caps p {
+  font-size: 20px;
+  position: relative;
+    left: 35px;
+    margin-top: 17px;
+    line-height: 1.1;
+    color: #000000;
+}
+
+.faq-right-section .faq-accordion-caps h6:not(:nth-child(1)) {
+margin-top: 35px;
 }
 
 
@@ -142,6 +164,11 @@
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
+
+.faq-right-section .faq-accordion-block:last-of-type{
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
 .faq-right-section .faq-accordion-block:nth-child(1) .faq-accordion-title{
   border-top: none;
   border-top-left-radius: 20px;
@@ -151,12 +178,13 @@
 .faq-left-heading{
   max-width: 472px;
   width: 30%;
+  margin-top: 35px;
 }
 
 .faq-left-heading h3{
   color: #FFFFFF;
-  font-family: "Polymath-Display";
-  font-weight: 800;
+  font-family: "Polymath Display";
+  font-weight: 900;
   font-size: 70px;
   line-height: 1.15;
 }

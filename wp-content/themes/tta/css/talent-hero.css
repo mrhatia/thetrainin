@@ -27,7 +27,7 @@
 }
 
 @font-face {
-  font-family: "Polymath-Display";
+  font-family: "Polymath Display";
   src: url(../fonts/Polymatch/Polymath-Bold.woff) format("woff");
   font-weight: 800;
 }
@@ -114,7 +114,7 @@
   letter-spacing: -0.5px;
   color: #000000;
   margin: 0;
-  font-family: "Polymath-Display";
+  font-family: "Polymath Display";
   margin-bottom: 37px;
 }
 .strategists-section .strategists-section-title span{
