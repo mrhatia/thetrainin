@@ -35,9 +35,33 @@
 <div class="strategists-section-title">
 <h2>Browse Our Expert<span> Learning Strategists</span></h2>
 </div>
-<div class="strategists-cards">
-	<div class="strategists-single-card">
+<div class="strategists-cards-main">
+	<div class="strategists-cards">
+		<div class="strategists-single-card">
+	
+		</div>
+	</div>
+	<div class="strategists-right">
+		<div class="content-main">
+			<h3>
+				TTA Connect
+			</h3>
+			<div class="content-box">
+				<h4>
+					Trusted by Fortune 500 teams, TTA Connect helps you find the right learning talent faster; backed by a 23,000+ contractor network and dedicated talent acquisition specialists.
+				</h4>
+				<p>
+					Our screening and matching process, supported by experienced recruiters and project managers, ensures you’re connected with vetted experts aligned to your goals, scope, and timeline.
 
+				</p>
+				<div class="content-box-button">
+					<p>
+						Find Talent Now With
+					</p>
+					<a class="view-btn-bottom" href="#" target="_self">TTA Connect<img src="http://thetrainin2dev.local/wp-content/themes/tta/images/new-home-images/icon-img.svg" alt=""></a>
+				</div>
+			</div>
+		</div>
 	</div>
 </div>
 	</div>

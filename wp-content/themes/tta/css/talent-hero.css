@@ -96,18 +96,18 @@
   margin-top: 62px;
 }
 
-.s-64{
+.s-64 {
   height: 64px;
 }
 
 /* //strategists */
 
-.strategists-section .wrapper{
+.strategists-section .wrapper {
   max-width: 1389px;
-  width: 90%;
+  width: 97%;
   margin: 0 auto;
 }
-.strategists-section .strategists-section-title h2{
+.strategists-section .strategists-section-title h2 {
   font-weight: 900;
   font-size: 48px;
   line-height: 1.15;
@@ -117,26 +117,107 @@
   font-family: "Polymath Display";
   margin-bottom: 37px;
 }
-.strategists-section .strategists-section-title span{
+.strategists-section .strategists-section-title span {
   background: linear-gradient(90deg, #3eb3e3 0%, #3be2a8 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+}
 
+.strategists-single-card {
+  box-sizing: border-box;
+
+  width: 881px;
+  height: 363px;
+
+  background: rgba(62, 179, 227, 0.08);
+  border: 1px solid #3eb3e3;
+  border-radius: 34px;
 }
 
 
+.strategists-cards-main{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.strategists-right {
+    width: 31.7%;
+}
+
+.content-main h3{
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 1.15;
+    letter-spacing: -0.1px;
+
+  color: #132136;
+  margin: 0;
+  font-family: "Polymath Display";
+  margin-bottom: 30px;
+}
 
 
-.strategists-single-card{
-
-
+.content-box{
+padding: 26px 32px;
 box-sizing: border-box;
-
-width: 881px;
-height: 363px;
-
-background: rgba(62, 179, 227, 0.08);
-border: 1px solid #3EB3E3;
+background: #FFFFFF;
+box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.1);
 border-radius: 34px;
+border: 1px solid; 
+border-image: linear-gradient(90deg, #3EB3E3 0%, #3BE2A8 100%) 1;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 2px 6px 6px rgba(255, 255, 255, 0.75);
+}
+
+.content-box h4{
+
+  font-family: "halyard-display";
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 130%;
+
+color: #132136;
+    margin-bottom: 20px;
+
+}
+
+.content-box p{
+
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 130%;
+
+color: #000000;
+
+}
+
+.content-box-button{
+  text-align: center;
+  margin-top: 39px;
+}
+.content-box-button p{
+
+font-family: 'Lato';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 130%;
+text-align: center;
+
+color: #132136;
+    margin-bottom: 20px;
+
+
+}
+.content-box-button .view-btn-bottom{
+      font-size: 24px;
+    letter-spacing: 0;
+    word-spacing: 4px;
+        gap: 20px;
+    padding: 8px 20px 8px 43px;
 }
