@@ -45,8 +45,13 @@
   width: 90%;
   margin: 0 auto;
 }
+
+.banner-wrapper{
+  display: flex;
+  justify-content: space-between;
+}
 .talent-banner-section .banner-detail-content {
-  max-width: 815px;
+  width: 50%;
 }
 .talent-banner-section {
   position: relative;
@@ -142,6 +147,10 @@
   justify-content: space-between;
 }
 
+.strategists-cards{
+  width: 60%;
+}
+
 .strategists-right {
     width: 31.7%;
 }
@@ -162,7 +171,7 @@
 .content-box{
 padding: 26px 32px;
 box-sizing: border-box;
-background: #FFFFFF;
+/* background: #FFFFFF; */
 box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.1);
 border-radius: 34px;
 border: 1px solid; 
@@ -220,4 +229,250 @@ color: #132136;
     word-spacing: 4px;
         gap: 20px;
     padding: 8px 20px 8px 43px;
+}
+
+.widget-card.blue-box .content-box{
+  background-color: #132136;
+}
+
+/* ===== Podcast Card Inner Styling Only ===== */
+
+.tta-podcast-card .podcast-box {
+  color: #fff;
+}
+
+/* Top Section */
+.tta-podcast-card .podcast-top {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Logo */
+.tta-podcast-card .podcast-logo {
+  min-width: 140px;
+  height: 140px;
+  background: #1b1b1b;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tta-podcast-card .logo-inner {
+  text-align: center;
+}
+
+.tta-podcast-card .mic-icon {
+  font-size: 26px;
+  display: block;
+  margin-bottom: 8px;
+  color: #2bd4b3;
+}
+
+.tta-podcast-card .logo-inner h4 {
+  font-size: 15px;
+  margin: 0;
+  line-height: 1.2;
+  color: #fff;
+}
+
+.tta-podcast-card .logo-inner strong {
+  font-size: 17px;
+}
+
+.tta-podcast-card .logo-inner .tta {
+  display: block;
+  margin-top: 4px;
+  font-size: 13px;
+  color: #2bd4b3;
+}
+
+/* Content */
+.tta-podcast-card .podcast-content h3 {
+  font-size: 20px;
+  line-height: 1.4;
+  margin-bottom: 8px;
+  color: #fff;
+}
+
+.tta-podcast-card .podcast-content p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #cfd8e3;
+  margin: 0;
+}
+
+/* Episode Card */
+.tta-podcast-card .episode-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(135deg, #ffffff 40%, #49c5c1 100%);
+  border-radius: 999px;
+  padding: 18px 22px;
+  margin-top: 20px;
+  gap: 15px;
+}
+
+/* Left */
+.tta-podcast-card .episode-left {
+  max-width: 65%;
+}
+
+.tta-podcast-card .episode-number {
+  font-size: 13px;
+  font-weight: 700;
+  color: #27b7b0;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.tta-podcast-card .episode-left h4 {
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0;
+  color: #000;
+}
+
+/* Right */
+.tta-podcast-card .episode-right {
+  text-align: center;
+}
+
+.tta-podcast-card .episode-right img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 6px;
+}
+
+.tta-podcast-card .guest-name {
+  font-size: 12px;
+  color: #000;
+}
+
+/* CTA */
+.tta-podcast-card .podcast-link {
+  display: inline-block;
+  margin-top: 18px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #2bd4b3;
+  text-decoration: none;
+}
+
+.tta-podcast-card .podcast-link:hover {
+  text-decoration: underline;
+}
+
+
+
+
+/* hero section */
+
+
+.banner-cards {
+  position: relative;
+  width: 50%;
+  height: 300px;
+  margin: auto;
+  perspective: 1200px;
+}
+
+/* CARD CONTAINER */
+.banner-cards .card {
+  position: absolute;
+  width: 220px;
+  min-height: 260px;
+  border-radius: 20px;
+  transition: all 0.6s ease;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* INNER DESIGN */
+.card-inner {
+  background: #fff;
+  border-radius: 20px;
+  padding: 15px;
+  height: 100%;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+  text-align: center;
+}
+
+/* IMAGE */
+.card-inner img {
+  width: 100%;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+/* TEXT */
+.card-inner h4 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.card-inner span {
+  font-size: 13px;
+  color: #666;
+}
+
+.card-inner p {
+  font-size: 12px;
+  margin: 8px 0;
+}
+
+.card-inner .logos img {
+  width: 45px;
+  margin: 0 4px;
+}
+
+/* ===== STATES ===== */
+
+/* CENTER */
+.card.center {
+  transform: translate(-50%, -50%) scale(1.15);
+  z-index: 3;
+}
+
+.card.center .card-inner {
+  filter: blur(0);
+  opacity: 1;
+}
+
+/* LEFT */
+.card.left {
+  transform: translate(-140%, -50%) scale(0.9) rotate(-6deg);
+  z-index: 2;
+}
+
+.card.left .card-inner {
+  filter: blur(3px);
+  opacity: 0.7;
+}
+
+/* RIGHT */
+.card.right {
+  transform: translate(40%, -50%) scale(0.9) rotate(6deg);
+  z-index: 2;
+}
+
+.card.right .card-inner {
+  filter: blur(3px);
+  opacity: 0.7;
+}
+
+/* HIDDEN */
+.card.hidden {
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%) scale(0.6);
 }
