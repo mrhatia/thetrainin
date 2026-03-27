@@ -34,80 +34,139 @@
       <!-- RIGHT CARDS -->
      <div class="banner-cards" id="talentSlider">
 
+		
 		<div class="card">
 			<div class="card-inner">
-			<img src="https://via.placeholder.com/200x140">
+				<div class="card-inner-image">
+
+					<img src="<?php echo get_template_directory_uri(); ?>/images/jacob.png" alt="">
+					<div class="card-inner-logo">
+						<img src="<?php echo get_template_directory_uri(); ?>/images/Certified Badge.svg" alt="">
+
+					</div>
+				</div>
 			<h4>Jacob L.</h4>
 			<span>Learning Strategist</span>
 			<p>Previously worked with:</p>
 			<div class="logos">
-				<img src="https://via.placeholder.com/50x20">
-				<img src="https://via.placeholder.com/50x20">
+				<img src="<?php echo get_template_directory_uri(); ?>/images/JetBlue.svg" alt="">
+				<img src="<?php echo get_template_directory_uri(); ?>/images/Volvo.svg" alt="">
+				<img src="<?php echo get_template_directory_uri(); ?>/images/Accenture.svg" alt="">
+
 			</div>
 			</div>
 		</div>
+		
 		<div class="card">
 			<div class="card-inner">
-			<img src="https://via.placeholder.com/200x140">
+				<div class="card-inner-image">
+
+					<img src="<?php echo get_template_directory_uri(); ?>/images/jacob.png" alt="">
+					<div class="card-inner-logo">
+						<img src="<?php echo get_template_directory_uri(); ?>/images/Certified Badge.svg" alt="">
+
+					</div>
+				</div>
 			<h4>Jacob L.</h4>
 			<span>Learning Strategist</span>
 			<p>Previously worked with:</p>
 			<div class="logos">
-				<img src="https://via.placeholder.com/50x20">
-				<img src="https://via.placeholder.com/50x20">
+				<img src="<?php echo get_template_directory_uri(); ?>/images/JetBlue.svg" alt="">
+				<img src="<?php echo get_template_directory_uri(); ?>/images/Volvo.svg" alt="">
+				<img src="<?php echo get_template_directory_uri(); ?>/images/Accenture.svg" alt="">
+
 			</div>
 			</div>
 		</div>
+		
 		<div class="card">
 			<div class="card-inner">
-			<img src="https://via.placeholder.com/200x140">
+				<div class="card-inner-image">
+
+					<img src="<?php echo get_template_directory_uri(); ?>/images/jacob.png" alt="">
+					<div class="card-inner-logo">
+						<img src="<?php echo get_template_directory_uri(); ?>/images/Certified Badge.svg" alt="">
+
+					</div>
+				</div>
 			<h4>Jacob L.</h4>
 			<span>Learning Strategist</span>
 			<p>Previously worked with:</p>
 			<div class="logos">
-				<img src="https://via.placeholder.com/50x20">
-				<img src="https://via.placeholder.com/50x20">
+				<img src="<?php echo get_template_directory_uri(); ?>/images/JetBlue.svg" alt="">
+				<img src="<?php echo get_template_directory_uri(); ?>/images/Volvo.svg" alt="">
+				<img src="<?php echo get_template_directory_uri(); ?>/images/Accenture.svg" alt="">
+
 			</div>
 			</div>
 		</div>
+		
 		<div class="card">
 			<div class="card-inner">
-			<img src="https://via.placeholder.com/200x140">
+				<div class="card-inner-image">
+
+					<img src="<?php echo get_template_directory_uri(); ?>/images/jacob.png" alt="">
+					<div class="card-inner-logo">
+						<img src="<?php echo get_template_directory_uri(); ?>/images/Certified Badge.svg" alt="">
+
+					</div>
+				</div>
 			<h4>Jacob L.</h4>
 			<span>Learning Strategist</span>
 			<p>Previously worked with:</p>
 			<div class="logos">
-				<img src="https://via.placeholder.com/50x20">
-				<img src="https://via.placeholder.com/50x20">
+				<img src="<?php echo get_template_directory_uri(); ?>/images/JetBlue.svg" alt="">
+				<img src="<?php echo get_template_directory_uri(); ?>/images/Volvo.svg" alt="">
+				<img src="<?php echo get_template_directory_uri(); ?>/images/Accenture.svg" alt="">
+
 			</div>
 			</div>
 		</div>
+		
 		<div class="card">
 			<div class="card-inner">
-			<img src="https://via.placeholder.com/200x140">
+				<div class="card-inner-image">
+
+					<img src="<?php echo get_template_directory_uri(); ?>/images/jacob.png" alt="">
+					<div class="card-inner-logo">
+						<img src="<?php echo get_template_directory_uri(); ?>/images/Certified Badge.svg" alt="">
+
+					</div>
+				</div>
 			<h4>Jacob L.</h4>
 			<span>Learning Strategist</span>
 			<p>Previously worked with:</p>
 			<div class="logos">
-				<img src="https://via.placeholder.com/50x20">
-				<img src="https://via.placeholder.com/50x20">
+				<img src="<?php echo get_template_directory_uri(); ?>/images/JetBlue.svg" alt="">
+				<img src="<?php echo get_template_directory_uri(); ?>/images/Volvo.svg" alt="">
+				<img src="<?php echo get_template_directory_uri(); ?>/images/Accenture.svg" alt="">
+
 			</div>
 			</div>
 		</div>
+		
 		<div class="card">
 			<div class="card-inner">
-			<img src="https://via.placeholder.com/200x140">
+				<div class="card-inner-image">
+
+					<img src="<?php echo get_template_directory_uri(); ?>/images/jacob.png" alt="">
+					<div class="card-inner-logo">
+						<img src="<?php echo get_template_directory_uri(); ?>/images/Certified Badge.svg" alt="">
+
+					</div>
+				</div>
 			<h4>Jacob L.</h4>
 			<span>Learning Strategist</span>
 			<p>Previously worked with:</p>
 			<div class="logos">
-				<img src="https://via.placeholder.com/50x20">
-				<img src="https://via.placeholder.com/50x20">
+				<img src="<?php echo get_template_directory_uri(); ?>/images/JetBlue.svg" alt="">
+				<img src="<?php echo get_template_directory_uri(); ?>/images/Volvo.svg" alt="">
+				<img src="<?php echo get_template_directory_uri(); ?>/images/Accenture.svg" alt="">
+
 			</div>
 			</div>
 		</div>
 
-		<!-- Repeat 5–7 cards -->
 		
 		</div>
     </div>
@@ -121,15 +180,12 @@
         <img src="<?php echo get_template_directory_uri(); ?>/images/consumers-credit.svg" alt="">
         <img src="<?php echo get_template_directory_uri(); ?>/images/consumers-credit.svg" alt="">
         <img src="<?php echo get_template_directory_uri(); ?>/images/consumers-credit.svg" alt="">
-        <img src="<?php echo get_template_directory_uri(); ?>/images/consumers-credit.svg" alt="">
-        <img src="<?php echo get_template_directory_uri(); ?>/images/consumers-credit.svg" alt="">
 
       </div>
     </div>
 
   </div>
 </section>
-
 <script>
 	const cards = document.querySelectorAll("#talentSlider .card");
 
@@ -162,8 +218,8 @@
 	}
 
 	updateCards();
-	setInterval(rotate, 2500);
-</script>
+	setInterval(rotate, 4000);
+</script> 
 
 
 <section class="strategists-section">
@@ -178,9 +234,7 @@
 					<div class="profile-card" data-tta-card="0">
 						<div class="main-profile-card">
 							<div class="profile-img">
-								<img src="http://thetrainin2dev.local/wp-content/themes/tta/images/avatar.png" alt="Edward B."
-									loading="lazy"
-									onerror="this.src='http://thetrainin2dev.local/wp-content/themes/tta/images/avatar.png'">
+					       <img src="<?php echo get_template_directory_uri(); ?>/images/consumers-credit.svg" alt="">
 								<div class="profile-logo">
 									<span class="certified">CERTIFIED</span>
 									<img src="http://thetrainin2dev.local/wp-content/themes/tta/images/new-home-images/verified-badge.png"
