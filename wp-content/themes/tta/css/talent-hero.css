@@ -1132,8 +1132,8 @@ a.slide-link {
 }
 
 .main-profile-card-content .logo-item img {
-  width: max-content;
-  height: max-content;
+  width: 50px;
+  height: 50px;
   max-width: max-content;
   min-width: max-content;
 }
@@ -1330,6 +1330,7 @@ a.slide-link {
   }
   .learning-strategy-section {
     padding: 0 0 0px;
+    border-bottom-left-radius: 0;
   }
   .learning-strategy-section.section-wrapper__card-grid .service-card {
     padding: 80px 20px 18px;
@@ -1338,6 +1339,17 @@ a.slide-link {
     .service-card:nth-child(n + 2) {
     margin-top: 20px;
   }
+.trusted-logos{
+  text-align: center;
+}
+  .logos-row{
+    justify-content: center;
+        width: 100%;
+  }
+
+  .footer-cta-outer .cta-text p {
+    font-size: 22px;
+}
   .learning-strategy-section .service-card::after {
     top: 15%;
     margin: 0 auto;
