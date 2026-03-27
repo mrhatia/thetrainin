@@ -926,6 +926,16 @@ a.slide-link {
   line-height: 130%;
   letter-spacing: 0.1px;
   color: #3eb3e3;
+  gap: 16px;
+  display: flex;
+}
+
+.tta-talent-capabilities-card .content-box-button .download-brochure:hover {
+  gap: 20px;
+}
+
+.tta-talent-capabilities-card .content-box-button .download-brochure img {
+  width: 7px;
 }
 .tta-talent-capabilities-card .content-box-button {
   text-align: left;
@@ -993,8 +1003,16 @@ a.slide-link {
   line-height: 130%;
   display: flex;
   align-items: center;
+  gap: 16px;
 
   color: #3eb3e3;
+}
+.tta-podcast-card .content-box-button a:hover {
+  
+  gap: 20px;
+}
+.tta-podcast-card .content-box-button img {
+     width: 7px;
 }
 .episode-card {
   position: relative;
