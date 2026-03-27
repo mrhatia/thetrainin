@@ -23,6 +23,8 @@
 						 $class_designvariation  ="design_one";
 						} elseif($tta_designvariation=="design_two") { 
 							$class_designvariation  ="design_two"; 
+						} else {
+							$class_designvariation  ="design_three"; 
 						}
 					$gradient_color_banner_section_id= get_sub_field( 'faqs_section_id' );  ?>
 	<?php  endwhile; 
@@ -53,23 +55,72 @@
 					<?php endif; ?>
 				</div>
 			</div>
-<script>
-	// FAQ Accordion Start
-	jQuery('.faq-accordion-title').click(function(e) {
-		jQuery('.faq-accordion-caps').slideUp();
-		jQuery('.faq-accordion-block').removeClass('open');
-		jQuery('.active').not(this).removeClass('active');
-		if (jQuery(this).hasClass('active')) {
-			jQuery(this).removeClass('active');
-			jQuery(this).next('.faq-accordion-caps').slideUp();
+			<script>
+				// FAQ Accordion Start
+				jQuery('.faq-accordion-title').click(function(e) {
+					jQuery('.faq-accordion-caps').slideUp();
+					jQuery('.faq-accordion-block').removeClass('open');
+					jQuery('.active').not(this).removeClass('active');
+					if (jQuery(this).hasClass('active')) {
+						jQuery(this).removeClass('active');
+						jQuery(this).next('.faq-accordion-caps').slideUp();
 
-		}else{
-			jQuery(this).addClass('active');
-			jQuery(this).next('.faq-accordion-caps').slideDown();
-			jQuery(this).parent('.faq-accordion-block').addClass('open');
-		}
-	});
-</script>
+					}else{
+						jQuery(this).addClass('active');
+						jQuery(this).next('.faq-accordion-caps').slideDown();
+						jQuery(this).parent('.faq-accordion-block').addClass('open');
+					}
+				});
+			</script>
+		</div>
+	</section>
+<?php } else if($class_designvariation === 'design_three'){ ?>
+	<section class="faq-section faq-section-design-three" id="<?php echo $gradient_color_banner_section_id; ?>">
+		<div class="container">
+			<div class="faq-section-title <?php echo $class_fontstyle; ?>">
+			</div>
+			<div class="faq-inner-section">
+				<div class="faq-left-heading-d3">
+					<h2><?php the_sub_field( 'left_heading' ); ?></h2>
+				</div>
+				<div class="faq-right-section-d3">
+					<h3><?php the_sub_field( 'faqs_heading' ); ?></h3>
+					<div class="faq-accordion-blocks">
+						<?php if ( have_rows( 'add_faqs_block' ) ) : ?>
+								<?php  $counter = 0; while ( have_rows( 'add_faqs_block' ) ) : the_row(); $counter++; ?>
+								<div class="faq-accordion-block <?php if( $counter == 1 ) { ?>open<?php } ?>">
+									<div class="faq-accordion-title <?php if( $counter == 1 ) { ?>active<?php } ?>">
+										<h5><?php the_sub_field( 'add_faqs_title' ); ?></h5>
+									</div>
+									<div class="faq-accordion-caps"   <?php if( $counter == 1 ) { ?>style="display: block;"<?php } ?>>
+										<?php the_sub_field( 'add_faqs_text' ); ?>
+									</div>
+								</div>
+							<?php endwhile; ?>
+						<?php endif; ?>
+					</div>
+				</div>
+			</div>
+			<script>
+				jQuery('.faq-accordion-title').click(function(e) {
+
+				const parentWrapper = jQuery(this).closest('.faq-section'); // main wrapper of each FAQ block
+
+				// close only inside this section
+				parentWrapper.find('.faq-accordion-caps').slideUp();
+				parentWrapper.find('.faq-accordion-block').removeClass('open');
+				parentWrapper.find('.faq-accordion-title').removeClass('active');
+
+				if (jQuery(this).hasClass('active')) {
+					jQuery(this).removeClass('active');
+					jQuery(this).next('.faq-accordion-caps').slideUp();
+				} else {
+					jQuery(this).addClass('active');
+					jQuery(this).next('.faq-accordion-caps').slideDown();
+					jQuery(this).parent('.faq-accordion-block').addClass('open');
+				}
+			});
+			</script>
 		</div>
 	</section>
 <?php } else { ?>

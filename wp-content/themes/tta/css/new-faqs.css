@@ -228,7 +228,7 @@ margin-top: 35px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 65px 110px 90px;
+  padding: 65px 79px 90px;
 
 }
 .cta-title h1{
@@ -245,6 +245,24 @@ margin-top: 35px;
   line-height: 1.17;
       text-transform: capitalize;
 }
+
+.footer-cta-outer .cta-text{
+
+  margin-top: 30px;
+}
+
+.footer-cta-outer .cta-text p{
+
+  color: #FFFFFF;
+font-size: 32px;
+line-height: 1.02;
+  font-family: "halyard-display";
+  font-weight: 400;
+  letter-spacing: -0.35px;
+
+}
+
+
 
 .cta-buttons-section{
   margin-top: 69px;
@@ -313,3 +331,164 @@ margin-top: 35px;
     color: #fff;
 }
  */
+
+
+
+
+
+ /* Learnining strtegy Section */
+
+.learning-strategy-section{
+ padding: 0 0 100px;
+  background-image: url(../images/learning-strategy-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+      border-top-left-radius: 0;
+        border-bottom-left-radius: 140px;
+    border-bottom-right-radius: 0;
+  
+
+}
+
+.learning-strategy-section.section-wrapper__card-grid .card-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+      margin-top: 70px;
+          gap: 35px 42px;
+              padding: 50px 30px;
+    border-radius: 16px;
+    background-color: white;
+    
+
+    
+}
+
+.learning-strategy-section h2.section-titles {
+  font-size: 74px;
+  -webkit-text-fill-color: unset;
+  color: #fff;
+  background: unset;
+  
+}
+.learning-strategy-section h2.section-titles span {
+  display: inline-block;
+  
+}
+
+.learning-strategy-section.section-wrapper__card-grid .service-card{
+  padding:30px 25px 30px 139px;
+  min-height: unset;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+  position: relative;
+}
+.learning-strategy-section .service-card::after{
+  content: "";
+  background-image: url(../images/check-icon.svg);
+  background-size: 50px;
+      background-position: center left 0;
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 47px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.learning-strategy-section .container {
+  max-width: 1340px;
+  padding: 0;
+}
+
+.learning-strategy-section .profile-card-outer {
+  margin: 0 0 0 auto;
+  border-bottom-left-radius: 100px;
+  border-top-right-radius: 0;
+  background: unset;
+}
+
+.learning-strategy-section + .staff-section {
+  padding-top: 0;
+}
+
+.service-card .talent-text {
+font-size: 20px;
+text-align: left;
+line-height: 1.9;
+}
+
+.learning-strategy-section .content  {
+    padding: 0 130px;
+}
+.learning-strategy-section .content p {
+font-size: 24px;
+color: #fff;
+    line-height: 1.6;
+}
+
+
+
+.faq-section.faq-section-design-three{
+  padding: 0;
+}
+
+.faq-left-heading-d3{
+  font-size: 80px;
+  font-family: "Polymath Display";
+  line-height: 1.15;
+  font-weight: 900;
+  max-width: 410px;
+    width: 30%;
+}
+
+.faq-right-section-d3{
+    max-width: 790px;
+    width: 65%;
+}
+
+.faq-right-section-d3 h3{
+    background: linear-gradient(90deg, #3EB3E3, #3BE2A8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+      font-size: 44px;
+  font-family: "Polymath Display";
+  line-height: 1.15;
+  font-weight: 900;
+}
+
+.faq-accordion-blocks{
+  border-top: 0.5px solid ;
+  /* border-image: linear-gradient(90deg, hsla(216, 48%, 14%, 1) 0%, hsla(197, 75%, 57%, 1) 41%, hsla(159, 74%, 56%, 1) 100%); */
+  border-image: linear-gradient(90deg, hsla(197, 75%, 57%, 1) 0%, hsla(159, 74%, 56%, 1) 48%) 1;
+}
+
+.faq-accordion-block{
+
+  border-bottom: 0.5px solid;
+  border-image: linear-gradient(90deg, hsla(197, 75%, 57%, 1) 0%, hsla(159, 74%, 56%, 1) 48%) 1;
+}
+
+.faq-right-section .faq-accordion-title{
+
+}
+ .faq-accordion-title:after {
+    background: unset;
+    background-image: url(../images/faq-arrow.svg);
+    background-size: contain;
+    height: 20px;
+    background-repeat: no-repeat;
+    transform: rotate(90deg);
+    background-position: center center;
+    top: -7px;
+    right: 38px;
+}
+ .faq-accordion-title:before {
+   display: none;
+}
+
+.faq-inner-section{
+  margin-top: 72px;
+
+}

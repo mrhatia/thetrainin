@@ -1,0 +1,46 @@
+/* .................................................... */
+/* Talent Banner Detail */
+/* .................................................... */
+
+@font-face {
+  font-family: "halyard-display";
+  src: url(../fonts/halyard-display/halyard-display.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "halyard-display";
+  src: url(../fonts/halyard-display/Halyard-Display_Bold.woff2) format("woff2");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "halyard-display";
+  src: url(../fonts/halyard-display/Halyard_Display_SemiBold.woff2)
+    format("woff2");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "lato";
+  src: url(../fonts/lato/Lato-Regular.woff) format("woff");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Polymath Display";
+  src: url(../fonts/Polymatch/Polymath-Bold.woff) format("woff");
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "Polymath Display";
+  src: url("../fonts/Polymatch/PolymathDisp-Black.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+.page-template-tpl-talent-page .staff-section{
+  border-top-right-radius: 140px;
+}
