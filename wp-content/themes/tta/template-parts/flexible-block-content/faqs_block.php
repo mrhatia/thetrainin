@@ -102,24 +102,37 @@
 				</div>
 			</div>
 			<script>
-				jQuery('.faq-accordion-title').click(function(e) {
+			jQuery('.faq-accordion-title').off('click').on('click', function (e) {
 
-				const parentWrapper = jQuery(this).closest('.faq-section'); // main wrapper of each FAQ block
+    e.preventDefault();
+    e.stopPropagation();
 
-				// close only inside this section
-				parentWrapper.find('.faq-accordion-caps').slideUp();
-				parentWrapper.find('.faq-accordion-block').removeClass('open');
-				parentWrapper.find('.faq-accordion-title').removeClass('active');
+    const head = jQuery(this);
+    const parentWrapper = head.closest('.faq-section');
+    const block = head.closest('.faq-accordion-block');
+    const content = block.find('.faq-accordion-caps'); // 🔥 FIXED
 
-				if (jQuery(this).hasClass('active')) {
-					jQuery(this).removeClass('active');
-					jQuery(this).next('.faq-accordion-caps').slideUp();
-				} else {
-					jQuery(this).addClass('active');
-					jQuery(this).next('.faq-accordion-caps').slideDown();
-					jQuery(this).parent('.faq-accordion-block').addClass('open');
-				}
-			});
+    if (block.hasClass('open')) {
+        // close current
+        block.removeClass('open');
+        head.removeClass('active');
+        content.stop(true, true).slideUp(400);
+    } else {
+        // close others ONLY in same section
+        parentWrapper.find('.faq-accordion-block.open')
+            .removeClass('open')
+            .find('.faq-accordion-caps')
+            .stop(true, true).slideUp(400);
+
+        parentWrapper.find('.faq-accordion-title.active').removeClass('active');
+
+        // open current
+        block.addClass('open');
+        head.addClass('active');
+        content.stop(true, true).slideDown(400);
+    }
+
+});
 			</script>
 		</div>
 	</section>
