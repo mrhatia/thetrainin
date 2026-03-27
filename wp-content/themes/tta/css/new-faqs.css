@@ -246,6 +246,13 @@ margin-top: 35px;
       text-transform: capitalize;
 }
 
+.cta-title h1 span{
+
+  color: #FFFFFF;
+  background: unset;
+  -webkit-text-fill-color: #ffffff !important;
+}
+
 .footer-cta-outer .cta-text{
 
   margin-top: 30px;
@@ -458,22 +465,20 @@ color: #fff;
   font-weight: 900;
 }
 
-.faq-accordion-blocks{
+.faq-right-section-d3 .faq-accordion-blocks{
   border-top: 0.5px solid ;
   /* border-image: linear-gradient(90deg, hsla(216, 48%, 14%, 1) 0%, hsla(197, 75%, 57%, 1) 41%, hsla(159, 74%, 56%, 1) 100%); */
   border-image: linear-gradient(90deg, hsla(197, 75%, 57%, 1) 0%, hsla(159, 74%, 56%, 1) 48%) 1;
 }
 
-.faq-accordion-block{
+.faq-right-section-d3 .faq-accordion-block{
 
   border-bottom: 0.5px solid;
   border-image: linear-gradient(90deg, hsla(197, 75%, 57%, 1) 0%, hsla(159, 74%, 56%, 1) 48%) 1;
 }
 
-.faq-right-section .faq-accordion-title{
 
-}
- .faq-accordion-title:after {
+.faq-right-section-d3 .faq-accordion-title:after {
     background: unset;
     background-image: url(../images/faq-arrow.svg);
     background-size: contain;
@@ -484,11 +489,11 @@ color: #fff;
     top: -7px;
     right: 38px;
 }
- .faq-accordion-title:before {
+.faq-right-section-d3 .faq-accordion-title:before {
    display: none;
 }
 
-.faq-inner-section{
+.faq-section-design-three .faq-inner-section{
   margin-top: 72px;
 
 }
