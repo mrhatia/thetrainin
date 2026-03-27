@@ -155,66 +155,73 @@ $episode_host = get_sub_field('episode_host');
                     ?>
                     <div class="profile-card" data-tta-card="<?php echo $idx; ?>" <?php echo $hidden; ?>>
                         <div class="main-profile-card">
-                            <div class="profile-img">
-                                <img src="<?php echo esc_url($img_url); ?>" alt="<?php echo esc_attr($display_name); ?>"
-                                    loading="lazy" onerror="this.src='<?php echo esc_url($tta_fallback_img); ?>'">
-                                <?php if ($badge_label) : ?>
-                                <div class="profile-logo">
-                                    <span class="certified"><?php echo esc_html($badge_label); ?></span>
-                                    <img src="<?php echo esc_url($tta_badge_img); ?>" alt="Badge">
+                            <div class="profile-img-left">
+                                <div class="profile-img">
+                                    <img src="<?php echo esc_url($img_url); ?>" alt="<?php echo esc_attr($display_name); ?>"
+                                        loading="lazy" onerror="this.src='<?php echo esc_url($tta_fallback_img); ?>'">
+                                    <?php if ($badge_label) : ?>
+                                    <div class="profile-logo">
+                                        <span class="certified"><?php echo esc_html($badge_label); ?></span>
+                                        <img src="<?php echo esc_url($tta_badge_img); ?>" alt="Badge">
+                                    </div>
+                                    <?php endif; ?>
                                 </div>
-                                <?php endif; ?>
-                            </div>
-
-                            <h3><?php echo esc_html($display_name); ?></h3>
-                            <?php if ($primary_role) : ?>
-                            <h4><?php echo esc_html($primary_role); ?></h4>
-                            <?php endif; ?>
-
-                            <?php if ($truncated) : ?>
-                            <p><?php echo esc_html($truncated); ?></p>
-                            <?php endif; ?>
-
-                            <?php if (!empty($visible_skills)) : ?>
-                            <div class="tags">
-                                <?php foreach ($visible_skills as $skill) : ?>
-                                <span><?php echo esc_html($skill); ?></span>
-                                <?php endforeach; ?>
-                            </div>
-                            <?php elseif (!empty($roles)) : ?>
-                            <div class="tags">
-                                <?php foreach (array_slice($roles, 0, 4) as $role) : ?>
-                                <span><?php echo esc_html($role); ?></span>
-                                <?php endforeach; ?>
-                            </div>
-                            <?php endif; ?>
-
-                            <?php if (!empty($logos)) : ?>
-                            <div class="worked-with">
-                                <div class="text-item">
-                                    <p>Worked with:</p>
-                                </div>
-                                <div class="logos-slider">
-                                    <div class="logo-track">
-                                        <?php foreach ($logos as $logo) : ?>
-                                        <div class="logo-item"><img src="<?php echo esc_url($logo['logoUrl']); ?>"
-                                                alt="<?php echo esc_attr(!empty($logo['name']) ? $logo['name'] : ''); ?>">
-                                        </div>
-                                        <?php endforeach; ?>
+                                 <div class="main-profile-card-button">
+                                    <div class="card-button">
+                                        <a href="<?php echo esc_url($profile_url); ?>" class="view-btn" target="_blank"
+                                            rel="noopener">
+                                            View Profile
+                                            <img src="<?php echo esc_url($tta_arrow_icon); ?>" alt="">
+                                        </a>
                                     </div>
                                 </div>
                             </div>
-                            <?php endif; ?>
-                        </div>
-                        <div class="main-profile-card-button">
-                            <div class="card-button">
-                                <a href="<?php echo esc_url($profile_url); ?>" class="view-btn" target="_blank"
-                                    rel="noopener">
-                                    View Profile
-                                    <img src="<?php echo esc_url($tta_arrow_icon); ?>" alt="">
-                                </a>
+                            <div class="main-profile-card-content">
+
+                                <h3><?php echo esc_html($display_name); ?></h3>
+                                <?php if ($primary_role) : ?>
+                                    <h4><?php echo esc_html($primary_role); ?></h4>
+                                <?php endif; ?>
+
+                                <?php if ($truncated) : ?>
+                                <p><?php echo esc_html($truncated); ?></p>
+                                <?php endif; ?>
+
+                                 <?php if (!empty($logos)) : ?>
+                                    <div class="worked-with">
+                                        <div class="text-item">
+                                            <p>Worked with:</p>
+                                        </div>
+                                        <div class="logos-slider">
+                                            <div class="logo-track">
+                                                <?php foreach ($logos as $logo) : ?>
+                                                <div class="logo-item"><img src="<?php echo esc_url($logo['logoUrl']); ?>"
+                                                        alt="<?php echo esc_attr(!empty($logo['name']) ? $logo['name'] : ''); ?>">
+                                                </div>
+                                                <?php endforeach; ?>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <?php endif; ?>
+
+                                <?php if (!empty($visible_skills)) : ?>
+                                <div class="tags">
+                                    <?php foreach ($visible_skills as $skill) : ?>
+                                    <span><?php echo esc_html($skill); ?></span>
+                                    <?php endforeach; ?>
+                                </div>
+                                <?php elseif (!empty($roles)) : ?>
+                                <div class="tags">
+                                    <?php foreach (array_slice($roles, 0, 4) as $role) : ?>
+                                    <span><?php echo esc_html($role); ?></span>
+                                    <?php endforeach; ?>
+                                </div>
+                                <?php endif; ?>
+
+                               
                             </div>
                         </div>
+                       
                     </div>
                     <?php endforeach; endif; ?>
                 </div>
