@@ -215,39 +215,33 @@ $banner_header_label = get_sub_field('banner_header_label');
                             </div>
                             <div class="main-profile-card-content">
 
-                                <h3>Edward B.</h3>
-                                <h4>Technical Writer</h4>
+                                <h3>Ava T.</h3>
+                                <h4>Learning Strategist</h4>
+                                <h5>
+                                    Certified Expert in Learning Strategy
+                                </h5>
 
-                                <p>Ed is an information technology network engineer, consultant, and trainer with 31+
-                                    years
-                                    experience in
-                                    Novell NetWare, M...</p>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in...
+                                </p>
                                 <div class="worked-with">
                                     <div class="text-item">
-                                        <p>Worked with:</p>
+                                        <p>Previously worked with:</p>
                                     </div>
-                                    <div class="logos-slider">
+                                    <div class="logos-sliders">
                                         <div class="logo-track">
-                                            <div class="logo-item"><img
-                                                    src="https://img.logo.dev/jpmorganco.com?token=pk_UAnfVClWRSudOqxDCqhVVw"
-                                                    alt="JP Morgan">
+                                            <div class="logo-item">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/images/JetBlue.svg"
+                                    alt="">
                                             </div>
-                                            <div class="logo-item"><img
-                                                    src="https://img.logo.dev/vipsolutions.com.br?token=pk_UAnfVClWRSudOqxDCqhVVw"
-                                                    alt="VIP Solutions">
+                                            <div class="logo-item">
+                                              <img src="<?php echo get_template_directory_uri(); ?>/images/Volvo.svg"
+                                    alt="">
                                             </div>
-                                            <div class="logo-item"><img
-                                                    src="https://img.logo.dev/exxonmobil.com?token=pk_UAnfVClWRSudOqxDCqhVVw"
-                                                    alt="ExxonMobil">
+                                            <div class="logo-item">     <img src="<?php echo get_template_directory_uri(); ?>/images/Accenture.svg"
+                                    alt="">
                                             </div>
-                                            <div class="logo-item"><img
-                                                    src="https://img.logo.dev/nasa.gov?token=pk_UAnfVClWRSudOqxDCqhVVw"
-                                                    alt="NASA">
-                                            </div>
-                                            <div class="logo-item"><img
-                                                    src="https://img.logo.dev/expressjet.com?token=pk_UAnfVClWRSudOqxDCqhVVw"
-                                                    alt="ExpressJet Airlines">
-                                            </div>
+                                     
                                         </div>
                                     </div>
                                 </div>
