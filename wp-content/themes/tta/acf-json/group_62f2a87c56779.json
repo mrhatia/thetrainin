@@ -9892,7 +9892,8 @@
                                     "relevanssi_exclude": 0,
                                     "choices": {
                                         "design_one": "Design One",
-                                        "design_two": "Design Two"
+                                        "design_two": "Design Two",
+                                        "design_three": "Design Three"
                                     },
                                     "default_value": "",
                                     "return_format": "value",
@@ -9962,8 +9963,8 @@
                                 [
                                     {
                                         "field": "field_69c4e3f3f2222",
-                                        "operator": "==",
-                                        "value": "design_two"
+                                        "operator": "!=",
+                                        "value": "design_one"
                                     }
                                 ]
                             ],
@@ -18605,5 +18606,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1774608903
+    "modified": 1774614752
 }

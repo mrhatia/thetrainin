@@ -565,6 +565,12 @@
           gap: 27px 14px;
 }
 
+.learning-strategy-section .card-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+      margin-top: 120px;
+          gap: 42px 35px;
+}
+
 .learning-services-section .card-grid .talent-title {
   font-size: 30px;
   font-weight: 700;
@@ -629,11 +635,11 @@
   font-family: "halyard-display";
 }
 
-.section-wrapper__card-grid h2.section-titles {
+.learning-services-section h2.section-titles {
   font-size: 104px;
 }
 
-.section-wrapper__card-grid h2.section-titles span {
+.learning-services-section h2.section-titles span {
   color: #000000 !important;
   /* background: unset !important; */
   -webkit-text-fill-color: #000000 !important;
