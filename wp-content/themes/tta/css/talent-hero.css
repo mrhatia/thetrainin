@@ -140,11 +140,11 @@
   font-weight: 900;
   font-size: 48px;
   line-height: 1.15;
-  letter-spacing: -0.5px;
+  letter-spacing: -0px;
   color: #000000;
   margin: 0;
   font-family: "Polymath Display";
-  margin-bottom: 37px;
+  margin-bottom: 34px;
 }
 .strategists-section .strategists-section-title span {
   background: linear-gradient(90deg, #3eb3e3 0%, #3be2a8 100%);
@@ -171,11 +171,13 @@
 }
 
 .strategists-cards {
-  width: 60%;
+    width: 63.4%;
+
 }
 
 .strategists-right {
   width: 31.7%;
+      margin-top: -22px;
 }
 
 .content-main h3 {
@@ -1018,4 +1020,23 @@ a.slide-link {
   background-repeat: no-repeat;
   width: 34px;
   height: 52px;
+}
+.strategists-cards .main-profile-card{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 23px;
+  align-items: flex-start;
+
+}
+
+.strategists-cards .profile-card{
+width: 100%;
+    padding: 14px 11px;
+}
+
+.strategists-cards .profile-img{
+max-width: 250px;
+    margin: 0;
+}.main-profile-card-content {
+    width: 66%;
 }

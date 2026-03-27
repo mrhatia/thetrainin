@@ -18,8 +18,8 @@ $banner_header_label = get_sub_field('banner_header_label');
 ?>
 
 <section class="talent-banner-section"
-   style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/industry-banner.png');">
-    
+    style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/industry-banner.png');">
+
     <div class="container">
         <div class="banner-wrapper">
 
@@ -27,11 +27,15 @@ $banner_header_label = get_sub_field('banner_header_label');
             <div class="banner-detail-content">
 
                 <?php if (!empty($banner_header_title)) { ?>
-                    <h1><?php echo $banner_header_title; ?></h1>
+                <h1>
+                    <?php echo $banner_header_title; ?>
+                </h1>
                 <?php } ?>
 
                 <?php if (!empty($banner_header_text)) { ?>
-                    <p><?php echo $banner_header_text; ?></p>
+                <p>
+                    <?php echo $banner_header_text; ?>
+                </p>
                 <?php } ?>
 
                 <?php if (!empty($banner_header_button)) { 
@@ -39,10 +43,11 @@ $banner_header_label = get_sub_field('banner_header_label');
                     $btn_title = $banner_header_button['title'];
                     $btn_target = $banner_header_button['target'] ? $banner_header_button['target'] : '_self';
                 ?>
-                    <a class="view-btn-bottom" href="<?php echo esc_url($btn_url); ?>" target="<?php echo esc_attr($btn_target); ?>">
-                        <?php echo esc_html($btn_title); ?>
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/new-home-images/icon-img.svg" alt="">
-                    </a>
+                <a class="view-btn-bottom" href="<?php echo esc_url($btn_url); ?>"
+                    target="<?php echo esc_attr($btn_target); ?>">
+                    <?php echo esc_html($btn_title); ?>
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/new-home-images/icon-img.svg" alt="">
+                </a>
                 <?php } ?>
 
             </div>
@@ -51,7 +56,7 @@ $banner_header_label = get_sub_field('banner_header_label');
             <div class="banner-cards" id="talentSlider">
 
                 <?php if (have_rows('banner_header_cards')): ?>
-                    <?php while (have_rows('banner_header_cards')): the_row(); 
+                <?php while (have_rows('banner_header_cards')): the_row(); 
                         
                         $image = get_sub_field('image');
                         $icon = get_sub_field('icon');
@@ -60,50 +65,54 @@ $banner_header_label = get_sub_field('banner_header_label');
                         $designation = get_sub_field('designation');
                     ?>
 
-                        <div class="card">
-                            <div class="card-inner">
-                                
-                                <div class="card-inner-image">
+                <div class="card">
+                    <div class="card-inner">
 
-                                    <?php if (!empty($image)) { ?>
-                                        <img src="<?php echo esc_url($image); ?>">
-                                    <?php } ?>
+                        <div class="card-inner-image">
 
-                                    <?php if (!empty($icon)) { ?>
-                                        <div class="card-inner-logo">
-                                            <img src="<?php echo esc_url($icon); ?>">
-                                        </div>
-                                    <?php } ?>
+                            <?php if (!empty($image)) { ?>
+                            <img src="<?php echo esc_url($image); ?>">
+                            <?php } ?>
 
-                                </div>
-
-                                <?php if (!empty($name)) { ?>
-                                    <h4><?php echo $name; ?></h4>
-                                <?php } ?>
-
-                                <?php if (!empty($designation)) { ?>
-                                    <span><?php echo $designation; ?></span>
-                                <?php } ?>
-
-
-                          
-                                <p>Previously worked with:</p>
-                                <?php if (have_rows('logos')): ?>
-                                    <div class="logos">
-                                        <?php while (have_rows('logos')): the_row(); 
-                                            $car_logo = get_sub_field('logo');
-                                        ?>
-                                            <?php if (!empty($car_logo)) { ?>
-                                                <img src="<?php echo esc_url($car_logo); ?>">
-                                            <?php } ?>
-                                        <?php endwhile; ?>
-                                    </div>
-                                <?php endif; ?>
-
+                            <?php if (!empty($icon)) { ?>
+                            <div class="card-inner-logo">
+                                <img src="<?php echo esc_url($icon); ?>">
                             </div>
+                            <?php } ?>
+
                         </div>
 
-                    <?php endwhile; ?>
+                        <?php if (!empty($name)) { ?>
+                        <h4>
+                            <?php echo $name; ?>
+                        </h4>
+                        <?php } ?>
+
+                        <?php if (!empty($designation)) { ?>
+                        <span>
+                            <?php echo $designation; ?>
+                        </span>
+                        <?php } ?>
+
+
+
+                        <p>Previously worked with:</p>
+                        <?php if (have_rows('logos')): ?>
+                        <div class="logos">
+                            <?php while (have_rows('logos')): the_row(); 
+                                            $car_logo = get_sub_field('logo');
+                                        ?>
+                            <?php if (!empty($car_logo)) { ?>
+                            <img src="<?php echo esc_url($car_logo); ?>">
+                            <?php } ?>
+                            <?php endwhile; ?>
+                        </div>
+                        <?php endif; ?>
+
+                    </div>
+                </div>
+
+                <?php endwhile; ?>
                 <?php endif; ?>
 
             </div>
@@ -113,19 +122,21 @@ $banner_header_label = get_sub_field('banner_header_label');
         <div class="trusted-logos">
 
             <?php if (!empty($banner_header_label)) { ?>
-                <span><?php echo $banner_header_label; ?></span>
+            <span>
+                <?php echo $banner_header_label; ?>
+            </span>
             <?php } ?>
 
             <?php if (have_rows('banner_header_logos')): ?>
-                <div class="logos-row">
-                    <?php while (have_rows('banner_header_logos')): the_row(); 
+            <div class="logos-row">
+                <?php while (have_rows('banner_header_logos')): the_row(); 
                         $banner_logo = get_sub_field('logo');
                     ?>
-                        <?php if (!empty($banner_logo)) { ?>
-                            <img src="<?php echo esc_url($banner_logo); ?>" >
-                        <?php } ?>
-                    <?php endwhile; ?>
-                </div>
+                <?php if (!empty($banner_logo)) { ?>
+                <img src="<?php echo esc_url($banner_logo); ?>">
+                <?php } ?>
+                <?php endwhile; ?>
+            </div>
             <?php endif; ?>
 
         </div>
@@ -181,40 +192,75 @@ $banner_header_label = get_sub_field('banner_header_label');
                 <div class="profile-card-wrapper-inner" id="ttaExpertsGrid">
                     <div class="profile-card" data-tta-card="0">
                         <div class="main-profile-card">
-                            <div class="profile-img">
-                                <img src="<?php echo get_template_directory_uri(); ?>/images/consumers-credit.svg"
-                                    alt="">
-                                <div class="profile-logo">
-                                    <span class="certified">CERTIFIED</span>
-                                    <img src="http://thetrainin2dev.local/wp-content/themes/tta/images/new-home-images/verified-badge.png"
-                                        alt="Badge">
+                            <div class="profile-img-left">
+                                <div class="profile-img">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/images/profile-card-one.png"
+                                        alt="">
+                                    <div class="profile-logo">
+                                        <span class="certified">CERTIFIED</span>
+                                        <img src="http://thetrainin2dev.local/wp-content/themes/tta/images/new-home-images/verified-badge.png"
+                                            alt="Badge">
+                                    </div>
+                                </div>
+                                <div class="main-profile-card-button">
+                                    <div class="card-button">
+                                        <a href="https://preprod.ttaconnect.com/talent/339/?h=8E667E2D-E9FC-41A5-95AE-38590BD5D13E&amp;source=splashpage"
+                                            class="view-btn" target="_blank" rel="noopener">
+                                            View Profile
+                                            <img src="http://thetrainin2dev.local/wp-content/themes/tta/images/new-home-images/icon-img.svg"
+                                                alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main-profile-card-content">
+
+                                <h3>Edward B.</h3>
+                                <h4>Technical Writer</h4>
+
+                                <p>Ed is an information technology network engineer, consultant, and trainer with 31+
+                                    years
+                                    experience in
+                                    Novell NetWare, M...</p>
+                                <div class="worked-with">
+                                    <div class="text-item">
+                                        <p>Worked with:</p>
+                                    </div>
+                                    <div class="logos-slider">
+                                        <div class="logo-track">
+                                            <div class="logo-item"><img
+                                                    src="https://img.logo.dev/jpmorganco.com?token=pk_UAnfVClWRSudOqxDCqhVVw"
+                                                    alt="JP Morgan">
+                                            </div>
+                                            <div class="logo-item"><img
+                                                    src="https://img.logo.dev/vipsolutions.com.br?token=pk_UAnfVClWRSudOqxDCqhVVw"
+                                                    alt="VIP Solutions">
+                                            </div>
+                                            <div class="logo-item"><img
+                                                    src="https://img.logo.dev/exxonmobil.com?token=pk_UAnfVClWRSudOqxDCqhVVw"
+                                                    alt="ExxonMobil">
+                                            </div>
+                                            <div class="logo-item"><img
+                                                    src="https://img.logo.dev/nasa.gov?token=pk_UAnfVClWRSudOqxDCqhVVw"
+                                                    alt="NASA">
+                                            </div>
+                                            <div class="logo-item"><img
+                                                    src="https://img.logo.dev/expressjet.com?token=pk_UAnfVClWRSudOqxDCqhVVw"
+                                                    alt="ExpressJet Airlines">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tags">
+                                    <span>Technical Writing</span>
+                                    <span>Articulate Storyline</span>
+                                    <span>Content Development</span>
                                 </div>
                             </div>
 
-                            <h3>Edward B.</h3>
-                            <h4>Technical Writer</h4>
-
-                            <p>Ed is an information technology network engineer, consultant, and trainer with 31+ years
-                                experience in
-                                Novell NetWare, M...</p>
-
-                            <div class="tags">
-                                <span>Technical Writing</span>
-                                <span>Articulate Storyline</span>
-                                <span>Content Development</span>
-                            </div>
-
                         </div>
-                        <div class="main-profile-card-button">
-                            <div class="card-button">
-                                <a href="https://preprod.ttaconnect.com/talent/339/?h=8E667E2D-E9FC-41A5-95AE-38590BD5D13E&amp;source=splashpage"
-                                    class="view-btn" target="_blank" rel="noopener">
-                                    View Profile
-                                    <img src="http://thetrainin2dev.local/wp-content/themes/tta/images/new-home-images/icon-img.svg"
-                                        alt="">
-                                </a>
-                            </div>
-                        </div>
+
                     </div>
                     <div class="profile-card" data-tta-card="1">
                         <div class="main-profile-card">
@@ -975,7 +1021,7 @@ $banner_header_label = get_sub_field('banner_header_label');
                 <div class="tta-podcast-card widget-card blue-box">
                     <div class="content-main">
                         <h3>
-Listen to Our Podcast                        </h3>
+                            Listen to Our Podcast </h3>
                         <div class="content-box">
                             <div class="podcast-box">
                                 <div class="podcast-top">
@@ -997,10 +1043,10 @@ Listen to Our Podcast                        </h3>
 
                                     </div>
                                 </div>
-								<p>
-									Quick, practical conversations hosted by TTA’s CEO Maria Melfa and
-									Director of Talent Management Jocelyn Allen.
-								</p>
+                                <p>
+                                    Quick, practical conversations hosted by TTA’s CEO Maria Melfa and
+                                    Director of Talent Management Jocelyn Allen.
+                                </p>
 
                                 <!-- Episode Card -->
                                 <div class="episode-card">
@@ -1013,7 +1059,8 @@ Listen to Our Podcast                        </h3>
                                     </div>
 
                                     <div class="episode-right">
-                                                            <img src="<?php echo get_template_directory_uri(); ?>/images/guest-image.png" alt="">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/images/guest-image.png"
+                                            alt="">
 
                                         <span class="guest-name">Special Guest - Shauna Bona</span>
                                     </div>
