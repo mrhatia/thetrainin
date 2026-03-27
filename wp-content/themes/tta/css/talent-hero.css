@@ -1155,7 +1155,7 @@ a.slide-link {
 
 /* /Resonsive */
 
-@media only screen and (max-width: 747px) {
+@media only screen and (max-width: 1003px) {
   .talent-banner-section h1 {
     font-weight: 900;
     font-size: 61px;
@@ -1344,7 +1344,7 @@ a.slide-link {
     left: 0;
     right: 0;
   }
-  .faq-left-heading-d3 h2{
+  .faq-left-heading-d3 h2 {
     max-width: 100%;
     width: 100%;
     font-size: 42px;
@@ -1353,45 +1353,65 @@ a.slide-link {
     max-width: 100%;
     width: 100%;
     margin-top: 30px;
-}
-.faq-right-section-d3 .faq-accordion-caps {
+  }
+  .faq-right-section-d3 .faq-accordion-caps {
     padding-left: 0;
     padding-right: 0;
-}
-.faq-right-section-d3 .faq-accordion-title:after{
-  right: 20px;
-}
-.faq-right-section-d3 h3 {
-
-    font-size: 30px;}
-.faq-right-section-d3 .faq-accordion-block .faq-accordion-title {
+  }
+  .faq-right-section-d3 .faq-accordion-title:after {
+    right: 20px;
+  }
+  .faq-right-section-d3 h3 {
+    font-size: 30px;
+  }
+  .faq-right-section-d3 .faq-accordion-block .faq-accordion-title {
     padding: 20px 0;
-}
-.faq-section-design-three .faq-inner-section {
+  }
+  .faq-section-design-three .faq-inner-section {
     margin-top: 20px;
-}
-.vetted-section-main{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  width: 90%;
-  margin: 0 auto;
-}
-.vetted-slider {
+  }
+  .vetted-section-main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .vetted-slider {
     width: 100%;
     float: right;
+  }
+  .vetted-content p {
+    font-size: 20px;
+  }
+  .vetted-content h2 {
+    font-size: 40px;
+  }
+  .vetted-content {
+    width: 100%;
+    padding: 0;
+  }
+  .vetted-section {
+    padding: 55px 0 45px;
+  }
 }
-.vetted-content p {
-
-    font-size: 20px;}
-.vetted-content h2 {
-
-    font-size: 40px;}
-.vetted-content{
-  width: 100%;
-  padding: 0;
-
-}
-.vetted-section {
-    padding: 55px 0 45px;}
+@media only screen and (min-width: 748px) and (max-width: 1003px) {
+  .learning-strategy-section .service-card::after {
+    top: 18%;
+  }
+  .learning-strategy-section.section-wrapper__card-grid .card-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .learning-strategy-section.section-wrapper__card-grid .service-card {
+    width: 48%;
+  }
+  .learning-strategy-section.section-wrapper__card-grid
+    .service-card:nth-child(n + 2) {
+    margin-top: 0;
+  }
+  .faq-left-heading-d3 h2 {
+        max-width: 60%;
+  }
 }
