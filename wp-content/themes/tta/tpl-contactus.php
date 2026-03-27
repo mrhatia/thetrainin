@@ -46,9 +46,12 @@ if($contact_us_layout=="bgimagecontact") { ?>
                     <?php the_field('sub_contact_us_layout_description'); ?>
                 </p>
 
+                <?php if (!empty(get_field('button_url'))) { ?>
+                
                 <div class="tta-contact-v1__cta">
-                    <a href="#" class="button staff-button tta-contact-v1__btn"><img src="<?php echo get_template_directory_uri(); ?>/images/TTA-Connect-Black.svg" alt=""></a>
+                    <a href="<?php echo esc_url(the_field('button_url')); ?>" class="button staff-button tta-contact-v1__btn"><img src="<?php echo get_template_directory_uri(); ?>/images/TTA-Connect-Black.svg" alt=""></a>
                 </div>
+                <?php } ?>
             </div>
 
             <!-- RIGHT SIDE FORM -->

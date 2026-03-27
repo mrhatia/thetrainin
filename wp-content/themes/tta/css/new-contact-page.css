@@ -770,7 +770,7 @@
   }
 
   .faq-left-heading h3 {
-    font-size: 40px;
+    font-size: 34px;
     text-align: center;
   }
 
@@ -802,19 +802,41 @@
   }
 
   .learning-services-section .profile-card-outer {
-    border-radius: 50px;
+    border-top-left-radius: 0;
+    padding-bottom: 0;
   }
 
   .learning-services-section {
-    padding: 50px 0;
+    padding: 0;
+  }
+  .learning-services-section .profile-card-outer {
+    width: 100%;
   }
 
   .learning-services-section+.staff-section .profile-card-outer {
-    border-radius: 50px;
+    border-radius: 0;
+    width: 100%;
+  }
+
+  .faq-section-design-two + .awards-section{
+    padding: 60px 0 56px;
+  }
+
+  .page-template-tpl-industry-page .tts-testimonial-section {
+    padding: 100px 0 80px;
+  }
+  
+  .section-wrapper__card-grid .service-card{
+    min-height: 150px;
+  }
+
+  .learning-services-section .card-grid .talent-title{
+    font-size: 28px;
   }
 
   .faq-section-design-two {
     border-bottom-left-radius: 50px;
+    padding-bottom: 45px;
   }
 
   .section-footer-cta {
