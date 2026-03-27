@@ -231,8 +231,8 @@ margin-top: 35px;
   padding: 65px 79px 90px;
 
 }
-.cta-title h1{
 
+.cta-title h1{
   color: #FFFFFF;
   background: linear-gradient(92.31deg, #3EB3E3 1.69%, #3BE2A8 97.57%);
   -webkit-background-clip: text;
@@ -441,13 +441,24 @@ color: #fff;
   padding: 0;
 }
 
-.faq-left-heading-d3{
+.faq-section.faq-section-design-three .container{
+  padding: 0;
+  max-width: 1325px;
+}
+
+.faq-left-heading-d3 h2{
   font-size: 80px;
   font-family: "Polymath Display";
   line-height: 1.15;
   font-weight: 900;
+  letter-spacing: 0;
+
+}
+
+.faq-left-heading-d3 h2{
   max-width: 410px;
     width: 30%;
+        margin-top: 40px;
 }
 
 .faq-right-section-d3{
@@ -466,6 +477,7 @@ color: #fff;
 }
 
 .faq-right-section-d3 .faq-accordion-blocks{
+  margin-top: 0;
   border-top: 0.5px solid ;
   /* border-image: linear-gradient(90deg, hsla(216, 48%, 14%, 1) 0%, hsla(197, 75%, 57%, 1) 41%, hsla(159, 74%, 56%, 1) 100%); */
   border-image: linear-gradient(90deg, hsla(197, 75%, 57%, 1) 0%, hsla(159, 74%, 56%, 1) 48%) 1;
@@ -475,6 +487,20 @@ color: #fff;
 
   border-bottom: 0.5px solid;
   border-image: linear-gradient(90deg, hsla(197, 75%, 57%, 1) 0%, hsla(159, 74%, 56%, 1) 48%) 1;
+}
+
+.faq-right-section-d3 .faq-accordion-block .faq-accordion-title{
+
+padding: 27px 0;
+}
+
+.faq-right-section-d3 .faq-accordion-caps{  
+  padding-left: 0;
+  padding-right: 70px;
+}
+
+.faq-right-section-d3 .faq-accordion-caps p{  
+line-height: 1.3;
 }
 
 

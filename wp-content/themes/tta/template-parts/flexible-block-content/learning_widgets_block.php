@@ -22,6 +22,7 @@ $widget_three_sub_text = get_sub_field('widget_three_sub_text');
 // Widget Four
 $widget_four_title = get_sub_field('widget_four_title');
 $widget_four_heading = get_sub_field('widget_four_heading');
+$widget_four_logo = get_sub_field('widget_four_logo');
 $widget_four_text = get_sub_field('widget_four_text');
 $widget_four_button = get_sub_field('widget_four_button');
 $episode_name = get_sub_field('episode_name');
@@ -154,66 +155,73 @@ $episode_host = get_sub_field('episode_host');
                     ?>
                     <div class="profile-card" data-tta-card="<?php echo $idx; ?>" <?php echo $hidden; ?>>
                         <div class="main-profile-card">
-                            <div class="profile-img">
-                                <img src="<?php echo esc_url($img_url); ?>" alt="<?php echo esc_attr($display_name); ?>"
-                                    loading="lazy" onerror="this.src='<?php echo esc_url($tta_fallback_img); ?>'">
-                                <?php if ($badge_label) : ?>
-                                <div class="profile-logo">
-                                    <span class="certified"><?php echo esc_html($badge_label); ?></span>
-                                    <img src="<?php echo esc_url($tta_badge_img); ?>" alt="Badge">
+                            <div class="profile-img-left">
+                                <div class="profile-img">
+                                    <img src="<?php echo esc_url($img_url); ?>" alt="<?php echo esc_attr($display_name); ?>"
+                                        loading="lazy" onerror="this.src='<?php echo esc_url($tta_fallback_img); ?>'">
+                                    <?php if ($badge_label) : ?>
+                                    <div class="profile-logo">
+                                        <span class="certified"><?php echo esc_html($badge_label); ?></span>
+                                        <img src="<?php echo esc_url($tta_badge_img); ?>" alt="Badge">
+                                    </div>
+                                    <?php endif; ?>
                                 </div>
-                                <?php endif; ?>
-                            </div>
-
-                            <h3><?php echo esc_html($display_name); ?></h3>
-                            <?php if ($primary_role) : ?>
-                            <h4><?php echo esc_html($primary_role); ?></h4>
-                            <?php endif; ?>
-
-                            <?php if ($truncated) : ?>
-                            <p><?php echo esc_html($truncated); ?></p>
-                            <?php endif; ?>
-
-                            <?php if (!empty($visible_skills)) : ?>
-                            <div class="tags">
-                                <?php foreach ($visible_skills as $skill) : ?>
-                                <span><?php echo esc_html($skill); ?></span>
-                                <?php endforeach; ?>
-                            </div>
-                            <?php elseif (!empty($roles)) : ?>
-                            <div class="tags">
-                                <?php foreach (array_slice($roles, 0, 4) as $role) : ?>
-                                <span><?php echo esc_html($role); ?></span>
-                                <?php endforeach; ?>
-                            </div>
-                            <?php endif; ?>
-
-                            <?php if (!empty($logos)) : ?>
-                            <div class="worked-with">
-                                <div class="text-item">
-                                    <p>Worked with:</p>
-                                </div>
-                                <div class="logos-slider">
-                                    <div class="logo-track">
-                                        <?php foreach ($logos as $logo) : ?>
-                                        <div class="logo-item"><img src="<?php echo esc_url($logo['logoUrl']); ?>"
-                                                alt="<?php echo esc_attr(!empty($logo['name']) ? $logo['name'] : ''); ?>">
-                                        </div>
-                                        <?php endforeach; ?>
+                                 <div class="main-profile-card-button">
+                                    <div class="card-button">
+                                        <a href="<?php echo esc_url($profile_url); ?>" class="view-btn" target="_blank"
+                                            rel="noopener">
+                                            View Profile
+                                            <img src="<?php echo esc_url($tta_arrow_icon); ?>" alt="">
+                                        </a>
                                     </div>
                                 </div>
                             </div>
-                            <?php endif; ?>
-                        </div>
-                        <div class="main-profile-card-button">
-                            <div class="card-button">
-                                <a href="<?php echo esc_url($profile_url); ?>" class="view-btn" target="_blank"
-                                    rel="noopener">
-                                    View Profile
-                                    <img src="<?php echo esc_url($tta_arrow_icon); ?>" alt="">
-                                </a>
+                            <div class="main-profile-card-content">
+
+                                <h3><?php echo esc_html($display_name); ?></h3>
+                                <?php if ($primary_role) : ?>
+                                    <h4><?php echo esc_html($primary_role); ?></h4>
+                                <?php endif; ?>
+
+                                <?php if ($truncated) : ?>
+                                <p><?php echo esc_html($truncated); ?></p>
+                                <?php endif; ?>
+
+                                 <?php if (!empty($logos)) : ?>
+                                    <div class="worked-with">
+                                        <div class="text-item">
+                                            <p>Worked with:</p>
+                                        </div>
+                                        <div class="logos-slider">
+                                            <div class="logo-track">
+                                                <?php foreach ($logos as $logo) : ?>
+                                                <div class="logo-item"><img src="<?php echo esc_url($logo['logoUrl']); ?>"
+                                                        alt="<?php echo esc_attr(!empty($logo['name']) ? $logo['name'] : ''); ?>">
+                                                </div>
+                                                <?php endforeach; ?>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <?php endif; ?>
+
+                                <?php if (!empty($visible_skills)) : ?>
+                                <div class="tags">
+                                    <?php foreach ($visible_skills as $skill) : ?>
+                                    <span><?php echo esc_html($skill); ?></span>
+                                    <?php endforeach; ?>
+                                </div>
+                                <?php elseif (!empty($roles)) : ?>
+                                <div class="tags">
+                                    <?php foreach (array_slice($roles, 0, 4) as $role) : ?>
+                                    <span><?php echo esc_html($role); ?></span>
+                                    <?php endforeach; ?>
+                                </div>
+                                <?php endif; ?>
+
+                               
                             </div>
                         </div>
+                       
                     </div>
                     <?php endforeach; endif; ?>
                 </div>
@@ -308,16 +316,9 @@ $episode_host = get_sub_field('episode_host');
                         <div class="content-box">
 
                             <?php if (!empty($widget_two_text)) { ?>
-                                <h4><?php echo $widget_two_text; ?></h4>
+                                <?php echo $widget_two_text; ?>
                             <?php } ?>
 
-                            <?php if (have_rows('widget_two_list')): ?>
-                                <ul>
-                                    <?php while (have_rows('widget_two_list')): the_row(); ?>
-                                        <li><?php echo get_sub_field('item'); ?></li>
-                                    <?php endwhile; ?>
-                                </ul>
-                            <?php endif; ?>
 
                             <?php if (!empty($widget_two_button)) { ?>
                                 <div class="content-box-button">
@@ -343,9 +344,11 @@ $episode_host = get_sub_field('episode_host');
                         <div class="content-box">
                             <div class="tst-content main-title">
                                 <?php if (!empty($widget_three_text)) { ?>
-                                    <p><?php echo $widget_three_text; ?></p>
+                                   <?php echo $widget_three_text; ?>
                                 <?php } ?>
 
+                            </div>
+                             <div class="tst-bottom-cotnent">
                                 <?php if (!empty($widget_three_sub_text)) { ?>
                                     <p><?php echo $widget_three_sub_text; ?></p>
                                 <?php } ?>
@@ -368,19 +371,22 @@ $episode_host = get_sub_field('episode_host');
 
                                 <div class="podcast-top">
 
-                                    <div class="podcast-logo">
-                                        <div class="logo-inner">
-                                            <span class="mic-icon">🎤</span>
-                                            <h4><?php echo $widget_four_heading; ?></h4>
-                                            <span class="tta">tta</span>
+                                    <?php if (!empty($widget_four_logo)) { ?>
+                                        <div class="podcast-logo">
+                                            <div class="logo-inner">
+                                                    <img src="<?php echo esc_url($widget_four_logo); ?>" alt="">
+                                            </div>
                                         </div>
-                                    </div>
+                                    <?php } ?>
 
                                     <div class="podcast-content">
-                                        <h3><?php echo $widget_four_text; ?></h3>
+                                        <h3><?php echo $widget_four_heading; ?></h3>
                                     </div>
 
                                 </div>
+                                <?php if (!empty($widget_four_text)) { ?>
+                                    <?php echo $widget_four_text; ?>
+                                <?php } ?>
 
                                 <!-- Episode -->
                                 <div class="episode-card">

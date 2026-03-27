@@ -1113,6 +1113,32 @@
                             "append": ""
                         },
                         {
+                            "key": "field_69c6a0064f46c",
+                            "label": "Logo",
+                            "name": "widget_four_logo",
+                            "aria-label": "",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "relevanssi_exclude": 0,
+                            "return_format": "url",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": "",
+                            "preview_size": "medium"
+                        },
+                        {
                             "key": "field_69c68cf490b83",
                             "label": "Text",
                             "name": "widget_four_text",
@@ -19353,5 +19379,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1774620817
+    "modified": 1774624793
 }
