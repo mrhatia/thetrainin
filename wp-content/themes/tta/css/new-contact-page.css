@@ -802,10 +802,19 @@ width: 100%;
     .learning-services-section + .staff-section .profile-card-outer{
       border-radius: 50px;
     }
-    
-    /* .faq-section-design-two{
-      border-radius: 50px;
-    } */
+   
+    .faq-section-design-two{
+          border-bottom-left-radius: 50px;
+    }
+
+    .section-footer-cta{
+      padding: 0;
+    }
+
+    .footer-cta-outer{
+      border-radius: 0;
+
+    }
 
     .slider-variation-outer{
       overflow: hidden;
