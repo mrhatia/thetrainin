@@ -1008,11 +1008,10 @@ a.slide-link {
   color: #3eb3e3;
 }
 .tta-podcast-card .content-box-button a:hover {
-  
   gap: 20px;
 }
 .tta-podcast-card .content-box-button img {
-     width: 7px;
+  width: 7px;
 }
 .episode-card {
   position: relative;
@@ -1126,32 +1125,273 @@ a.slide-link {
 
   color: #132136;
 }
-.main-profile-card-content .logo-track{
+.main-profile-card-content .logo-track {
   animation: none;
   align-items: center;
   justify-content: space-between;
-
 }
 
-.main-profile-card-content .logo-item img{
-width: max-content;
-height: max-content;
-max-width: max-content;
-min-width: max-content;
+.main-profile-card-content .logo-item img {
+  width: max-content;
+  height: max-content;
+  max-width: max-content;
+  min-width: max-content;
 }
 
-
-.main-profile-card-content .worked-with{
+.main-profile-card-content .worked-with {
   gap: 28px;
 }
 
-.main-profile-card-content .logos-sliders{
+.main-profile-card-content .logos-sliders {
   width: 61%;
 }
 
-.main-profile-card-content .tags{
-    margin-top: 23px;
+.main-profile-card-content .tags {
+  margin-top: 23px;
 }
-.strategists-cards .profile-card-wrapper-inner{
-    gap: 24px;
+.strategists-cards .profile-card-wrapper-inner {
+  gap: 24px;
+}
+
+/* /Resonsive */
+
+@media only screen and (max-width: 747px) {
+  .talent-banner-section h1 {
+    font-weight: 900;
+    font-size: 61px;
+  }
+  .talent-banner-section .banner-detail-content {
+    width: 100%;
+  }
+  .banner-wrapper {
+    flex-wrap: wrap;
+  }
+  .banner-cards {
+    width: 100%;
+    top: 0;
+    margin-top: 140px;
+  }
+  .banner-detail-content .view-btn-bottom {
+    font-size: 18px;
+    margin-top: 32px;
+  }
+  .card-inner p {
+    margin-top: 24px;
+  }
+  .card-inner {
+    padding: 10px 16px 17px;
+  }
+  .talent-banner-section {
+    overflow: hidden;
+    padding: 100px 0 29px;
+  }
+  .trusted-logos span {
+    width: 100%;
+  }
+
+  .trusted-logos {
+    gap: 35px;
+    margin-top: 80px;
+  }
+  .strategists-section .wrapper {
+    width: 90%;
+  }
+  .strategists-section .strategists-section-title h2 {
+    font-size: 36px;
+  }
+  .strategists-cards {
+    width: 100%;
+  }
+
+  .profile-img-left {
+    width: 100%;
+  }
+
+  .strategists-cards .profile-card {
+    flex: inherit;
+  }
+  .strategists-cards .profile-img {
+    max-width: 100%;
+    margin: 0;
+  }
+  .main-profile-card-content {
+    width: 100%;
+  }
+
+  .profile-img-left .card-button a {
+    font-size: 20px;
+    padding: 7px 13px 6px 49px;
+    gap: 16px;
+  }
+  .profile-img-left .card-button {
+    margin: 0 auto;
+    width: max-content !important;
+    padding-top: 18px;
+  }
+  .main-profile-card-content .worked-with {
+    flex-wrap: wrap;
+    gap: 0;
+  }
+  .profile-img-left .profile-logo img {
+    bottom: -7px;
+    right: 0;
+  }
+  .profile-img-left .profile-logo span {
+    right: -4px;
+  }
+  .strategists-right {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .bottom-link-text {
+    text-align: left;
+    margin-top: 30px;
+  }
+  .content-main h3 {
+    font-size: 28px;
+
+    margin-bottom: 25px;
+  }
+  .content-box h4 {
+    margin-bottom: 15px;
+  }
+  .content-box-button {
+    margin-top: 18px;
+  }
+  .content-box {
+    padding: 16px 20px 18px;
+  }
+
+  .tta-talent-capabilities-card {
+    margin-top: 45px;
+  }
+  .tta-talent-capabilities-card .content-box-button {
+    margin-top: 28px;
+  }
+  .tta-testimonials-card {
+    margin-top: 38px;
+  }
+  .tta-testimonials-card .content-box {
+    padding-top: 40px;
+    padding-bottom: 32px;
+  }
+  .tta-testimonials-card .main-title {
+    margin: 0 0 25px;
+  }
+
+  .tta-podcast-card {
+    margin-top: 45px;
+  }
+  .tst-content p {
+    margin-bottom: 18px;
+  }
+  .tta-podcast-card .podcast-top {
+    flex-wrap: wrap;
+  }
+  .tta-podcast-card .podcast-logo {
+    width: 100%;
+  }
+  .podcast-content {
+    width: 100%;
+    padding-top: 0px;
+  }
+  .tta-podcast-card .podcast-content h3 {
+    margin-bottom: 15px;
+  }
+  .tta-podcast-card .episode-card {
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
+  .tta-podcast-card .episode-left {
+    max-width: 100%;
+  }
+  .tta-podcast-card .episode-left h4 {
+    max-width: 100%;
+  }
+  .tta-podcast-card .episode-right {
+    width: 100%;
+  }
+  .episode-card::before {
+    top: auto;
+    bottom: -4px;
+    height: 104%;
+    background-size: cover;
+    right: 0;
+  }
+  .spacer-200 {
+    height: 80px;
+  }
+  .learning-strategy-section .content {
+    padding: 0;
+  }
+  .learning-strategy-section.section-wrapper__card-grid .card-grid {
+    display: block;
+    padding: 30px 10px;
+  }
+  .learning-strategy-section {
+    padding: 0 0 0px;
+  }
+  .learning-strategy-section.section-wrapper__card-grid .service-card {
+    padding: 80px 20px 18px;
+  }
+  .learning-strategy-section.section-wrapper__card-grid
+    .service-card:nth-child(n + 2) {
+    margin-top: 20px;
+  }
+  .learning-strategy-section .service-card::after {
+    top: 15%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+  }
+  .faq-left-heading-d3 h2{
+    max-width: 100%;
+    width: 100%;
+    font-size: 42px;
+  }
+  .faq-right-section-d3 {
+    max-width: 100%;
+    width: 100%;
+    margin-top: 30px;
+}
+.faq-right-section-d3 .faq-accordion-caps {
+    padding-left: 0;
+    padding-right: 0;
+}
+.faq-right-section-d3 .faq-accordion-title:after{
+  right: 20px;
+}
+.faq-right-section-d3 h3 {
+
+    font-size: 30px;}
+.faq-right-section-d3 .faq-accordion-block .faq-accordion-title {
+    padding: 20px 0;
+}
+.faq-section-design-three .faq-inner-section {
+    margin-top: 20px;
+}
+.vetted-section-main{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  width: 90%;
+  margin: 0 auto;
+}
+.vetted-slider {
+    width: 100%;
+    float: right;
+}
+.vetted-content p {
+
+    font-size: 20px;}
+.vetted-content h2 {
+
+    font-size: 40px;}
+.vetted-content{
+  width: 100%;
+  padding: 0;
+
+}
+.vetted-section {
+    padding: 55px 0 45px;}
 }
