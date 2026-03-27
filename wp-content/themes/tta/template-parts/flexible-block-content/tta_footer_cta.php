@@ -32,6 +32,11 @@ if ($button_two) {
 					<h1><?php the_sub_field( 'title' ); ?></h1>
 				</div>
 			<?php } ?>
+			<?php if(get_sub_field('text')) { ?>
+				<div class="cta-text">
+					<p><?php the_sub_field( 'text' ); ?></p>
+				</div>
+			<?php } ?>
 			<div class="cta-buttons-section">
 				<!-- button two -->
 				<?php if($button_one) { ?>
