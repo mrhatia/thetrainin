@@ -1104,20 +1104,22 @@
     <div class="wrapper">
         <div class="vetted-section-main">
             <div class="vetted-content">
-				<div class="vetted-content-inner">
+                <div class="vetted-content-inner">
 
-			
-                <h2>
-                    Vetted Learning Strategists <br><span>
-                        You Can Trust
-                    </span>
-                </h2>
-                <p>
-                    TTA Connect Learning Strategists are screened, evaluated, and matched using our Talent Qualification
-                    Program. Every match is based on skills, experience, and culture fit, with our team supporting you
-                    through selection and onboarding.
-                </p>
-					</div>
+
+                    <h2>
+                        Vetted Learning Strategists <br><span>
+                            You Can Trust
+                        </span>
+                    </h2>
+                    <p>
+                        TTA Connect Learning Strategists are screened, evaluated, and matched using our Talent
+                        Qualification
+                        Program. Every match is based on skills, experience, and culture fit, with our team supporting
+                        you
+                        through selection and onboarding.
+                    </p>
+                </div>
 
             </div>
             <div class="vetted-slider">
@@ -1268,22 +1270,24 @@
                     <div class="slider-header">
                         <div class="slider-header-controls">
                             <button class="arrow-btn" data-dir="prev" aria-label="Previous slide">
-								              <img src="<?php echo get_template_directory_uri(); ?>/images/slider-arrow-left.svg" alt="">
-							</button>
+                                <img src="<?php echo get_template_directory_uri(); ?>/images/slider-arrow-left.svg"
+                                    alt="">
+                            </button>
                             <button class="arrow-btn" data-dir="next" aria-label="Next slide">
-								              <img src="<?php echo get_template_directory_uri(); ?>/images/slider-arrow-right.svg" alt="">
+                                <img src="<?php echo get_template_directory_uri(); ?>/images/slider-arrow-right.svg"
+                                    alt="">
 
-							</button>
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-		<div class="vetted-bottom-text">
-			<p>
-				<span>30</span> years in L&D talent • 3 levels of excellence • 12M learners impacted • 100+ countries
-			</p>
-		</div>
+        <div class="vetted-bottom-text">
+            <p>
+                <span>30</span> years in L&D talent • 3 levels of excellence • 12M learners impacted • 100+ countries
+            </p>
+        </div>
     </div>
     </div>
 </section>
