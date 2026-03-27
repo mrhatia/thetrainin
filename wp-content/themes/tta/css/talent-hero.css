@@ -171,13 +171,12 @@
 }
 
 .strategists-cards {
-    width: 63.4%;
-
+  width: 63.4%;
 }
 
 .strategists-right {
   width: 31.7%;
-      margin-top: -22px;
+  margin-top: -22px;
 }
 
 .content-main h3 {
@@ -1021,22 +1020,120 @@ a.slide-link {
   width: 34px;
   height: 52px;
 }
-.strategists-cards .main-profile-card{
+.strategists-cards .main-profile-card {
   display: flex;
   flex-wrap: wrap;
   gap: 23px;
   align-items: flex-start;
+}
+
+.strategists-cards .profile-card {
+  width: 100%;
+  padding: 14px 11px 24px;
+}
+
+.strategists-cards .profile-img {
+  max-width: 250px;
+  margin: 0;
+}
+.main-profile-card-content {
+  width: 66%;
+}
+.profile-img-left .profile-logo span {
+  font-size: 12px;
+  right: -14px;
+  letter-spacing: -0.3px;
+}
+.profile-img-left .profile-logo img {
+  bottom: -7px;
+  right: -9px;
+  width: 56px !important;
+  height: 67px;
+  border-radius: 0;
+  object-fit: contain;
+}
+
+.profile-img-left .card-button a {
+  letter-spacing: 0.8px;
+  font-size: 24px;
+  padding: 7px 13px 5px 49px;
+  gap: 19px;
+  width: 100%;
+}
+.profile-img-left .card-button {
+  margin: 0 auto;
+  width: max-content !important;
+  padding-top: 27px;
+}
+
+.main-profile-card-content h3 {
+  font-family: "halyard-display";
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 115.87%;
+
+  color: #132136;
+  margin-top: -1px;
+}
+.main-profile-card-content h4 {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 115.87%;
+
+  color: #000000;
+  margin-top: -3px;
+  letter-spacing: -0.1px;
+  margin-bottom: 7px;
+}
+.main-profile-card-content h5 {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 115.87%;
+
+  color: #000000;
+}
+
+.main-profile-card-content p {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+
+  color: #132136;
+}
+.main-profile-card-content .logo-track{
+  animation: none;
+  align-items: center;
+  justify-content: space-between;
 
 }
 
-.strategists-cards .profile-card{
-width: 100%;
-    padding: 14px 11px;
+.main-profile-card-content .logo-item img{
+width: max-content;
+height: max-content;
+max-width: max-content;
+min-width: max-content;
 }
 
-.strategists-cards .profile-img{
-max-width: 250px;
-    margin: 0;
-}.main-profile-card-content {
-    width: 66%;
+
+.main-profile-card-content .worked-with{
+  gap: 28px;
+}
+
+.main-profile-card-content .logos-sliders{
+  width: 61%;
+}
+
+.main-profile-card-content .tags{
+    margin-top: 23px;
+}
+.strategists-cards .profile-card-wrapper-inner{
+    gap: 24px;
 }
