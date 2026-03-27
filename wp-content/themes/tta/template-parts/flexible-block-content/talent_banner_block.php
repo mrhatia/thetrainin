@@ -1036,8 +1036,7 @@
                 <div class="tta-podcast-card widget-card blue-box">
                     <div class="content-main">
                         <h3>
-                            Testimonials
-                        </h3>
+Listen to Our Podcast                        </h3>
                         <div class="content-box">
                             <div class="podcast-box">
                                 <div class="podcast-top">
@@ -1057,12 +1056,12 @@
                                             Bring Out the Talent Podcast: Hear how top L&D leaders solve real problems
                                         </h3>
 
-                                        <p>
-                                            Quick, practical conversations hosted by TTA’s CEO Maria Melfa and
-                                            Director of Talent Management Jocelyn Allen.
-                                        </p>
                                     </div>
                                 </div>
+								<p>
+									Quick, practical conversations hosted by TTA’s CEO Maria Melfa and
+									Director of Talent Management Jocelyn Allen.
+								</p>
 
                                 <!-- Episode Card -->
                                 <div class="episode-card">
@@ -1075,7 +1074,8 @@
                                     </div>
 
                                     <div class="episode-right">
-                                        <img src="https://via.placeholder.com/120" alt="Guest">
+                                                            <img src="<?php echo get_template_directory_uri(); ?>/images/guest-image.png" alt="">
+
                                         <span class="guest-name">Special Guest - Shauna Bona</span>
                                     </div>
                                 </div>
