@@ -547,24 +547,20 @@
 
 .vetted-section {
   position: relative;
-    padding: 70px 0 51px;
+  padding: 70px 0 51px;
   overflow: hidden;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-
 .vetted-content {
-    width: 46.5%;
-    float: left;
-    padding-right: 33px;
-  
-  
+  width: 46.5%;
+  float: left;
+  padding-right: 33px;
 }
-.vetted-content-inner{
+.vetted-content-inner {
   max-width: 588px;
   margin-left: auto;
-
 }
 
 .vetted-content h2 {
@@ -598,8 +594,8 @@
   margin: 0;
 }
 .vetted-section-main {
-display: flow-root;
-clear: both;
+  display: flow-root;
+  clear: both;
 }
 
 .vetted-item {
@@ -695,8 +691,8 @@ clear: both;
 
   color: #132136;
 }
-.vetted-slider{
-    width: 53.5%;
+.vetted-slider {
+  width: 53.5%;
   float: right;
 }
 /* /// sdf */
@@ -709,15 +705,12 @@ clear: both;
 
 /* OUTER SHELL (right aligned) */
 
-
 /* HEADER: title + arrows on one row */
 .slider-header {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   gap: 1rem;
-  
-
 }
 
 .slider-title {
@@ -731,7 +724,7 @@ clear: both;
   align-items: center;
   gap: 0.5rem;
   justify-content: flex-end;
-    margin-top: 32px;
+  margin-top: 32px;
 }
 
 .arrow-btn {
@@ -746,10 +739,10 @@ clear: both;
   background-color: transparent;
   cursor: pointer;
 }
-.arrow-btn img{
-width: 100%;
-height: 100%;
-object-fit: cover;
+.arrow-btn img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 /* SLIDER */
 .slider {
@@ -779,7 +772,6 @@ object-fit: cover;
   flex-direction: column;
   gap: 0.8rem;
 }
-
 
 /* CLICKABLE ROW: title + arrow (ONLY this is a link) */
 .slide-footer {
@@ -825,33 +817,30 @@ a.slide-link {
   }
 }
 
-.vetted-bottom-text{
-  max-width: 1121px ;
+.vetted-bottom-text {
+  max-width: 1121px;
   width: 90%;
   margin: 0 auto;
   text-align: center;
-      margin-top: 24px;
+  margin-top: 24px;
 }
-.vetted-bottom-text p{
-
-
+.vetted-bottom-text p {
   font-family: "halyard-display";
 
-font-style: normal;
-font-weight: 300;
-font-size: 28px;
-line-height: 102%;
-text-align: center;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 102%;
+  text-align: center;
 
-color: white;
-    letter-spacing: -0.24px;
-
+  color: white;
+  letter-spacing: -0.24px;
 }
 
-.vetted-bottom-text p span{
-  background: linear-gradient(90deg, #3EB3E3 0%, #3BE2A8 100%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-background-clip: text;
-text-fill-color: transparent;
+.vetted-bottom-text p span {
+  background: linear-gradient(90deg, #3eb3e3 0%, #3be2a8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
 }
