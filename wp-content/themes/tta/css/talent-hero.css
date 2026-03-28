@@ -15,8 +15,7 @@
 
 @font-face {
   font-family: "halyard-display";
-  src: url(../fonts/halyard-display/Halyard_Display_SemiBold.woff2)
-    format("woff2");
+  src: url(../fonts/halyard-display/Halyard_Display_SemiBold.woff2) format("woff2");
   font-weight: 600;
 }
 
@@ -40,24 +39,33 @@
   font-display: swap;
 }
 
+
+.logged-in.admin-bar .tta-header-section {
+  top: 32px;
+}
+
 .ctn-800 {
   max-width: 800px;
   width: 90%;
   margin: 0 auto;
 }
+
 .talent-banner-section .container {
   max-width: 1337px;
   width: 97%;
   margin: 0 auto;
   padding: 0;
 }
+
 .banner-wrapper {
   display: flex;
   justify-content: space-between;
 }
+
 .talent-banner-section .banner-detail-content {
   width: 62.5%;
 }
+
 .talent-banner-section {
   position: relative;
   padding: 140px 0 29px;
@@ -65,6 +73,7 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .talent-banner-section h1 {
   font-weight: 900;
   font-size: 90px;
@@ -74,6 +83,7 @@
   margin: 0 0 14px 0;
   font-family: "Polymath Display";
 }
+
 .talent-banner-section::after {
   display: none;
 }
@@ -88,12 +98,14 @@
   max-width: 785px;
   color: #ffffff;
 }
+
 .talent-banner-section h1 span {
   background: linear-gradient(90deg, #3eb3e3 0%, #3be2a8 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 .banner-detail-content .view-btn-bottom {
   font-size: 22px;
   letter-spacing: 0.8px;
@@ -107,6 +119,7 @@
   gap: 45px;
   margin-top: 94px;
 }
+
 .trusted-logos span {
   width: 13.8%;
 
@@ -118,6 +131,7 @@
 
   color: #ffffff;
 }
+
 .logos-row {
   display: flex;
   flex-wrap: wrap;
@@ -125,6 +139,7 @@
   justify-content: space-between;
   width: 82.8%;
 }
+
 .s-64 {
   height: 64px;
 }
@@ -136,6 +151,7 @@
   width: 97%;
   margin: 0 auto;
 }
+
 .strategists-section .strategists-section-title h2 {
   font-weight: 900;
   font-size: 48px;
@@ -146,6 +162,7 @@
   font-family: "Polymath Display";
   margin-bottom: 34px;
 }
+
 .strategists-section .strategists-section-title span {
   background: linear-gradient(90deg, #3eb3e3 0%, #3be2a8 100%);
   -webkit-background-clip: text;
@@ -228,6 +245,7 @@
   text-align: center;
   margin-top: 39px;
 }
+
 .content-box-button p {
   font-family: "Lato";
   font-style: normal;
@@ -239,6 +257,7 @@
   color: #132136;
   margin-bottom: 20px;
 }
+
 .content-box-button .view-btn-bottom {
   font-size: 24px;
   letter-spacing: 0;
@@ -250,6 +269,7 @@
 .widget-card.blue-box .content-box {
   background-color: #132136;
 }
+
 .tta-podcast-card .content-box {
   padding: 24px 15px 21px 18px;
 }
@@ -320,10 +340,12 @@
 
   color: #ffffff;
 }
+
 .podcast-content {
   width: 47%;
   padding-top: 4px;
 }
+
 .podcast-box p {
   font-family: "Lato";
   font-style: normal;
@@ -493,9 +515,11 @@
   color: #132136;
   margin-bottom: 0px;
 }
+
 .card-inner-image {
   position: relative;
 }
+
 .card-inner-logo {
   width: 50px;
   height: 52px;
@@ -503,12 +527,14 @@
   bottom: -10px;
   right: -16px;
 }
+
 .card-inner-logo img {
   width: 100%;
   height: 100%;
   margin: 0;
   border-radius: 0;
 }
+
 .card-inner span {
   font-family: "Lato";
   font-style: normal;
@@ -540,6 +566,7 @@
   align-items: center;
   margin-top: 20px;
 }
+
 .logos img {
   max-width: 70px;
   max-height: 37px;
@@ -550,6 +577,7 @@
   margin: 0;
   object-fit: initial;
 }
+
 /* ===== STATES ===== */
 
 /* CENTER */
@@ -605,6 +633,7 @@
   float: left;
   padding-right: 33px;
 }
+
 .vetted-content-inner {
   max-width: 588px;
   margin-left: auto;
@@ -640,6 +669,7 @@
   max-width: 580px;
   margin: 0;
 }
+
 .vetted-section-main {
   display: flow-root;
   clear: both;
@@ -729,6 +759,7 @@
   padding-left: 1.5rem;
   margin-top: 15px;
 }
+
 .vetted-item-content ul li {
   font-family: "Lato";
   font-style: normal;
@@ -738,10 +769,12 @@
 
   color: #132136;
 }
+
 .vetted-slider {
   width: 53.5%;
   float: right;
 }
+
 /* /// sdf */
 :root {
   --card-width-mobile: 85vw;
@@ -786,18 +819,21 @@
   background-color: transparent;
   cursor: pointer;
 }
+
 .arrow-btn img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+
 /* SLIDER */
 .slider {
   position: relative;
 }
 
 .slider-inner {
-  overflow: hidden; /* creates the off-canvas effect */
+  overflow: hidden;
+  /* creates the off-canvas effect */
 }
 
 .slider-track {
@@ -809,7 +845,8 @@
 }
 
 .slide {
-  flex: 0 0 var(--card-width-mobile); /* mobile basis */
+  flex: 0 0 var(--card-width-mobile);
+  /* mobile basis */
   max-width: var(--card-width-desktop);
   margin-right: var(--card-gap);
   border-radius: 1.5rem;
@@ -833,8 +870,10 @@ a.slide-link {
   justify-content: space-between;
   gap: 0.75rem;
   width: 100%;
-  text-decoration: none; /* remove blue underline */
-  color: inherit; /* inherit text colour */
+  text-decoration: none;
+  /* remove blue underline */
+  color: inherit;
+  /* inherit text colour */
 }
 
 /* SMALL CIRCLE ARROW – centered */
@@ -850,7 +889,8 @@ a.slide-link {
   font-size: 1.1rem;
   line-height: 1;
   position: relative;
-  top: -0.5px; /* tiny nudge up for visual centering */
+  top: -0.5px;
+  /* tiny nudge up for visual centering */
 }
 
 /* Optional hover effect only on link area */
@@ -871,6 +911,7 @@ a.slide-link {
   text-align: center;
   margin-top: 24px;
 }
+
 .vetted-bottom-text p {
   font-family: "halyard-display";
 
@@ -891,9 +932,11 @@ a.slide-link {
   background-clip: text;
   text-fill-color: transparent;
 }
+
 .tta-talent-capabilities-card {
   margin-top: 77px;
 }
+
 .tta-talent-capabilities-card .content-box {
   box-shadow: none;
   padding-bottom: 31px;
@@ -904,20 +947,24 @@ a.slide-link {
   color: #ffffff;
   margin-bottom: 14px;
 }
+
 .tta-talent-capabilities-card .content-box ul {
   margin: 0;
   padding-left: 25px;
 }
+
 .tta-talent-capabilities-card .content-box ul li {
   font-family: "Lato";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 130%;
+  margin-bottom: 7px;
   /* or 21px */
 
   color: #ffffff;
 }
+
 .tta-talent-capabilities-card .content-box-button .download-brochure {
   font-family: "Lato";
   font-style: normal;
@@ -937,6 +984,7 @@ a.slide-link {
 .tta-talent-capabilities-card .content-box-button .download-brochure img {
   width: 7px;
 }
+
 .tta-talent-capabilities-card .content-box-button {
   text-align: left;
   margin-top: 38px;
@@ -945,6 +993,7 @@ a.slide-link {
 .tta-testimonials-card {
   margin-top: 61px;
 }
+
 .tst-content p {
   font-family: "Lato";
   font-style: normal;
@@ -961,9 +1010,11 @@ a.slide-link {
   padding-top: 53px;
   padding-bottom: 41px;
 }
+
 .tta-testimonials-card .main-title {
   margin: 0 0 35px;
 }
+
 .tta-testimonials-card .main-title::after {
   width: 121px;
   left: 0;
@@ -972,6 +1023,7 @@ a.slide-link {
   height: 1px;
   border-radius: 0;
 }
+
 .tst-bottom-cotnent {
   font-family: "Lato";
   font-style: normal;
@@ -990,6 +1042,7 @@ a.slide-link {
 .tta-podcast-card .content-box {
   box-shadow: none;
 }
+
 .tta-podcast-card .content-box-button {
   text-align: left;
   margin-top: 21px;
@@ -1007,15 +1060,19 @@ a.slide-link {
 
   color: #3eb3e3;
 }
+
 .tta-podcast-card .content-box-button a:hover {
   gap: 20px;
 }
+
 .tta-podcast-card .content-box-button img {
   width: 7px;
 }
+
 .episode-card {
   position: relative;
 }
+
 .episode-card::before {
   content: "";
   position: absolute;
@@ -1037,6 +1094,7 @@ a.slide-link {
   width: 34px;
   height: 52px;
 }
+
 .strategists-cards .main-profile-card {
   display: flex;
   flex-wrap: wrap;
@@ -1053,14 +1111,21 @@ a.slide-link {
   max-width: 250px;
   margin: 0;
 }
+
 .main-profile-card-content {
   width: 66%;
 }
+
+.profile-img-left {
+  width: 30%;
+}
+
 .profile-img-left .profile-logo span {
   font-size: 12px;
   right: -14px;
   letter-spacing: -0.3px;
 }
+
 .profile-img-left .profile-logo img {
   bottom: -7px;
   right: -9px;
@@ -1077,6 +1142,7 @@ a.slide-link {
   gap: 19px;
   width: 100%;
 }
+
 .profile-img-left .card-button {
   margin: 0 auto;
   width: max-content !important;
@@ -1094,6 +1160,7 @@ a.slide-link {
   color: #132136;
   margin-top: -1px;
 }
+
 .main-profile-card-content h4 {
   font-family: "Lato";
   font-style: normal;
@@ -1106,6 +1173,7 @@ a.slide-link {
   letter-spacing: -0.1px;
   margin-bottom: 7px;
 }
+
 .main-profile-card-content h5 {
   font-family: "Lato";
   font-style: normal;
@@ -1125,6 +1193,7 @@ a.slide-link {
 
   color: #132136;
 }
+
 .main-profile-card-content .logo-track {
   animation: none;
   align-items: center;
@@ -1149,6 +1218,7 @@ a.slide-link {
 .main-profile-card-content .tags {
   margin-top: 23px;
 }
+
 .strategists-cards .profile-card-wrapper-inner {
   gap: 24px;
 }
@@ -1160,31 +1230,39 @@ a.slide-link {
     font-weight: 900;
     font-size: 61px;
   }
+
   .talent-banner-section .banner-detail-content {
     width: 100%;
   }
+
   .banner-wrapper {
     flex-wrap: wrap;
   }
+
   .banner-cards {
     width: 100%;
     top: 0;
     margin-top: 140px;
   }
+
   .banner-detail-content .view-btn-bottom {
     font-size: 18px;
     margin-top: 32px;
   }
+
   .card-inner p {
     margin-top: 24px;
   }
+
   .card-inner {
     padding: 10px 16px 17px;
   }
+
   .talent-banner-section {
     overflow: hidden;
     padding: 100px 0 29px;
   }
+
   .trusted-logos span {
     width: 100%;
   }
@@ -1193,15 +1271,16 @@ a.slide-link {
     gap: 35px;
     margin-top: 80px;
   }
+
   .strategists-section .wrapper {
     width: 90%;
   }
+
   .strategists-section .strategists-section-title h2 {
     font-size: 36px;
   }
-  .strategists-cards {
-    width: 100%;
-  }
+
+
 
   .profile-img-left {
     width: 100%;
@@ -1210,54 +1289,64 @@ a.slide-link {
   .strategists-cards .profile-card {
     flex: inherit;
   }
+
   .strategists-cards .profile-img {
     max-width: 100%;
     margin: 0;
   }
-  .main-profile-card-content {
-    width: 100%;
-  }
+
+ 
 
   .profile-img-left .card-button a {
     font-size: 20px;
     padding: 7px 13px 6px 49px;
     gap: 16px;
   }
+
   .profile-img-left .card-button {
     margin: 0 auto;
     width: max-content !important;
     padding-top: 18px;
   }
+
   .main-profile-card-content .worked-with {
     flex-wrap: wrap;
     gap: 0;
   }
+
   .profile-img-left .profile-logo img {
     bottom: -7px;
     right: 0;
   }
+
   .profile-img-left .profile-logo span {
     right: -4px;
   }
+
   .strategists-right {
     width: 100%;
     margin-top: 30px;
   }
+
   .bottom-link-text {
-    text-align: left;
+    /* text-align: left; */
     margin-top: 30px;
   }
+
   .content-main h3 {
     font-size: 28px;
 
     margin-bottom: 25px;
   }
+
   .content-box h4 {
     margin-bottom: 15px;
   }
+
   .content-box-button {
     margin-top: 18px;
   }
+
   .content-box {
     padding: 16px 20px 18px;
   }
@@ -1265,16 +1354,20 @@ a.slide-link {
   .tta-talent-capabilities-card {
     margin-top: 45px;
   }
+
   .tta-talent-capabilities-card .content-box-button {
     margin-top: 28px;
   }
+
   .tta-testimonials-card {
     margin-top: 38px;
   }
+
   .tta-testimonials-card .content-box {
     padding-top: 40px;
     padding-bottom: 32px;
   }
+
   .tta-testimonials-card .main-title {
     margin: 0 0 25px;
   }
@@ -1282,35 +1375,45 @@ a.slide-link {
   .tta-podcast-card {
     margin-top: 45px;
   }
+
   .tst-content p {
     margin-bottom: 18px;
   }
+
   .tta-podcast-card .podcast-top {
     flex-wrap: wrap;
   }
+
   .tta-podcast-card .podcast-logo {
     width: 100%;
   }
+
   .podcast-content {
     width: 100%;
     padding-top: 0px;
   }
+
   .tta-podcast-card .podcast-content h3 {
     margin-bottom: 15px;
   }
+
   .tta-podcast-card .episode-card {
     flex-wrap: wrap;
     overflow: hidden;
   }
+
   .tta-podcast-card .episode-left {
     max-width: 100%;
   }
+
   .tta-podcast-card .episode-left h4 {
     max-width: 100%;
   }
+
   .tta-podcast-card .episode-right {
     width: 100%;
   }
+
   .episode-card::before {
     top: auto;
     bottom: -4px;
@@ -1318,70 +1421,86 @@ a.slide-link {
     background-size: cover;
     right: 0;
   }
+
   .spacer-200 {
     height: 80px;
   }
+
   .learning-strategy-section .content {
     padding: 0;
   }
+
   .learning-strategy-section.section-wrapper__card-grid .card-grid {
     display: block;
     padding: 30px 10px;
   }
+
   .learning-strategy-section {
     padding: 0 0 0px;
     border-bottom-left-radius: 0;
   }
+
   .learning-strategy-section.section-wrapper__card-grid .service-card {
     padding: 80px 20px 18px;
   }
-  .learning-strategy-section.section-wrapper__card-grid
-    .service-card:nth-child(n + 2) {
+
+  .learning-strategy-section.section-wrapper__card-grid .service-card:nth-child(n + 2) {
     margin-top: 20px;
   }
-.trusted-logos{
-  text-align: center;
-}
-  .logos-row{
+
+  .trusted-logos {
+    text-align: center;
+  }
+
+  .logos-row {
     justify-content: center;
-        width: 100%;
+    width: 100%;
   }
 
   .footer-cta-outer .cta-text p {
     font-size: 22px;
-}
+  }
+
   .learning-strategy-section .service-card::after {
     top: 15%;
     margin: 0 auto;
     left: 0;
     right: 0;
   }
+
   .faq-left-heading-d3 h2 {
     max-width: 100%;
     width: 100%;
     font-size: 42px;
   }
+
   .faq-right-section-d3 {
     max-width: 100%;
     width: 100%;
     margin-top: 30px;
   }
+
   .faq-right-section-d3 .faq-accordion-caps {
     padding-left: 0;
     padding-right: 0;
   }
+
   .faq-right-section-d3 .faq-accordion-title:after {
     right: 20px;
   }
+
   .faq-right-section-d3 h3 {
     font-size: 30px;
   }
+
   .faq-right-section-d3 .faq-accordion-block .faq-accordion-title {
     padding: 20px 0;
   }
+
   .faq-section-design-three .faq-inner-section {
-    margin-top: 20px;
+    margin-top: 0;
   }
+
   .vetted-section-main {
     display: flex;
     flex-wrap: wrap;
@@ -1389,41 +1508,334 @@ a.slide-link {
     width: 90%;
     margin: 0 auto;
   }
+
   .vetted-slider {
     width: 100%;
     float: right;
   }
+
   .vetted-content p {
     font-size: 20px;
   }
+
   .vetted-content h2 {
     font-size: 40px;
   }
+
   .vetted-content {
     width: 100%;
     padding: 0;
   }
+
   .vetted-section {
     padding: 55px 0 45px;
   }
 }
+
 @media only screen and (min-width: 748px) and (max-width: 1003px) {
   .learning-strategy-section .service-card::after {
     top: 18%;
   }
+
   .learning-strategy-section.section-wrapper__card-grid .card-grid {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
   }
+
   .learning-strategy-section.section-wrapper__card-grid .service-card {
     width: 48%;
   }
-  .learning-strategy-section.section-wrapper__card-grid
-    .service-card:nth-child(n + 2) {
+
+  .learning-strategy-section.section-wrapper__card-grid .service-card:nth-child(n + 2) {
     margin-top: 0;
   }
+
   .faq-left-heading-d3 h2 {
-        max-width: 60%;
+    max-width: 60%;
+  }
+}
+
+
+
+@media only screen and (max-width: 766px) {
+  .strategists-cards {
+    width: 100%;
+  }
+   .main-profile-card-content {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 782px) {
+  .logged-in.admin-bar .tta-header-section {
+    top: 46px;
+  }
+
+
+}
+
+@media only screen and (min-width: 1180px) and (max-width: 1370px) {
+
+  .logos-row {
+    width: 80.8%;
+  }
+
+  .logos-row img {
+    max-width: 140px;
+  }
+
+  .profile-img-left .card-button a {
+
+    font-size: 18px;
+    padding: 7px 10px 5px 24px;
+  }
+
+  .faq-left-heading-d3 h2 {
+    font-size: 64px;
+  }
+
+  .vetted-content {
+    padding-left: 33px;
+  }
+
+  .vetted-content h2 {
+    font-size: 64px;
+  }
+
+  .vetted-content p {
+    font-size: 20px;
+  }
+
+  .cta-title h1 {
+    font-size: 64px;
+  }
+
+  .footer-cta-outer .cta-text p {
+    font-size: 26px;
+    line-height: 1.3;
+  }
+
+  .footer-cta-outer {
+    padding: 64px 75px 64px;
+  }
+
+  .section-footer-cta {
+    padding: 80px 0 90px;
+  }
+
+  .cta-buttons-section {
+    margin-top: 42px;
+  }
+
+}
+
+
+@media only screen and (min-width: 1004px) and (max-width: 1179px) {
+
+  .profile-img-left .card-button a {
+
+    font-size: 18px;
+    padding: 7px 10px 5px 24px;
+
+  }
+
+  .talent-banner-section .container {
+    max-width: 1337px !important;
+  }
+
+  .page-template-tpl-talent-page .container {
+    width: 90% !important;
+    max-width: 1337px !important;
+    padding: 0 !important;
+  }
+
+  .logos-row {
+    width: 100%;
+  }
+
+  .logos-row img {
+    width: 16%;
+  }
+
+  .trusted-logos {
+    gap: 30px;
+  }
+
+  .trusted-logos span {
+    width: 100%;
+  }
+
+  .content-main h3 {
+    font-size: 26px;
+    margin-bottom: 15px;
+  }
+
+  .tta-talent-capabilities-card,
+  .tta-testimonials-card,
+  .tta-podcast-card {
+    margin-top: 30px;
+  }
+
+
+  .strategists-cards .profile-card {
+    flex: unset;
+  }
+
+  .content-box h4 {
+    font-size: 20px;
+  }
+
+  .content-box-button {
+    margin-top: 25px;
+  }
+
+  .tst-content::before {
+    top: -38px;
+  }
+
+  .tta-testimonials-card .main-title {
+    margin: 0 0 25px;
+    padding: 0 0 3px;
+  }
+
+  .tta-testimonials-card .content-box {
+    padding-top: 45px;
+    padding-bottom: 15px;
+  }
+
+  .tta-podcast-card .podcast-logo {
+    width: 29.2%;
+    min-width: unset;
+    height: unset;
+  }
+
+  .podcast-content {
+    width: 68%;
+  }
+
+  .tta-podcast-card .podcast-content h3 {
+    font-size: 17px;
+  }
+
+  .podcast-box p {
+
+    font-size: 14px;
+  }
+
+  .episode-card::before {
+
+    width: 190px;
+    height: 100%;
+  }
+
+  .tta-podcast-card .episode-left {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .episode-right {
+    display: none;
+  }
+
+  .tta-podcast-card .episode-left h4 {
+    width: 100%;
+    max-width: 100%;
+    font-size: 15px;
+  }
+
+  .tta-podcast-card .episode-number {
+    margin-bottom: 6px;
+  }
+
+  .talent-banner-section .banner-detail-content {
+    width: 45.5%;
+  }
+
+  .talent-banner-section h1 {
+    font-size: 60px;
+  }
+
+  .talent-banner-section p {
+    font-size: 18px;
+  }
+
+  .banner-detail-content .view-btn-bottom {
+    margin-top: 40px;
+    font-size: 20px;
+  }
+
+  .main-profile-card-content {
+    width: 62%;
+  }
+
+  .strategists-right {
+    width: 37.7%;
+    margin-top: 0;
+  }
+
+  .strategists-cards {
+    width: 58.4%;
+  }
+
+  .content-box-button .view-btn-bottom {
+    font-size: 18px;
+  }
+
+  .faq-left-heading-d3 h2 {
+    font-size: 60px;
+
+  }
+
+  .faq-left-heading-d3 {
+
+    width: 35%;
+  }
+
+  .faq-right-section-d3 h3 {
+    font-size: 30px;
+  }
+
+  .faq-right-section-d3 {
+
+    width: 61%;
+  }
+
+  .vetted-content {
+    padding-left: 33px;
+  }
+
+  .vetted-content h2 {
+    font-size: 54px;
+  }
+
+  .vetted-content p {
+    font-size: 18px;
+  }
+
+  .vetted-bottom-text {
+    width: 100%;
+
+  }
+
+  .vetted-bottom-text p {
+    font-size: 24px;
+  }
+
+  .cta-title h1 {
+    font-size: 60px;
+  }
+
+  .footer-cta-outer .cta-text p {
+  
+    font-size: 24px;
+    line-height: 1.3;
+  }
+
+  .cta-buttons-section{
+    margin-top: 40px;
+  }
+
+  .footer-cta-outer{
+    padding: 55px 60px 55px;
   }
 }

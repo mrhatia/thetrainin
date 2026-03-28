@@ -1801,3 +1801,18 @@ img.alignleft, img.alignright {
     .container { max-width: 1200px; }
 }
 /*---------- Large Desktop , Large Screen End ----------*/
+
+
+
+@media only screen and (min-width: 1180px) and (max-width: 1280px) {
+
+.talent-banner-section .container{
+  max-width: 1337px !important;
+}
+
+.page-template-tpl-talent-page .container{
+width: 95% !important;
+max-width: 1337px !important;
+}
+
+}

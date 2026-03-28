@@ -852,6 +852,254 @@
     overflow: hidden;
   }
 
+  .footer-cta-outer{
+    width: 100%;
+  }
+  .profile-card-wrapper-inner.slider-variation .bottom-link-text{
+  text-align: center;
+
+
+}
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1003px) {
+
+  .faq-section-design-two .faq-left-heading{
+    width: 100% !important;
+    max-width: 100% !important;
+    
+  }
+  .faq-section-design-two .faq-right-section{
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+
+  .staff-section .step-section-heading h2,
+  .section-wrapper__card-grid h2.section-title {
+    font-size: 35px;
+    margin-bottom: 10px;
+  }
+
+  .staff-section .steps {
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 80px;
+  }
+
+  .staff-section .step {
+    border-left: none;
+    padding-left: 0;
+    padding: 0 50px;
+  }
+
+  .staff-section .step h3 {
+    font-size: 24px;
+  }
+
+  .staff-section .step h4 {
+    font-size: 36px;
+  }
+
+  .case-studies-design-two .tech-card-body .card-left-section img{
+    max-width: 130px;
+  }
+
+ .case-studies-design-two .heading-wrapper h2, .case-studies-design-two .heading-wrapper h2 span{
+font-size: 60px !important;
+  }
+
+  .case-studies-design-two .slick-slider-wrapper .tta-sub-title {
+    font-size: 30px;
+  }
+.card-left-section{
+
+  flex-direction: row !important;
+  justify-content: center;
+  line-height: 0;
+  /* max-height: 190px; */
+  margin-top: 0;
+}
+
+
+
+  .industry-banner-section .sub-title {
+    padding-bottom: 40px;
+  }
+
+  .industry-banner-section .main-title h1 {
+    font-size: 62px;
+  }
+
+  .industry-banner-section .content {
+    padding-right: 0;
+  }
+
+  .case_studies_section.case-studies-design-two {
+    padding: 80px 0 90px !important;
+  }
+
+  .case-studies-design-two .heading-wrapper h2 {
+    margin-bottom: 30px;
+  }
+
+  .case-studies-design-two .tech-slider-section {
+    padding: 56px 0;
+  }
+
+  .case-studies-design-two .tech-card-body {
+    flex-wrap: wrap;
+  }
+
+  .case-studies-design-two .card-right-section .list-style-heaindg {
+    margin-bottom: 13px;
+  }
+
+  .case-studies-design-two .card-right-section ul {
+    padding-left: 0;
+  }
+
+  .case-studies-design-two .tech-card-body .card-right-section {
+    width: 100%;
+  }
+
+  .case-studies-design-two .tech-card-body .card-left-section {
+    width: 100%;
+    margin-top: 60px;
+  }
+
+  .section-wrapper__card-grid h2.section-titles,
+  .section-wrapper__card-grid h2.section-titles span {
+    font-size: 50px !important;
+  }
+
+  .learning-services-section .card-grid {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    margin-top: 60px;
+  }
+
+  .bottom-button-wrapper {
+
+    margin-top: 55px;
+  }
+
+  .learning-services-section+.staff-section .profile-card-outer {
+    border-top-right-radius: 0 !important;
+  }
+
+  .slider-variation-outer .bottom-link-text {
+    margin-top: 129px;
+  }
+
+  .slider-variation-outer .bottom-button-wrapper {
+    margin-top: 19px;
+  }
+
+  .faq-section-design-two h2 {
+    font-size: 50px;
+  }
+
+  .faq-inner-section {
+    flex-wrap: wrap;
+  }
+
+  .faq-left-heading,
+  .faq-right-section {
+    width: 100%;
+  }
+
+  .faq-inner-section {
+    margin-top: 25px;
+  }
+
+  .faq-left-heading h3 {
+    font-size: 34px;
+    text-align: center;
+  }
+
+  .faq-right-section .faq-accordion-title h5 {
+    font-size: 24px;
+  }
+
+  .faq-right-section .faq-accordion-caps p {
+    font-size: 18px;
+    left: 0;
+  }
+
+  .faq-section-design-two+.awards-section .awards-section__heading h2 {
+    font-size: 56px;
+  }
+
+  .cta-buttons-section {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .footer-cta-outer {
+    padding: 65px 40px 90px;
+    border-radius: 50px;
+  }
+
+  .cta-title h1 {
+    font-size: 50px;
+  }
+
+  .learning-services-section .profile-card-outer {
+    border-top-left-radius: 0;
+    padding-bottom: 0;
+  }
+
+  .learning-services-section {
+    padding: 0;
+  }
+  .learning-services-section .profile-card-outer {
+    width: 100%;
+  }
+
+  .learning-services-section+.staff-section .profile-card-outer {
+    border-radius: 0;
+    width: 100%;
+  }
+
+  .faq-section-design-two + .awards-section{
+    padding: 60px 0 56px;
+  }
+
+  .page-template-tpl-industry-page .tts-testimonial-section {
+    padding: 100px 0 80px;
+  }
+  
+  .section-wrapper__card-grid .service-card{
+    min-height: 150px;
+  }
+
+  .learning-services-section .card-grid .talent-title{
+    font-size: 28px;
+  }
+
+  .faq-section-design-two {
+    border-bottom-left-radius: 50px;
+    padding-bottom: 45px;
+  }
+
+  .section-footer-cta {
+    padding: 0;
+  }
+
+  .footer-cta-outer {
+    border-radius: 0;
+
+  }
+
+  .slider-variation-outer {
+    overflow: hidden;
+  }
+
+  .footer-cta-outer{
+    width: 100%;
+  }
+
 }
 
 @media only screen and (min-width: 1280px) and (max-width: 1344px) {

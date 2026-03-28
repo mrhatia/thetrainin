@@ -2093,6 +2093,7 @@ section.tt_lago {
   .staff-section .step {
     border-left: none;
     padding-left: 0;
+    padding: 0 50px;
   }
 
   .staff-section .step h3 {
@@ -2103,9 +2104,9 @@ section.tt_lago {
     font-size: 36px;
   }
 
-  .staff-section .step p {
+  /* .staff-section .step p {
     font-size: 16px;
-  }
+  } */
 
   .staff-section .staff-button {
     font-size: 22px;
@@ -2249,9 +2250,9 @@ section.tt_lago {
     font-size: 28px;
   }
 
-  .step p {
+  /* .step p {
     font-size: 14px;
-  }
+  } */
 
   .staff-button {
     font-size: 18px;

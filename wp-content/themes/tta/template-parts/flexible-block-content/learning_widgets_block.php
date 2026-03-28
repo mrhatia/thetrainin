@@ -286,7 +286,7 @@ $episode_host = get_sub_field('episode_host');
                         <div class="content-box">
 
                             <?php if (!empty($widget_one_text)) { ?>
-                                <h4><?php echo $widget_one_text; ?></h4>
+                                <?php echo $widget_one_text; ?>
                             <?php } ?>
 
                             <?php if (!empty($widget_one_button)) { ?>
