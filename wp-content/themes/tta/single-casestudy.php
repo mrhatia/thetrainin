@@ -16,6 +16,27 @@ get_header(); ?>
 		<section class="main-banner">
 			<div class="container">
 				<div class="row">
+									<div class="col-sm-12 col-md-12 col-lg-3">
+										<div class="top-label">
+								<?php the_sub_field( 'casestudy_single_heading' ); ?>
+							</div>
+								<?php 	$casestudy_single_image = get_sub_field( 'casestudy_single_image' );   ?>
+					<?php if ( $casestudy_single_image ) { ?>
+					<div class="banner-img ">
+					<img src="<?php echo $casestudy_single_image['url']; ?>" alt="<?php echo $casestudy_single_image['alt']; ?>" class="img-fluid" />
+					</div>	
+					<?php }?>
+</div>	
+<div class="col-sm-12 col-md-12 col-lg-9">
+	<div class="main-title">
+								<h1><?php the_sub_field( 'casestudy_single_title' ); ?></h1>
+							</div>
+							<div class="sub-title">
+								<h2><?php the_field( 'sub_title' ); ?></h2>
+							</div>
+</div>
+</div>
+			<!--	<div class="row">
 					<div class="col-sm-12 col-md-12 col-lg-6">
 						<div class="banner-detail">
 							<div class="top-label">
@@ -63,10 +84,149 @@ get_header(); ?>
 							</svg>					
 						</a>
 					</div>
-				</div>
+				</div>-->
 		</section>
+<section class="numbersection">
+<div class="container">	
+	<div class="row">
+		<div class="col-sm-12 col-md-12 col-lg-8">
+			<?php echo get_field('description');?>
+										</div>
+						<div class="col-sm-12 col-md-12 col-lg-4">
+<div class="image award_flow_active">
+									<div class="gradient_block_cl">
+										
+										<?php if ( get_field( 'case_study_award_winning' ) == 1 ) { ?>
+										<?php if ( have_rows( 'case_study_award_winning_detail' ) ) : ?>
+										<?php while ( have_rows( 'case_study_award_winning_detail' ) ) : the_row(); ?>
+										<div class="award_flow">
+											<div class="award_flow_text"><p><?php the_sub_field( 'casestudy_award_winning_text' ); ?></p></div>
+											<?php $casestudy_award_winning_logo = get_sub_field( 'casestudy_award_winning_logo' ); ?>
+											<?php if ( $casestudy_award_winning_logo ) { ?>
+													<div class="award_flow_image"><img src="<?php echo $casestudy_award_winning_logo['url']; ?>" alt="<?php echo $casestudy_award_winning_logo['alt']; ?>" /></div>
+											<?php } ?>
+										</div>
 
-<?php elseif ( get_row_layout() == 'single_content_list_service_block' ) : ?>
+											<?php endwhile; ?>
+										<?php endif; ?>
+											<?php } ?>
+									</div>
+								</div>
+										</div>					
+
+										</div>	
+									
+
+       <?php $numbers = get_field('numbers');  if($numbers){?>
+	   <div class="row nitemsection">
+	    <div class="col-sm-12 col-md-12 col-lg-5">
+			<div class="main-title">
+								<h2><?php echo get_field( 'number_section_title' ); ?></h2>
+							</div>
+		</div>
+			<div class="col-sm-12 col-md-12 col-lg-7">
+              <div class="row">
+				<?php foreach($numbers as $num){?>
+				<div class="col-sm-12 col-md-12 col-lg-6 nitems">
+					<div class="ntitle"><?php echo $num['number_title'];?></div>
+					<div class="nstitle"><?php echo $num['number_sub_title'];?></div>
+										</div>
+										<?php }?>
+			</div>	
+			</div> 
+			</div>		
+	<?php }?>
+	</div>	
+</section>
+<?php $talents = get_field('talents'); if($talents){?>
+<section class="talentprovide section-wrapper__card-grid">
+<div class="container">	
+	<div class="main-title">
+								<h2><?php echo get_field( 'talent_section_title' ); ?></h2>
+							</div>
+      		<div class="card-grid">
+				<?php foreach($talents as $talent){?>
+				    <div class="talent-card">
+                              <div class="talent-icon"><img src="<?php echo $talent['icon']['url'];?>" alt=""></div>
+							  <div class="talent-title"><h4><?php echo $talent['talent_title'];?></h4></div>
+										</div>
+										<?php }?>
+										</div>				
+</div>	
+</div>
+</section>
+
+<section class="ttaservices">
+	<?php $tta_services = get_field('tta_services');?>
+	<?php if($tta_services){?>
+ <div class="container">
+	<div class="main-title">
+								<h2><?php echo get_field( 'tta_service_section_title' ); ?></h2>
+							</div>
+							
+							<div class="ttaservicesrow">
+								
+								<div class="ttanav">
+									<?php $c=0; foreach($tta_services as $tts){ $c++;?>
+								      <h4 data-id="n<?php echo $c;?>" class="<?php if($c==1){?>active<?php }?>" ><?php echo $tts;?><?php echo $tts['tta_title'];?></h4>
+								<?php }?>
+										</div>
+										<div class="ttacont">
+											<?php $c=0; foreach($tta_services as $tts){ $c++;?>
+										<div id="n<?php echo $c;?>" class="ncontent <?php if($c==1){?>show<?php }?>">
+											<?php echo $tts['tta_description'];?>
+										</div>
+											<?php }?>
+										</div>
+										</div>
+</div>	
+<?php }?>
+<?php $businessimp = get_field('business_impacts');?>
+<?php if($businessimp){?>
+ <div class="container businesssection">
+		<div class="main-title">
+								<h2><?php echo get_field( 'business_section_title' ); ?></h2>
+							</div>
+							<div class="businessimpacts">
+							<?php foreach($businessimp as $busin){
+								?>
+								<div class="impactitem">
+                                   <div class="impicon"><img src="<?php echo $busin['business_icon']['url'];?>" alt=""></div>
+								   <div class="impdetails">
+                                     <h3><?php echo $busin['bnumbers'];?></h3>
+									 <h5><?php echo $busin['impact_title'];?></h5>
+								    
+								   </div>
+								   <div class="impdesc"><?php echo $busin['impact_description'];?>
+										</div>
+								</div>	
+								<?php
+							}	?>
+										</div>	
+</div>	
+<?php }?>
+</section>
+
+<?php $bottomtitle = get_field('bottom_title');
+$bottom_content = get_field('bottom_content');
+$bottom_sub_title = get_field('bottom_sub_title');
+if($bottomtitle || $bottom_content){
+?>
+<section class="bottomsection">
+	<div class="container">
+		<div class="main-title">
+								<h2><?php echo $bottomtitle; ?> <?php if($bottom_sub_title){?><span><?php echo $bottom_sub_title;?></span><?php }?></h2>
+							</div>
+                          <div class="botomcontent">
+							<?php echo $bottom_content;?>
+										</div>
+										</div>
+										</section>	
+<?php
+}
+?>
+<?php }?>
+<?php elseif ( get_row_layout() == 'single_content_list_service_block' ) : /*?>
 
 	<section class="text-block-bg casestudy_three_cl" id="call-to-section">
 		<div class="container">					
@@ -112,7 +272,7 @@ get_header(); ?>
 		</div>
 	</section>
 
-<?php elseif ( get_row_layout() == 'casestudy_single_callout_block' ) : ?>
+<?php */ elseif ( get_row_layout() == 'casestudy_single_callout_block' ) : /*?>
 
 	<section class="signup">
 		<div class="container">
@@ -129,7 +289,7 @@ get_header(); ?>
 		</div>
 	</section>
 
-<?php elseif ( get_row_layout() == 'casestudy_single_testimonial_slider_block' ) : ?>
+<?php */ elseif ( get_row_layout() == 'casestudy_single_testimonial_slider_block' ) : ?>
 
 	<?php $name_font_size = get_sub_field( 'name_font_size' ); ?>
 	<?php $designation_font_size = get_sub_field( 'designation_font_size' ); ?>
@@ -297,4 +457,19 @@ get_header(); ?>
 <?php endwhile; ?>
 <?php endif; ?>
 
-<?php get_footer();
+<?php get_footer();?>
+<script>
+	jQuery(document).ready(function($){
+
+    $('.ttanav h4').on('click', function(e){
+        $('.ttanav h4').removeClass('active');
+		$(this).addClass('active');
+		var nid = $(this).data('id');
+		
+		$('.ncontent').removeClass('show')
+         $('#'+nid).addClass('show')
+
+
+					})
+	})
+	</script>

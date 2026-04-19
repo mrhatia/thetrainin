@@ -134,6 +134,28 @@
                     "parent_repeater": "field_64b8c85e0ac66"
                 },
                 {
+                    "key": "field_69cb5616d0a89",
+                    "label": "Extra Class",
+                    "name": "extra_class",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "relevanssi_exclude": 0,
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_64b8c85e0ac66"
+                },
+                {
                     "key": "field_64f5a3404618f",
                     "label": "Sub Menu Row List",
                     "name": "sub_menu_row_list",
@@ -867,5 +889,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1774409732
+    "modified": 1774933540
 }

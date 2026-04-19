@@ -148,6 +148,8 @@ function tta_scripts() {
 	wp_enqueue_style('tta-faq-style', get_template_directory_uri().'/css/new-faqs.css', array(), time());
 	wp_enqueue_style('tta-talent-hero-style', get_template_directory_uri().'/css/talent-hero.css', array(), time());
 	wp_enqueue_style('tta-contact-style', get_template_directory_uri().'/css/new-contact-page.css', array(), time());
+	wp_enqueue_style('tta-custom-style', get_template_directory_uri().'/css/custom.css?ref=2.3.0', array(), '3.0.9');
+	wp_enqueue_style('tta-talent-style', get_template_directory_uri().'/css/talent.css?ref=1.0.1', array(), '1.0.1');
 	// wp_enqueue_style('tta-slick-theme-style', get_template_directory_uri().'/css/new-homepage.css', array(), time());
 
 	// wp_enqueue_script( 'jquery');
@@ -602,4 +604,249 @@ function tta_add_page_cats(){
     register_taxonomy_for_object_type('post_tag', 'page');
 
 }
+
+
+function search_casestudy_ajax_handler() {
+
+    $keyword = isset($_POST['keyword']) ? sanitize_text_field($_POST['keyword']) : '';
+    $topics  = isset($_POST['topics']) ? array_map('sanitize_text_field', (array) $_POST['topics']) : array();
+    $types   = isset($_POST['types']) ? array_map('sanitize_text_field', (array) $_POST['types']) : array();
+
+    $tax_query = array('relation' => 'AND');
+
+    // Custom taxonomy: topics
+    if (!empty($topics)) {
+        $tax_query[] = array(
+            'taxonomy' => 'casestudy-services', // change taxonomy name if needed
+            'field'    => 'slug',
+            'terms'    => $topics,
+            'operator' => 'IN',
+        );
+    }
+
+    // Custom taxonomy: types
+    if (!empty($types)) {
+        $tax_query[] = array(
+            'taxonomy' => 'casestudy-industries', // change taxonomy name if needed
+            'field'    => 'slug',
+            'terms'    => $types,
+            'operator' => 'IN',
+        );
+    }
+
+    $args = array(
+        'post_type'      => 'casestudy', // change post type if needed
+        'post_status'    => 'publish',
+        'posts_per_page' => -1,
+        's'              => $keyword,
+    );
+
+    if (count($tax_query) > 1) {
+        $args['tax_query'] = $tax_query;
+    }
+  
+    $query = new WP_Query($args);
+
+    if ($query->have_posts()) {
+        ob_start();
+
+        while ($query->have_posts()) {
+            $query->the_post();
+            ?>
+            <div class="<?php echo $clase_lyout; ?> studyitem">
+							<div class="story-block award-win">
+							 <?php
+								$disp_img_box ='';
+								if ( has_post_thumbnail()) {
+									$large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'full'); 
+									 $disp_img_box = $large_image_url[0];
+								}else{ 
+									$disp_img_box = get_template_directory_uri().'/images/akami-logo 1.png';
+									} 
+								  ?>
+								 
+								<div class="s-img">
+									<img src="<?php echo $disp_img_box; ?>" alt="logo" class="img-fluid">
+									 <a target="_blank" href="<?php the_permalink(); ?>" class="btn btn-border-blue">Learn More <svg width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.999442 1.00002L5.03516 5.70835L0.999442 10.4167" stroke="url(#paint0_linear_5093_620)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<defs>
+<linearGradient id="paint0_linear_5093_620" x1="3.0173" y1="1.00002" x2="3.0173" y2="10.4167" gradientUnits="userSpaceOnUse">
+<stop stop-color="#3EB3E3"/>
+<stop offset="1" stop-color="#3BE2A8"/>
+</linearGradient>
+</defs>
+</svg>
+</a>
+								</div>
+
+							 <?php    if (have_rows('casestudy_single_content_layout', $post->ID)): 
+            
+             while (have_rows('casestudy_single_content_layout', $post->ID)): the_row();  if (get_row_layout() == 'casestudy_single_award_block'): ?>
+
+                    <?php echo '<div class="titlebox">';
+                    // Access sub fields of this block
+                    $title = get_sub_field('single_award_title');
+                    $description = get_sub_field('single_award_content');
+                    echo '<h4>' . esc_html($description) . '</h4>'; 
+                    echo '<h3>' . esc_html($title) . '</h3>';
+                    echo "</div>";
+                    ?>
+
+                <?php endif; endwhile; endif;?>
+
+
+							<div class="detail">
+									<!--<div class="match" data-mh="story-block-text"><?php the_excerpt(); ?></div>-->
+									
+									
+							<?php if ( get_field( 'case_study_award_winning' ) == 1 ) {
+								if ( have_rows( 'case_study_award_winning_detail' ) ) : ?>
+								<?php while ( have_rows( 'case_study_award_winning_detail' ) ) : the_row(); ?>
+									<div class="story-award" class="match" data-mh="story-block-ss">
+                                        <div class="left">
+                                            <p><?php the_sub_field( 'casestudy_award_winning_text' ); ?></p>
+                                        </div>
+										<?php $casestudy_award_winning_logo = get_sub_field( 'casestudy_award_winning_logo' ); ?>
+										<?php if ( $casestudy_award_winning_logo ) { ?>
+										<div class="right">
+                                      	<img src="<?php echo $casestudy_award_winning_logo['url']; ?>" alt="<?php echo $casestudy_award_winning_logo['alt']; ?>" class="img-fluid" />
+                                        </div>
+										<?php } ?>
+									  </div>
+									  	<?php endwhile; ?>
+								<?php endif; } ?>
+								</div>
+							</div>
+						</div>
+
+            <?php
+        }
+
+        wp_reset_postdata();
+        echo ob_get_clean();
+    } else {
+        echo '<p>No case studies found.</p>';
+    }
+
+    wp_die();
+}
+
+add_action('wp_ajax_search_casestudy', 'search_casestudy_ajax_handler');
+add_action('wp_ajax_nopriv_search_casestudy', 'search_casestudy_ajax_handler');
+function talent_list(){
+ob_start();
+?>
+<div class="talentsgrid">
+<div class="talent-card">
+  <div class="talent-left">
+    <div class="talent-image-wrap">
+      <img src="<?php echo get_bloginfo('template_url');?>/images/talent2.png" alt="Ava T" class="talent-image">
+      <div class="qualified-badge">
+       <img src="<?php echo get_bloginfo('template_url');?>/images/Certified Badge.png" alt="Ava T" class="talent-image">
+      </div>
+    </div>
+   <div class="downlink">
+    <a href="#" class=" ">
+      View Profile
+    <svg width="30" height="35" viewBox="0 0 30 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.25 8.75L18.75 17.5L11.25 26.25" stroke="white" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+    </a>
+								</div>
+  </div>
+
+  <div class="talent-right">
+    <h2>Ava T</h2>
+    <h3>Learning Strategist</h3>
+    <h4>Certified Expert in Learning Strategy</h4>
+
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in...
+    </p>
+
+    <div class="worked-with">
+      <span class="worked-label">Previously worked with:</span>
+
+      <div class="logos">
+        <span class="logo tta-logo">tta</span>
+        <span class="logo jetblue">jetBlue</span>
+        <span class="logo volvo">VOLVO</span>
+        <span class="logo accenture">accenture</span>
+      </div>
+    </div>
+
+    <div class="skills">
+      <span>Learning Strategist</span>
+      <span>Instructional Skills</span>
+      <span>Strategic Planning</span>
+      <span>Data Analysis</span>
+      <span>Strategic Planning</span>
+      <span>Data Analysis</span>
+      <span>Instructional Skills</span>
+      <span>+ 8 More</span>
+    </div>
+  </div>
+</div>
+<div class="talent-card">
+  <div class="talent-left">
+    <div class="talent-image-wrap">
+      <img src="<?php echo get_bloginfo('template_url');?>/images/talent1.png" alt="Ava T" class="talent-image">
+      <div class="qualified-badge">
+       <img src="<?php echo get_bloginfo('template_url');?>/images/Qualified Badge.png" alt="Ava T" class="talent-image">
+      </div>
+    </div>
+
+     <div class="downlink">
+    <a href="#" class=" ">
+      View Profile
+    <svg width="30" height="35" viewBox="0 0 30 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.25 8.75L18.75 17.5L11.25 26.25" stroke="white" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+    </a>
+								</div>
+  </div>
+
+  <div class="talent-right">
+    <h2>Ava T</h2>
+    <h3>Learning Strategist</h3>
+    <h4>Certified Expert in Learning Strategy</h4>
+
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in...
+    </p>
+
+    <div class="worked-with">
+      <span class="worked-label">Previously worked with:</span>
+
+      <div class="logos">
+        <span class="logo tta-logo">tta</span>
+        <span class="logo jetblue">jetBlue</span>
+        <span class="logo volvo">VOLVO</span>
+        <span class="logo accenture">accenture</span>
+      </div>
+    </div>
+
+    <div class="skills">
+      <span>Learning Strategist</span>
+      <span>Instructional Skills</span>
+      <span>Strategic Planning</span>
+      <span>Data Analysis</span>
+      <span>Strategic Planning</span>
+      <span>Data Analysis</span>
+      <span>Instructional Skills</span>
+      <span>+ 8 More</span>
+    </div>
+  </div>
+</div>
+</div>
+<?php 
+ return ob_get_clean();
+}
+add_shortcode('talentlist','talent_list');
 ?>

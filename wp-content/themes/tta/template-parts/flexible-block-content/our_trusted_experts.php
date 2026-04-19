@@ -52,8 +52,16 @@ if ($button) {
                             $json = json_decode($body, true);
                             $code = (int) wp_remote_retrieve_response_code($response);
                             if ($json !== null && $code >= 200 && $code < 300) {
+                                // Convert profilePictureBytes to data URIs
+                                foreach ($json as &$_t) {
+                                    if (is_array($_t) && !empty($_t['profilePictureBytes']) && !empty($_t['profilePictureFileType'])) {
+                                        $_t['profileImageDataUri'] = 'data:' . $_t['profilePictureFileType'] . ';base64,' . $_t['profilePictureBytes'];
+                                    }
+                                    if (is_array($_t)) unset($_t['profilePictureBytes']);
+                                }
+                                unset($_t);
                                 $result = ['success' => true, 'data' => $json];
-                                set_transient('tta_featured_talent_all', $result, 600);
+                                set_transient('tta_featured_talent_all', $result, 5400);
                             }
                         }
                     }
@@ -101,7 +109,7 @@ if ($button) {
 
                                 $badge_label = tta_get_badge_label(!empty($t['instrStatus']) ? $t['instrStatus'] : '');
 
-                                $img_url = !empty($t['profileImageUrl']) ? $t['profileImageUrl'] : $tta_fallback_img;
+                                $img_url = !empty($t['profileImageDataUri']) ? $t['profileImageDataUri'] : (!empty($t['profileImageUrl']) ? $t['profileImageUrl'] : $tta_fallback_img);
 
                                 $about = !empty($t['aboutMe']) ? $t['aboutMe'] : '';
                                 $truncated = (mb_strlen($about) > 120) ? mb_substr($about, 0, 120) . '...' : $about;
@@ -140,7 +148,7 @@ if ($button) {
                         <div class="profile-card" data-tta-card="<?php echo $idx; ?>" <?php echo $hidden; ?>>
                             <div class="main-profile-card">
                                 <div class="profile-img">
-                                    <img src="<?php echo esc_url($img_url); ?>" alt="<?php echo esc_attr($display_name); ?>"
+                                    <img src="<?php echo esc_url($img_url, array('http', 'https', 'data')); ?>" alt="<?php echo esc_attr($display_name); ?>"
                                         loading="lazy" onerror="this.src='<?php echo esc_url($tta_fallback_img); ?>'">
                                     <?php if ($badge_label) : ?>
                                     <div class="profile-logo">
@@ -206,7 +214,7 @@ if ($button) {
 
                 <?php if (count($tta_talent) > $tta_per_page) : ?>
                 <div class="bottom-link-text">
-                    <a href="#" id="ttaSeeMoreBtn">See More Featured Talent</a>
+                    <a href="#" id="ttaSeeMoreBtn">Explore More Talent & Roles on TTA Connect</a>
                 </div>
                 <script>
                 (function() {
@@ -734,8 +742,16 @@ if ($button) {
                             $json = json_decode($body, true);
                             $code = (int) wp_remote_retrieve_response_code($response);
                             if ($json !== null && $code >= 200 && $code < 300) {
+                                // Convert profilePictureBytes to data URIs
+                                foreach ($json as &$_t) {
+                                    if (is_array($_t) && !empty($_t['profilePictureBytes']) && !empty($_t['profilePictureFileType'])) {
+                                        $_t['profileImageDataUri'] = 'data:' . $_t['profilePictureFileType'] . ';base64,' . $_t['profilePictureBytes'];
+                                    }
+                                    if (is_array($_t)) unset($_t['profilePictureBytes']);
+                                }
+                                unset($_t);
                                 $result = ['success' => true, 'data' => $json];
-                                set_transient('tta_featured_talent_all', $result, 600);
+                                set_transient('tta_featured_talent_all', $result, 5400);
                             }
                         }
                     }
@@ -782,7 +798,7 @@ if ($button) {
 
                             $badge_label = tta_get_badge_label(!empty($t['instrStatus']) ? $t['instrStatus'] : '');
 
-                            $img_url = !empty($t['profileImageUrl']) ? $t['profileImageUrl'] : $tta_fallback_img;
+                            $img_url = !empty($t['profileImageDataUri']) ? $t['profileImageDataUri'] : (!empty($t['profileImageUrl']) ? $t['profileImageUrl'] : $tta_fallback_img);
 
                             $about = !empty($t['aboutMe']) ? $t['aboutMe'] : '';
                             $truncated = (mb_strlen($about) > 120) ? mb_substr($about, 0, 120) . '...' : $about;
@@ -821,7 +837,7 @@ if ($button) {
                     <div class="profile-card" data-tta-card="<?php echo $idx; ?>" <?php echo $hidden; ?>>
                         <div class="main-profile-card">
                             <div class="profile-img">
-                                <img src="<?php echo esc_url($img_url); ?>" alt="<?php echo esc_attr($display_name); ?>"
+                                <img src="<?php echo esc_url($img_url, array('http', 'https', 'data')); ?>" alt="<?php echo esc_attr($display_name); ?>"
                                     loading="lazy" onerror="this.src='<?php echo esc_url($tta_fallback_img); ?>'">
                                 <?php if ($badge_label) : ?>
                                 <div class="profile-logo">

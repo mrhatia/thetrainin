@@ -234,6 +234,7 @@
     <!-- Start Custom Header -->
     <header class="tta-header-section">
         <nav>
+          
             <?php $header_site_logo = get_field( 'header_site_logo', 'option' ); ?>
             <?php if ( $header_site_logo ) { ?>
             <a class="navbar-brand" href="<?php echo site_url(); ?>">
@@ -241,7 +242,7 @@
                     class="img-fluid" />
             </a>
             <?php } ?>
-
+   
             <!-- Start Desktop Menu -->
             <div class="tta-header-desktop-menu-box">
                 <div class="tta-header-menu">
@@ -249,9 +250,12 @@
                     <!-- Start Main Menu List -->
                     <?php if( have_rows('menu_list_group', 'option') ) { ?>
                     <ul class="tta-header-menu-lists">
-                        <?php while( have_rows('menu_list_group', 'option') ) { the_row(); ?>
+                        <?php  $extra_class =""; while( have_rows('menu_list_group', 'option') ) { the_row(); ?>
 
-                        <?php $main_menu_item_type = get_sub_field('main_menu_item_type', 'option'); ?>
+                        <?php $main_menu_item_type = get_sub_field('main_menu_item_type', 'option');
+                        
+                        $extra_class = get_sub_field('extra_class', 'option');
+                        ?>
 
                         <?php if ($main_menu_item_type == 'simple') { ?>
 
@@ -265,7 +269,7 @@
                         <?php } elseif ($main_menu_item_type == 'megamenu') { ?>
 
                         <!-- Start Mega Menu -->
-                        <li class="tta-header-menu-list-item item-has-children">
+                        <li class="tta-header-menu-list-item item-has-children <?php echo $extra_class;?>">
                             <a
                                 href="<?php the_sub_field('main_menu_item_link', 'option'); ?>"><?php the_sub_field('main_menu_item_text', 'option'); ?></a>
                             <ul class="tta-header-megamenu-list">
@@ -457,20 +461,8 @@
                     <!-- End Main Menu List -->
 
                 </div>
-
-                <!-- Start Main Menu Search -->
-                <div class="tta-search-btn">
-                    <button class="search">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
-                                stroke="#494949" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                            <path d="M20.9984 20.9999L16.6484 16.6499" stroke="#494949" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                    </button>
-                </div>
-                <!-- End Main Menu Search -->
+                <div class="header_right">
+            
 
                 <!-- Start Main Menu Login -->
                 <?php $header_login_button = get_field( 'header_login_button', 'option' ); ?>
@@ -491,18 +483,34 @@
                 </div>
                 <?php } ?>
                 <!-- End Main Menu Login -->
-
+    <!-- Start Main Menu Search -->
+                <div class="tta-search-btn">
+                    <button class="search">
+                       <svg width="19" height="23" viewBox="0 0 19 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="1" y="1" width="16.3455" height="16.3455" rx="8.17277" stroke="url(#paint0_linear_2889_2343)" stroke-width="2"/>
+<path d="M4.84961 16.7158L1.33789 22" stroke="#3BE2A8" stroke-width="2"/>
+<defs>
+<linearGradient id="paint0_linear_2889_2343" x1="0.632605" y1="1.26521" x2="18.3455" y2="17.3966" gradientUnits="userSpaceOnUse">
+<stop stop-color="#3EB3E3"/>
+<stop offset="1" stop-color="#3BE2A8"/>
+</linearGradient>
+</defs>
+</svg>
+                    </button>
+                </div>
+                <!-- End Main Menu Search -->
                 <!-- Start Main Menu Hamburger -->
-                <a href="Javascript:void(0);" class="hamburger">
+               
+                <!-- End Main Menu Hamburger -->
+<a href="Javascript:void(0);" class="hamburger">
                     <span class="navbar-toggler-icon">
                         <span class="toggle-bar"></span>
                         <span class="toggle-bar"></span>
                         <span class="toggle-bar"></span>
                     </span>
                 </a>
-                <!-- End Main Menu Hamburger -->
-
             </div>
+                                                    </div>
             <!-- End Desktop Menu -->
 
             <!-- Start Mobile Menu -->

@@ -8,7 +8,7 @@
  */
 ?>	
 
-<section class="industry-banner-section" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/industry-banner.png');">
+<section class="industry-banner-section" style="background-image: url('<?php echo get_template_directory_uri(); ?>/images/casestudibanner.webp');">
 	<div class="container">
 		<div class="banner-detail">
 		

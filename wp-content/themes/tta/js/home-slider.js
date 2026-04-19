@@ -2,6 +2,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const counters = document.querySelectorAll('.counter');
   const section = document.querySelector('.fast-facts');
+  if (!section || !counters.length) return;
   let started = false;
 
   new IntersectionObserver(entries => {
@@ -91,6 +92,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   const ttsTrack = document.querySelector('.tts-track');
   const ttsDots = document.querySelectorAll('.tts-dot');
+   if (!ttsTrack || !ttsDots.length) return;
   let ttsIndex = 0;
 
   function ttsUpdateSlider(i) {
@@ -138,7 +140,7 @@ jQuery('.case-studies-design-one .tech-slider').slick({
 });
 
 jQuery('.case-studies-design-two .tech-slider').slick({
-  slidesToShow: 1,
+  slidesToShow: 4,
   slidesToScroll: 1,
   autoplay: false,
   autoplaySpeed: 2500,
@@ -154,6 +156,11 @@ jQuery('.case-studies-design-two .tech-slider').slick({
         <svg width="50" height="58" viewBox="0 0 50 58" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M18.5023 14.3906L30.8372 28.7813L18.5023 43.1719" stroke="#132136" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
 </svg></button>`,
+  responsive: [
+    { breakpoint: 1580, settings: { slidesToShow: 3 } },
+    { breakpoint: 991, settings: { slidesToShow: 2 } },
+    { breakpoint: 767, settings: { slidesToShow: 1 } }
+  ]
 });
 
 jQuery('.profile-card-inner-slider').slick({
@@ -198,7 +205,7 @@ jQuery('.profile-card-inner-slider').on('setPosition', function () {
 
 jQuery(document).ready(function () {
 
-  jQuery(document).on("click", ".tech-btn", function (e) {
+  jQuery(document).on("click", ".tech-btn, .tech-popup", function (e) {
     e.preventDefault();
 
     let card = jQuery(this).closest(".tech-card");

@@ -1,8 +1,16 @@
 <?php if (get_row_layout() == 'ttas_testimonial_section') { ?>
     <section class="tts-testimonial-section">
         <div class="container">
-
+				<div class="tta-head0">
+						<?php
+                                        $ttahead = get_sub_field('ttas_testimonial_heading');
+                                        if ($ttahead) {
+                                        ?>
+                                            <h2 class="tta-head"><?php echo $ttahead ?></h2>
+                        <?php } ?>
+				</div>
             <div class="tts-testimonial-wrapper">
+				
                 <div class="tts-quote">
                     <?php
                     $image = get_sub_field('tta_image');

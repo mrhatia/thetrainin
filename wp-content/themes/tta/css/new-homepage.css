@@ -158,6 +158,9 @@ p {
 }
 
 .section-wrapper__card-grid {
+  background-color: #000000;
+}
+.section-wrapper__card-grid .source-talent-test{
   padding: 80px 0;
   background-color: #FFFFFF;
   border-top-left-radius: 140px;
@@ -790,6 +793,20 @@ display: inline-flex;
   padding: 200px 0 0;
   color: #fff;
 }
+.tts-testimonial-section .tta-head0 .tta-head {
+
+background: linear-gradient(90deg, #3eb3e3 0%, #3be2a8 100%);
+background-clip: border-box;
+background-clip: border-box;
+-webkit-background-clip: text;
+background-clip: text;
+-webkit-text-fill-color: transparent;
+font-weight: 900;
+margin-bottom: 100px;
+font-size: 80px;
+line-height: 1.17;
+text-transform: capitalize;
+}
 
 .bottom-link-text {
   text-align: center;
@@ -1342,7 +1359,7 @@ section.tt_lago {
 .popup-image a {
   text-decoration: none;
   font-family: "Lato";
-  font-weight: 400;
+  font-weight: 600;
   font-size: 16px;
   padding: 10px 15px;
   text-transform: capitalize;
@@ -1373,7 +1390,7 @@ section.tt_lago {
   position: absolute;
   inset: 0;
   border-radius: 50px;
-  background: linear-gradient(90deg, #3EB3E3 0%, #3BE2A8 100%);
+  /* background: linear-gradient(90deg, #3EB3E3 0%, #3BE2A8 100%); */
   z-index: -1;
   transition: all .4s;
 }
@@ -1734,6 +1751,10 @@ section.tt_lago {
 @media (max-width:1024px) {
   .award-card {
     flex: 0 0 calc((100% - 2 * 20px) / 3);
+  }
+  .section-wrapper__card-grid .source-talent-test{
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
   }
 }
 
@@ -2180,7 +2201,9 @@ section.tt_lago {
   .trusted-by {
     padding: 80px 0 !important;
   }
-
+	.tts-testimonial-section .tta-head0 .tta-head{
+		font-size:50px;
+	}
 }
 
 @media (max-width: 640px) {
@@ -2484,6 +2507,10 @@ section.tt_lago {
   }
   .staff-footer p{
     margin-bottom: 0;
+  }
+  .section-wrapper__card-grid .source-talent-test{
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
   }
 }
 

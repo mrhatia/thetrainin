@@ -700,6 +700,88 @@ function custom_taxonomy_resource() {
 		'rewrite'                    => $rewrite,
 	);
 	register_taxonomy( 'resource-industries', array( 'resource' ), $args );
+
+$labels = array(
+		'name'                       => _x( 'Topics', 'Taxonomy General Name', 'tta' ),
+		'singular_name'              => _x( 'topic', 'Taxonomy Singular Name', 'tta' ),
+		'menu_name'                  => __( 'Topics', 'tta' ),
+		'all_items'                  => __( 'Topics Items', 'tta' ),
+		'parent_item'                => __( 'Parent Topic', 'tta' ),
+		'parent_item_colon'          => __( 'Parent Topic:', 'tta' ),
+		'new_item_name'              => __( 'New Item Name', 'tta' ),
+		'add_new_item'               => __( 'Add New Item', 'tta' ),
+		'edit_item'                  => __( 'Edit Item', 'tta' ),
+		'update_item'                => __( 'Update Item', 'tta' ),
+		'view_item'                  => __( 'View Item', 'tta' ),
+		'separate_items_with_commas' => __( 'Separate items with commas', 'tta' ),
+		'add_or_remove_items'        => __( 'Add or remove items', 'tta' ),
+		'choose_from_most_used'      => __( 'Choose from the most used', 'tta' ),
+		'popular_items'              => __( 'Popular Items', 'tta' ),
+		'search_items'               => __( 'Search Items', 'tta' ),
+		'not_found'                  => __( 'Not Found', 'tta' ),
+		'no_terms'                   => __( 'No items', 'tta' ),
+		'items_list'                 => __( 'Items list', 'tta' ),
+		'items_list_navigation'      => __( 'Items list navigation', 'tta' ),
+	);
+	$rewrite = array(
+		'slug'                       => 'resource-topic',
+		'with_front'                 => true,
+		'hierarchical'               => false,
+	);
+	$args = array(
+		'labels'                     => $labels,
+		'hierarchical'               => true,
+		'public'                     => true,
+		'show_ui'                    => true,
+		'show_admin_column'          => true,
+		'show_in_nav_menus'          => true,
+		'show_tagcloud'              => true,
+		'rewrite'                    => $rewrite,
+	);
+	register_taxonomy( 'resource-topic', array( 'resource' ), $args );
+
+
+	/* register types texonomy*/
+
+	$labels = array(
+		'name'                       => _x( 'Types', 'Taxonomy General Name', 'tta' ),
+		'singular_name'              => _x( 'types', 'Taxonomy Singular Name', 'tta' ),
+		'menu_name'                  => __( 'Types', 'tta' ),
+		'all_items'                  => __( 'Types Items', 'tta' ),
+		'parent_item'                => __( 'Parent Types', 'tta' ),
+		'parent_item_colon'          => __( 'Parent Types:', 'tta' ),
+		'new_item_name'              => __( 'New Item Name', 'tta' ),
+		'add_new_item'               => __( 'Add New Item', 'tta' ),
+		'edit_item'                  => __( 'Edit Item', 'tta' ),
+		'update_item'                => __( 'Update Item', 'tta' ),
+		'view_item'                  => __( 'View Item', 'tta' ),
+		'separate_items_with_commas' => __( 'Separate items with commas', 'tta' ),
+		'add_or_remove_items'        => __( 'Add or remove items', 'tta' ),
+		'choose_from_most_used'      => __( 'Choose from the most used', 'tta' ),
+		'popular_items'              => __( 'Popular Items', 'tta' ),
+		'search_items'               => __( 'Search Items', 'tta' ),
+		'not_found'                  => __( 'Not Found', 'tta' ),
+		'no_terms'                   => __( 'No items', 'tta' ),
+		'items_list'                 => __( 'Items list', 'tta' ),
+		'items_list_navigation'      => __( 'Items list navigation', 'tta' ),
+	);
+	$rewrite = array(
+		'slug'                       => 'resource-types',
+		'with_front'                 => true,
+		'hierarchical'               => false,
+	);
+	$args = array(
+		'labels'                     => $labels,
+		'hierarchical'               => true,
+		'public'                     => true,
+		'show_ui'                    => true,
+		'show_admin_column'          => true,
+		'show_in_nav_menus'          => true,
+		'show_tagcloud'              => true,
+		'rewrite'                    => $rewrite,
+	);
+	register_taxonomy( 'resource-types', array( 'resource' ), $args );
+	
 	
 }
 add_action( 'init', 'custom_taxonomy_resource', 0 );

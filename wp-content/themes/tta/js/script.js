@@ -751,18 +751,37 @@ $(document).ready(function () {
 
 
 	// Accordion Start
-	jQuery('.accordion-title').click(function(e) {
-		jQuery('.accordion-caps').slideUp();
-		jQuery('.active').not(this).removeClass('active');
-		if (jQuery(this).hasClass('active')) {
-			jQuery(this).removeClass('active');
-		jQuery(this).next('.accordion-caps').slideUp();
-		}else{
-			jQuery(this).addClass('active');
-			jQuery(this).next('.accordion-caps').slideDown();
-		}
-	});
+// 	jQuery('.accordion-title').click(function(e) {
+// 		jQuery('.accordion-caps').slideUp();
+// 		jQuery('.active').not(this).removeClass('active');
+// 		if (jQuery(this).hasClass('active')) {
+// 			jQuery(this).removeClass('active');
+// 		jQuery(this).next('.accordion-caps').slideUp();
+// 		}else{
+// 			jQuery(this).addClass('active');
+// 			jQuery(this).next('.accordion-caps').slideDown();
+// 		}
+// 	});
+jQuery(document).ready(function ($) {
+  $('.accordion-title').on('click', function (e) {
+    e.preventDefault();
+    e.stopPropagation();
 
+    var $this = $(this);
+    var $currentContent = $this.next('.accordion-caps');
+
+    if ($this.hasClass('active')) {
+      $this.removeClass('active');
+      $currentContent.stop(true, true).slideUp();
+    } else {
+      $('.accordion-title.active').removeClass('active');
+      $('.accordion-caps').not($currentContent).stop(true, true).slideUp();
+
+      $this.addClass('active');
+      $currentContent.stop(true, true).slideDown();
+    }
+  });
+});
 
 	// Sccordion End
 	checkPosition();
